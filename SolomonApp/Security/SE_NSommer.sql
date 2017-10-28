@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\NSommer] FOR LOGIN [SE\NSommer]
+    WITH DEFAULT_SCHEMA = [SE\NSommer];
+

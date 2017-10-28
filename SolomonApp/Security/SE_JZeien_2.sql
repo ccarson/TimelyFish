@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JZeien]
+    AUTHORIZATION [SE\JZeien];
+

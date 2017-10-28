@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SQLReader]
+    AUTHORIZATION [SQLReader];
+

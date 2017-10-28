@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[CFT_TARGET] (
+    [ID]              BIGINT         IDENTITY (0, 1) NOT NULL,
+    [CREATE_DATE]     DATETIME       DEFAULT (getutcdate()) NOT NULL,
+    [LAST_UPDATE]     DATETIME       DEFAULT (getutcdate()) NOT NULL,
+    [CREATED_BY]      BIGINT         DEFAULT ((0)) NOT NULL,
+    [LAST_UPDATED_BY] BIGINT         DEFAULT ((0)) NOT NULL,
+    [DELETED_BY]      BIGINT         DEFAULT ((-1)) NOT NULL,
+    [TARGETNAME]      NVARCHAR (80)  NULL,
+    [TARGETDESC]      NVARCHAR (255) NULL,
+    [CREATEDBY]       NVARCHAR (80)  NULL,
+    [ACTIVE]          INT            NULL,
+    [CREATEDDATE]     DATETIME       NULL,
+    [TARGETTYPE]      NVARCHAR (10)  NULL,
+    CONSTRAINT [CFT_TARGET_PK] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

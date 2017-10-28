@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[ManureStructure] (
+    [ManureStructureID]          INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [ManureStructTypeID]         INT          NULL,
+    [StorageTypeID]              INT          NULL,
+    [SiteLocation]               VARCHAR (30) NULL,
+    [ManureStructureDescription] VARCHAR (30) NULL,
+    [Dimensions]                 VARCHAR (30) NULL,
+    [ManualCapacityDataEntry]    SMALLINT     CONSTRAINT [DF_ManureStructure_ManualCapacityDataEntry] DEFAULT (0) NULL,
+    [CapacityGalPerFt]           FLOAT (53)   NULL,
+    [TotalCapacity]              FLOAT (53)   NOT NULL,
+    [Radius]                     FLOAT (53)   NOT NULL,
+    [Width]                      FLOAT (53)   CONSTRAINT [DF_ManureStructure_Width] DEFAULT (0) NOT NULL,
+    [Length]                     FLOAT (53)   CONSTRAINT [DF_ManureStructure_Length] DEFAULT (0) NOT NULL,
+    [Depth]                      FLOAT (53)   CONSTRAINT [DF_ManureStructure_Depth] DEFAULT (0) NOT NULL,
+    [Slope]                      FLOAT (53)   CONSTRAINT [DF_ManureStructure_Slope] DEFAULT (1) NOT NULL,
+    [Adjustment]                 FLOAT (53)   CONSTRAINT [DF_ManureStructure_Adjustment] DEFAULT (0) NOT NULL,
+    [Freeboard]                  FLOAT (53)   CONSTRAINT [DF_ManureStructure_Freeboard] DEFAULT (0) NOT NULL,
+    [MinLevel]                   FLOAT (53)   NOT NULL,
+    [LinearEquationConstant]     FLOAT (53)   NULL,
+    [LinearEquationSlope]        FLOAT (53)   NULL,
+    [LinearEquationFileLink]     VARCHAR (50) NULL,
+    [ManureSystemOther]          VARCHAR (30) NULL,
+    [EmissionControlTypeID]      INT          CONSTRAINT [DF_ManureStructure_EmissionControlTypeID] DEFAULT (4) NULL,
+    [EmissionControlTypeOther]   VARCHAR (30) NULL,
+    CONSTRAINT [PK_ManureStructure] PRIMARY KEY CLUSTERED ([ManureStructureID] ASC) WITH (FILLFACTOR = 90)
+);
+

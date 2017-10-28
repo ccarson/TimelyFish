@@ -1,0 +1,3 @@
+﻿CREATE USER [SQLReader] FOR LOGIN [SQLReader]
+    WITH DEFAULT_SCHEMA = [SQLReader];
+

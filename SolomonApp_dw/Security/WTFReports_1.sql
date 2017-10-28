@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [WTFReports]
+    AUTHORIZATION [WTFReports];
+

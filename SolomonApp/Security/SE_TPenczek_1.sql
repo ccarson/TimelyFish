@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\TPenczek]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

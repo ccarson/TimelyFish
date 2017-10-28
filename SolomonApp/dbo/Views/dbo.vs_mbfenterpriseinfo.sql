@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfenterpriseinfo AS SELECT * FROM SolomonSystem..mbfenterpriseinfo

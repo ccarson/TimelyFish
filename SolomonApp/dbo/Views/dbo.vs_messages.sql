@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_messages AS SELECT * FROM SolomonSystem..messages

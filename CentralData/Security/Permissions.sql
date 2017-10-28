@@ -1,0 +1,149 @@
+﻿GRANT CONNECT TO [CentralDataApp];
+
+
+GO
+GRANT CONNECT TO [kronread];
+
+
+GO
+GRANT CONNECT TO [SSIS_operator];
+
+
+GO
+GRANT CONNECT TO [master];
+
+
+GO
+GRANT CONNECT TO [SOLOMON];
+
+
+GO
+GRANT CONNECT TO [se\ITAdmins];
+
+
+GO
+GRANT CONNECT REPLICATION TO [se\ITAdmins];
+
+
+GO
+GRANT CONNECT TO [SE\PRD];
+
+
+GO
+GRANT CONNECT TO [LinkedServer2Earthtest];
+
+
+GO
+GRANT CONNECT TO [SE\ssis_datareader];
+
+
+GO
+GRANT CONNECT TO [SE\HealthAssurance];
+
+
+GO
+GRANT CONNECT TO [SE\ssis_datawriter];
+
+
+GO
+GRANT CONNECT TO [SE\MyFaxService];
+
+
+GO
+GRANT CONNECT TO [SE\SPSecureStoreSvc];
+
+
+GO
+GRANT CONNECT TO [exe_cfp_excel_LP];
+
+
+GO
+GRANT CONNECT TO [SLWSAPP];
+
+
+GO
+GRANT CONNECT TO [07718158D19D4f5f9D23B55DBF5DF1];
+
+
+GO
+GRANT CONNECT TO [SQLReader];
+
+
+GO
+GRANT CONNECT TO [E8F575915A2E4897A517779C0DD7CE];
+
+
+GO
+GRANT CONNECT TO [SE\JHaala];
+
+
+GO
+GRANT CONNECT TO [se\Earth~CentralData~DataReader];
+
+
+GO
+GRANT CONNECT TO [SE\Earth~CentralData~DataWriter];
+
+
+GO
+GRANT CONNECT TO [SE\PQA Individuals];
+
+
+GO
+GRANT CONNECT TO [TRANSAPP];
+
+
+GO
+GRANT CONNECT TO [SE\PigMgmtAppReports];
+
+
+GO
+GRANT CONNECT TO [SE\powerobjects];
+
+
+GO
+GRANT CONNECT TO [SE\scribeservice];
+
+
+GO
+GRANT CONNECT TO [se\sqlsvc2];
+
+
+GO
+GRANT CONNECT TO [SE\ITDevelopers];
+
+
+GO
+GRANT CONNECT TO [HybridConnectionLogin];
+
+
+GO
+GRANT CREATE SCHEMA TO [HybridConnectionLogin];
+
+
+GO
+GRANT CREATE TABLE TO [HybridConnectionLogin];
+
+
+GO
+GRANT CREATE VIEW TO [HybridConnectionLogin];
+
+
+GO
+GRANT CONNECT TO [ApplicationCenter];
+
+
+GO
+GRANT CONNECT TO [SE\veeambackup];
+
+
+GO
+GRANT CONNECT TO [CorpReports];
+
+
+GO
+GRANT EXECUTE TO [db_sp_exec];
+
+
+GO
+GRANT CONNECT TO [SE\SQLRepl];

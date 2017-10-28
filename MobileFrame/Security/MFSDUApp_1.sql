@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [MFSDUApp]
+    WITH PASSWORD = N'e,rlf9|EeVjwgrxPAcgjt|bamsFT7_&#$!~<chffndCntaCa', SID = 0xEB957EF7437F5949822B41CF713EE668, DEFAULT_DATABASE = [MobileFrame], DEFAULT_LANGUAGE = [us_english];
+

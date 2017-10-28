@@ -1,0 +1,51 @@
+﻿CREATE TABLE [dbo].[CashSumD] (
+    [BankAcct]             CHAR (10)     NOT NULL,
+    [BankSub]              CHAR (24)     NOT NULL,
+    [ConCuryDisbursements] FLOAT (53)    NOT NULL,
+    [ConCuryReceipts]      FLOAT (53)    NOT NULL,
+    [Condisbursements]     FLOAT (53)    NOT NULL,
+    [ConReceipts]          FLOAT (53)    NOT NULL,
+    [CpnyID]               CHAR (10)     NOT NULL,
+    [Crtd_DateTime]        SMALLDATETIME NOT NULL,
+    [Crtd_Prog]            CHAR (8)      NOT NULL,
+    [Crtd_User]            CHAR (10)     NOT NULL,
+    [CuryDisbursements]    FLOAT (53)    NOT NULL,
+    [CuryID]               CHAR (4)      NOT NULL,
+    [CuryReceipts]         FLOAT (53)    NOT NULL,
+    [Disbursements]        FLOAT (53)    NOT NULL,
+    [LUpd_DateTime]        SMALLDATETIME NOT NULL,
+    [LUpd_Prog]            CHAR (8)      NOT NULL,
+    [LUpd_User]            CHAR (10)     NOT NULL,
+    [NoteID]               INT           NOT NULL,
+    [PerNbr]               CHAR (6)      NOT NULL,
+    [Receipts]             FLOAT (53)    NOT NULL,
+    [S4Future01]           CHAR (30)     NOT NULL,
+    [S4Future02]           CHAR (30)     NOT NULL,
+    [S4Future03]           FLOAT (53)    NOT NULL,
+    [S4Future04]           FLOAT (53)    NOT NULL,
+    [S4Future05]           FLOAT (53)    NOT NULL,
+    [S4Future06]           FLOAT (53)    NOT NULL,
+    [S4Future07]           SMALLDATETIME NOT NULL,
+    [S4Future08]           SMALLDATETIME NOT NULL,
+    [S4Future09]           INT           NOT NULL,
+    [S4Future10]           INT           NOT NULL,
+    [S4Future11]           CHAR (10)     NOT NULL,
+    [S4Future12]           CHAR (10)     NOT NULL,
+    [TranDate]             SMALLDATETIME NOT NULL,
+    [User1]                CHAR (30)     NOT NULL,
+    [User2]                CHAR (30)     NOT NULL,
+    [User3]                FLOAT (53)    NOT NULL,
+    [User4]                FLOAT (53)    NOT NULL,
+    [User5]                CHAR (10)     NOT NULL,
+    [User6]                CHAR (10)     NOT NULL,
+    [User7]                SMALLDATETIME NOT NULL,
+    [User8]                SMALLDATETIME NOT NULL,
+    [tstamp]               ROWVERSION    NOT NULL,
+    CONSTRAINT [cashsumd0] PRIMARY KEY CLUSTERED ([CpnyID] ASC, [BankAcct] ASC, [BankSub] ASC, [PerNbr] ASC, [TranDate] ASC) WITH (FILLFACTOR = 100)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [cashsumd2]
+    ON [dbo].[CashSumD]([CpnyID] ASC, [BankAcct] ASC, [BankSub] ASC, [TranDate] ASC, [PerNbr] ASC) WITH (FILLFACTOR = 90);
+

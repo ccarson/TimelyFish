@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_customvba AS SELECT * FROM SolomonSystem..customvba

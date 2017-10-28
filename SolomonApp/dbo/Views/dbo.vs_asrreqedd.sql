@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_asrreqedd AS SELECT * FROM SolomonSystem..asrreqedd

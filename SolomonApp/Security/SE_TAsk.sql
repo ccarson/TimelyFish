@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\TAsk] FOR LOGIN [SE\TAsk]
+    WITH DEFAULT_SCHEMA = [SE\TAsk];
+

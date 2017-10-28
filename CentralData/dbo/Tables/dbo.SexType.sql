@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[SexType] (
+    [SexTypeID] INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [SexType]   VARCHAR (30) NULL,
+    CONSTRAINT [PK_SexType] PRIMARY KEY CLUSTERED ([SexTypeID] ASC) WITH (FILLFACTOR = 90)
+);
+

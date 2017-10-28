@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[cft_PACKER_CONSTRAINT] (
+    [ContactID]       INT          NOT NULL,
+    [QtyDayMinMo]     INT          NOT NULL,
+    [QtyDayMaxMo]     INT          NOT NULL,
+    [QtyDayMinTu]     INT          NOT NULL,
+    [QtyDayMaxTu]     INT          NOT NULL,
+    [QtyDayMinWe]     INT          NOT NULL,
+    [QtyDayMaxWe]     INT          NOT NULL,
+    [QtyDayMinTh]     INT          NOT NULL,
+    [QtyDayMaxTh]     INT          NOT NULL,
+    [QtyDayMinFr]     INT          NOT NULL,
+    [QtyDayMaxFr]     INT          NOT NULL,
+    [QtyDayMinSa]     INT          NOT NULL,
+    [QtyDayMaxSa]     INT          NOT NULL,
+    [QtyWeekMin]      INT          NOT NULL,
+    [QtyWeekMax]      INT          NOT NULL,
+    [QtyLoadMin]      INT          NOT NULL,
+    [QtyLoadMax]      INT          NOT NULL,
+    [WtWeekAvg]       INT          NOT NULL,
+    [CreatedDateTime] DATETIME     CONSTRAINT [DF_cft_PACKER_CONSTRAINT_CreatedDateTime] DEFAULT (getdate()) NOT NULL,
+    [CreatedBy]       VARCHAR (50) NOT NULL,
+    [UpdatedDateTime] DATETIME     NULL,
+    [UpdatedBy]       VARCHAR (50) NULL,
+    [QtyDayMinSn]     INT          CONSTRAINT [DF_cft_qtyDayMin7] DEFAULT (0) NULL,
+    [QtyDayMaxSn]     INT          CONSTRAINT [DF_cft_qtyDayMax7] DEFAULT (0) NULL,
+    CONSTRAINT [PK_cft_PACKER_CONSTRAINT] PRIMARY KEY CLUSTERED ([ContactID] ASC) WITH (FILLFACTOR = 90)
+);
+

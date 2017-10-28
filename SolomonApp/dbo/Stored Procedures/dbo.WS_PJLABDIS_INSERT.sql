@@ -1,0 +1,55 @@
+﻿
+ CREATE PROCEDURE WS_PJLABDIS_INSERT 
+	@acct           CHAR(16),      @amount         FLOAT,         @BaseCuryId     CHAR(4),       @CpnyId_chrg    CHAR(10),
+    @CpnyId_home    CHAR(10),      @crtd_datetime  SMALLDATETIME, @crtd_prog      CHAR(8),       @crtd_user      CHAR(10),
+    @CuryEffDate    SMALLDATETIME, @CuryId         CHAR(4),       @CuryMultDiv    CHAR(1),       @CuryRate       FLOAT,
+    @CuryRateType   CHAR(6),       @CuryTranamt    FLOAT,         @Curystdcost    FLOAT,         @dl_id01        CHAR(30),
+    @dl_id02        CHAR(30),      @dl_id03        CHAR(16),      @dl_id04        CHAR(16),      @dl_id05        CHAR(4),
+    @dl_id06        FLOAT,         @dl_id07        FLOAT,         @dl_id08        SMALLDATETIME, @dl_id09        SMALLDATETIME,
+    @dl_id10        INT,           @dl_id11        CHAR(30),      @dl_id12        CHAR(30),      @dl_id13        CHAR(20),
+    @dl_id14        CHAR(20),      @dl_id15        CHAR(10),      @dl_id16        CHAR(10),      @dl_id17        CHAR(4),
+    @dl_id18        FLOAT,         @dl_id19        FLOAT,         @dl_id20        SMALLDATETIME, @docnbr         CHAR(10),
+    @earn_type_id   CHAR(10),      @employee       CHAR(10),      @fiscalno       CHAR(6),       @gl_acct        CHAR(10),
+    @gl_subacct     CHAR(24),      @home_subacct   CHAR(24),      @hrs_type       CHAR(4),       @labor_class_cd CHAR(4),
+    @labor_stdcost  FLOAT,         @linenbr        SMALLINT,      @lupd_datetime  SMALLDATETIME, @lupd_prog      CHAR(8),
+    @lupd_user      CHAR(10),      @pe_date        SMALLDATETIME, @pjt_entity     CHAR(32),      @premium_hrs    FLOAT,
+    @project        CHAR(16),      @rate_source    CHAR(1),       @shift          CHAR(7),       @status_1       CHAR(2),
+    @status_2       CHAR(2),       @status_gl      CHAR(2),       @SubTask_Name   CHAR(50),      @union_cd       CHAR(10),
+    @work_comp_cd   CHAR(6),       @work_type      CHAR(2),       @worked_hrs     FLOAT
+ AS
+   BEGIN
+       INSERT INTO [PJLABDIS]
+			([acct],          [amount],        [BaseCuryId],    [CpnyId_chrg],
+             [CpnyId_home],   [crtd_datetime], [crtd_prog],     [crtd_user],
+             [CuryEffDate],   [CuryId],        [CuryMultDiv],   [CuryRate],
+             [CuryRateType],  [CuryTranamt],   [Curystdcost],   [dl_id01],
+             [dl_id02],       [dl_id03],       [dl_id04],       [dl_id05],
+             [dl_id06],       [dl_id07],       [dl_id08],       [dl_id09],
+             [dl_id10],       [dl_id11],       [dl_id12],       [dl_id13],
+             [dl_id14],       [dl_id15],       [dl_id16],       [dl_id17],
+             [dl_id18],       [dl_id19],       [dl_id20],       [docnbr],
+             [earn_type_id],  [employee],      [fiscalno],      [gl_acct],
+             [gl_subacct],    [home_subacct],  [hrs_type],      [labor_class_cd],
+             [labor_stdcost], [linenbr],       [lupd_datetime], [lupd_prog],
+             [lupd_user],     [pe_date],       [pjt_entity],    [premium_hrs],
+             [project],       [rate_source],   [shift],         [status_1],
+             [status_2],      [status_gl],     [SubTask_Name],  [union_cd],
+             [work_comp_cd],  [work_type],     [worked_hrs])
+       VALUES      
+		    (@acct,           @amount,         @BaseCuryId,     @CpnyId_chrg,
+             @CpnyId_home,    @crtd_datetime,  @crtd_prog,      @crtd_user,
+             @CuryEffDate,    @CuryId,         @CuryMultDiv,    @CuryRate,
+             @CuryRateType,   @CuryTranamt,    @Curystdcost,    @dl_id01,
+             @dl_id02,        @dl_id03,        @dl_id04,        @dl_id05,
+             @dl_id06,        @dl_id07,        @dl_id08,        @dl_id09,
+             @dl_id10,        @dl_id11,        @dl_id12,        @dl_id13,
+             @dl_id14,        @dl_id15,        @dl_id16,        @dl_id17,
+             @dl_id18,        @dl_id19,        @dl_id20,        @docnbr,
+             @earn_type_id,   @employee,       @fiscalno,       @gl_acct,
+             @gl_subacct,     @home_subacct,   @hrs_type,       @labor_class_cd,
+             @labor_stdcost,  @linenbr,        @lupd_datetime,  @lupd_prog,
+             @lupd_user,      @pe_date,        @pjt_entity,     @premium_hrs,
+             @project,        @rate_source,    @shift,          @status_1,
+             @status_2,       @status_gl,      @SubTask_Name,   @union_cd,
+             @work_comp_cd,   @work_type,      @worked_hrs);
+   END 

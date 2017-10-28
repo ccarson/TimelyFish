@@ -1,0 +1,28 @@
+﻿CREATE TABLE [caredata].[COHORT_LOCATION_RESERVATIONS] (
+    [sub_cohort_id]         INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [cohort_id]             INT          NOT NULL,
+    [location_id]           INT          NOT NULL,
+    [original_reserve_from] DATETIME     NOT NULL,
+    [original_reserve_to]   DATETIME     NOT NULL,
+    [reserve_from]          DATETIME     NOT NULL,
+    [reserve_to]            DATETIME     NOT NULL,
+    [estimated_head]        INT          NULL,
+    [budget_id]             INT          NOT NULL,
+    [medication_id]         INT          NULL,
+    [growth_curve_id]       INT          NOT NULL,
+    [empty_date]            DATETIME     NULL,
+    [close_date]            DATETIME     NULL,
+    [creation_date]         DATETIME     CONSTRAINT [DF_COHORT_LOCATION_RESERVATIONS_creation_date] DEFAULT (getdate()) NOT NULL,
+    [created_by]            VARCHAR (15) CONSTRAINT [DF_COHORT_LOCATION_RESERVATIONS_created_by] DEFAULT ('SYSTEM') NOT NULL,
+    [last_update_date]      DATETIME     NULL,
+    [last_update_by]        VARCHAR (15) NULL,
+    [deletion_date]         DATETIME     NULL,
+    [deleted_by]            VARCHAR (15) NULL,
+    CONSTRAINT [PK_COHORT_LOCATION_RESERVATIONS] PRIMARY KEY NONCLUSTERED ([sub_cohort_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_COHORT_LOCATION_RESERVATIONS_GROWTH_CURVES_4] FOREIGN KEY ([growth_curve_id]) REFERENCES [caredata].[GROWTH_CURVES] ([growth_curve_id]),
+    CONSTRAINT [FK_COHORT_LOCATION_RESERVATIONS_HDR_COHORTS_0] FOREIGN KEY ([cohort_id]) REFERENCES [caredata].[HDR_COHORTS] ([cohort_id]),
+    CONSTRAINT [FK_COHORT_LOCATION_RESERVATIONS_HDR_FEED_BUDGETS_2] FOREIGN KEY ([budget_id]) REFERENCES [caredata].[HDR_FEED_BUDGETS] ([budget_id]),
+    CONSTRAINT [FK_COHORT_LOCATION_RESERVATIONS_HDR_FEED_LOCATIONS_1] FOREIGN KEY ([location_id]) REFERENCES [caredata].[HDR_FEED_LOCATIONS] ([location_id]) ON UPDATE CASCADE,
+    CONSTRAINT [FK_COHORT_LOCATION_RESERVATIONS_HDR_MEDICATION_BUDGETS_3] FOREIGN KEY ([medication_id]) REFERENCES [caredata].[HDR_MEDICATION_BUDGETS] ([budget_id]) ON DELETE SET NULL
+);
+

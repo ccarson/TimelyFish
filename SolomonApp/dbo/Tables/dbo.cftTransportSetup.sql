@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[cftTransportSetup] (
+    [CF01]          CHAR (30)     NOT NULL,
+    [CF02]          CHAR (30)     NOT NULL,
+    [CF03]          CHAR (10)     NOT NULL,
+    [CF04]          CHAR (10)     NOT NULL,
+    [CF05]          SMALLDATETIME NOT NULL,
+    [CF06]          SMALLDATETIME NOT NULL,
+    [CF07]          SMALLDATETIME NOT NULL,
+    [CF08]          SMALLDATETIME NOT NULL,
+    [CF09]          SMALLINT      NOT NULL,
+    [CF10]          SMALLINT      NOT NULL,
+    [CF11]          FLOAT (53)    NOT NULL,
+    [CF12]          FLOAT (53)    NOT NULL,
+    [Crtd_DateTime] SMALLDATETIME NOT NULL,
+    [Crtd_Prog]     CHAR (8)      NOT NULL,
+    [Crtd_User]     CHAR (10)     NOT NULL,
+    [ID]            CHAR (10)     NOT NULL,
+    [Lupd_DateTime] SMALLDATETIME NOT NULL,
+    [Lupd_Prog]     CHAR (8)      NOT NULL,
+    [Lupd_User]     CHAR (10)     NOT NULL,
+    [MixedPodID]    CHAR (3)      NOT NULL,
+    [PhaseTranAcct] CHAR (10)     NOT NULL,
+    [SowTranAcct]   CHAR (10)     NOT NULL,
+    [TranDeptAcct]  CHAR (10)     NOT NULL,
+    [tstamp]        ROWVERSION    NULL,
+    CONSTRAINT [cftTransportSetup0] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

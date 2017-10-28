@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_registration AS SELECT * FROM SolomonSystem..registration

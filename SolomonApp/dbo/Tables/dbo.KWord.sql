@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[KWord] (
+    [KWord]  CHAR (11)  NOT NULL,
+    [tstamp] ROWVERSION NOT NULL,
+    CONSTRAINT [KWord0] PRIMARY KEY CLUSTERED ([KWord] ASC) WITH (FILLFACTOR = 90)
+);
+

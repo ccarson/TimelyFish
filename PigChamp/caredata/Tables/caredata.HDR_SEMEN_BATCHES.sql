@@ -1,0 +1,15 @@
+﻿CREATE TABLE [caredata].[HDR_SEMEN_BATCHES] (
+    [identity_id] INT        NOT NULL,
+    [doses]       SMALLINT   NULL,
+    [expiry_date] DATETIME   NULL,
+    [value]       FLOAT (53) NULL,
+    CONSTRAINT [PK_HDR_SEMEN_BATCHES] PRIMARY KEY CLUSTERED ([identity_id] ASC) WITH (FILLFACTOR = 80),
+    CONSTRAINT [FK_HDR_SEMEN_BATCHES_BH_IDENTITIES_0] FOREIGN KEY ([identity_id]) REFERENCES [caredata].[BH_IDENTITIES] ([identity_id]) ON DELETE CASCADE
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_HDR_SEMEN_BATCHES_0]
+    ON [caredata].[HDR_SEMEN_BATCHES]([identity_id] ASC)
+    INCLUDE([expiry_date]) WITH (FILLFACTOR = 80);
+

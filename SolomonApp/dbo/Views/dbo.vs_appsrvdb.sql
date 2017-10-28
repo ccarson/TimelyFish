@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_appsrvdb AS SELECT * FROM SolomonSystem..appsrvdb

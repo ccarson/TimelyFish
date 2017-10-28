@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfactionmenuitem AS SELECT * FROM SolomonSystem..mbfactionmenuitem

@@ -1,0 +1,3 @@
+﻿CREATE USER [SMatter]
+    WITH DEFAULT_SCHEMA = [SMatter];
+

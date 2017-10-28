@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[MF_LOG] (
+    [ID]              BIGINT        IDENTITY (0, 1) NOT NULL,
+    [CREATE_DATE]     DATETIME      DEFAULT (getutcdate()) NOT NULL,
+    [LAST_UPDATE]     DATETIME      DEFAULT (getutcdate()) NOT NULL,
+    [CREATED_BY]      BIGINT        DEFAULT ((0)) NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        DEFAULT ((0)) NOT NULL,
+    [DELETED_BY]      BIGINT        DEFAULT ((-1)) NOT NULL,
+    [USERID]          BIGINT        NULL,
+    [SESSIONID]       NVARCHAR (36) COLLATE Latin1_General_CS_AS NULL,
+    [SEVERITY]        INT           NULL,
+    [MESSAGESOURCE]   INT           NULL,
+    [MESSAGE]         NTEXT         NULL,
+    CONSTRAINT [MF_LOG_PK] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [LogCreateDate]
+    ON [dbo].[MF_LOG]([CREATE_DATE] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [LogUserID]
+    ON [dbo].[MF_LOG]([USERID] ASC) WITH (FILLFACTOR = 90);
+

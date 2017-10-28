@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_impdefde AS SELECT * FROM SolomonSystem..impdefde

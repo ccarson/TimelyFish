@@ -1,0 +1,30 @@
+﻿
+-- ===================================================================
+-- Author:	Andrew Derco
+-- Create date: 06/20/2008
+-- Description:	Selects all Promotion records
+-- ===================================================================
+CREATE PROCEDURE [dbo].[cfp_CORN_PURCHASING_PROMOTION_RATE_SELECT]
+AS
+BEGIN
+SET NOCOUNT ON;
+
+SELECT [PromotionID],
+       [FeedMillID],
+       [Active],
+       [DateEstablishedFrom],
+       [DateEstablishedTo],
+       [DeliveryDateFrom],
+       [DeliveryDateTo],
+       [CreatedDateTime],
+       [CreatedBy],
+       [UpdatedDateTime],
+       [UpdatedBy]
+FROM dbo.cft_PROMOTION_RATE
+END
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[cfp_CORN_PURCHASING_PROMOTION_RATE_SELECT] TO [db_sp_exec]
+    AS [dbo];
+

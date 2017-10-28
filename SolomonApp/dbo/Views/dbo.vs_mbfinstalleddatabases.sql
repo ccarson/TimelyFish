@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfinstalleddatabases AS SELECT * FROM SolomonSystem..mbfinstalleddatabases

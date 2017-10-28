@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprovideritem_l AS SELECT * FROM SolomonSystem..mbfprovideritem_l

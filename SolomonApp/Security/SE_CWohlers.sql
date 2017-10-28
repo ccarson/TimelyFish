@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\CWohlers] FOR LOGIN [SE\CWohlers]
+    WITH DEFAULT_SCHEMA = [SE\CWohlers];
+

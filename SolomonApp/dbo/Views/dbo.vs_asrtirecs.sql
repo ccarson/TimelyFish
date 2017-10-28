@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_asrtirecs AS SELECT * FROM SolomonSystem..asrtirecs

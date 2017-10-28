@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_numericmetadata AS SELECT * FROM SolomonSystem..numericmetadata

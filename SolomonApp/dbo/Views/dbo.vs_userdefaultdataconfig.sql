@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_userdefaultdataconfig AS SELECT * FROM SolomonSystem..userdefaultdataconfig

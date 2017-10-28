@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\KACummins] FOR LOGIN [SE\KACummins]
+    WITH DEFAULT_SCHEMA = [SE\KACummins];
+

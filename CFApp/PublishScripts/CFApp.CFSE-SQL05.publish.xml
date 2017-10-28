@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>CentralData</TargetDatabaseName>
+    <DeployScriptFileName>[$(CentralData)].sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=CFSE-SQL05;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <ScriptDatabaseOptions>False</ScriptDatabaseOptions>
+    <DoNotAlterReplicatedObjects>False</DoNotAlterReplicatedObjects>
+    <DropStatisticsNotInSource>False</DropStatisticsNotInSource>
+    <DropConstraintsNotInSource>False</DropConstraintsNotInSource>
+    <DropDmlTriggersNotInSource>False</DropDmlTriggersNotInSource>
+    <DropIndexesNotInSource>False</DropIndexesNotInSource>
+    <VerifyDeployment>False</VerifyDeployment>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="SolomonApp">
+      <Value>SolomonApp</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>

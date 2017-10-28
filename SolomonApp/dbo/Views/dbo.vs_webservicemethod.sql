@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_webservicemethod AS SELECT * FROM SolomonSystem..webservicemethod

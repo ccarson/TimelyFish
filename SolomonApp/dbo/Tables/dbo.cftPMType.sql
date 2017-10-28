@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[cftPMType] (
+    [Desc]     CHAR (30)  NOT NULL,
+    [PMTypeID] INT        IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [tstamp]   ROWVERSION NOT NULL,
+    CONSTRAINT [cftPMType0] PRIMARY KEY CLUSTERED ([PMTypeID] ASC) WITH (FILLFACTOR = 90)
+);
+

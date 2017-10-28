@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[xCFSetUp] (
+    [ClassBag]      CHAR (6)      NOT NULL,
+    [ClassIngr]     CHAR (6)      NOT NULL,
+    [ClassRation]   CHAR (6)      NOT NULL,
+    [Crtd_DateTime] SMALLDATETIME NOT NULL,
+    [Crtd_Prog]     CHAR (8)      NOT NULL,
+    [Crtd_User]     CHAR (10)     NOT NULL,
+    [DfltPath]      CHAR (120)    NOT NULL,
+    [FeedPlanPct]   FLOAT (53)    NOT NULL,
+    [FinishStatus]  CHAR (1)      NOT NULL,
+    [LastOrdNbr]    CHAR (10)     NOT NULL,
+    [Lupd_DateTime] SMALLDATETIME NOT NULL,
+    [Lupd_Prog]     CHAR (8)      NOT NULL,
+    [Lupd_User]     CHAR (10)     NOT NULL,
+    [RoadRestr]     SMALLINT      NOT NULL,
+    [SetUpId]       CHAR (2)      NOT NULL,
+    [User1]         CHAR (30)     NOT NULL,
+    [User2]         CHAR (30)     NOT NULL,
+    [User3]         FLOAT (53)    NOT NULL,
+    [User4]         FLOAT (53)    NOT NULL,
+    [User5]         CHAR (10)     NOT NULL,
+    [User6]         CHAR (10)     NOT NULL,
+    [User7]         SMALLDATETIME NOT NULL,
+    [User8]         INT           NOT NULL,
+    [tstamp]        ROWVERSION    NULL,
+    CONSTRAINT [xCFSetUp0] PRIMARY KEY CLUSTERED ([SetUpId] ASC) WITH (FILLFACTOR = 90)
+);
+

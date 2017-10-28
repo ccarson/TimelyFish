@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[cft_SLF_CIRCULAR_PIG_GROUPS] (
+    [PigGroupID] CHAR (12) NOT NULL
+);
+

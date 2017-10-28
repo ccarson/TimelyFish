@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_cftaccess AS SELECT * FROM SolomonSystem..cftaccess

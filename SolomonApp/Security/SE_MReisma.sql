@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\MReisma] FOR LOGIN [SE\MReisma]
+    WITH DEFAULT_SCHEMA = [SE\MReisma];
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_cftrptcontrol AS SELECT * FROM SolomonSystem..cftrptcontrol

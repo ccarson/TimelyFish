@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\TAsk]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

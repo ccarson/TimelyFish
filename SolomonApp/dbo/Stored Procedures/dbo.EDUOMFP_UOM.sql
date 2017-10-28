@@ -1,0 +1,15 @@
+﻿ CREATE PROCEDURE EDUOMFP_UOM
+ @parm1 varchar( 6 )
+AS
+ SELECT *
+ FROM EDUOMFP
+ WHERE UOM LIKE @parm1
+ ORDER BY UOM
+
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[EDUOMFP_UOM] TO [MSDSL]
+    AS [dbo];
+

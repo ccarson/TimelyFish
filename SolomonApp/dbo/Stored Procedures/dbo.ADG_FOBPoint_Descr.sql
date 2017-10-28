@@ -1,0 +1,7 @@
+﻿ CREATE PROCEDURE ADG_FOBPoint_Descr	@parm1 VARCHAR(15)
+AS
+	SELECT Descr
+	FROM FOBPoint
+	WHERE FOBID = @parm1
+
+

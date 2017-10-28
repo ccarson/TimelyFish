@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\NSommer]
+    AUTHORIZATION [SE\NSommer];
+

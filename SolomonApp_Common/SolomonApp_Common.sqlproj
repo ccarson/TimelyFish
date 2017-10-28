@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SolomonApp_Common</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{0f63a210-2e31-4e64-83d7-4416ba7dbd9b}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SolomonApp</RootNamespace>
+    <AssemblyName>SolomonApp</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SqlTargetName>SolomonApp</SqlTargetName>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings>71558</SuppressTSqlWarnings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Functions\dbo.cff_getBaseRate.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_GetMarketServiceManager.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_GetServiceManager.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_GetServiceManagerData_SBF.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_GetSiteMarketManagerData.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_GetSiteServiceManagerData.sql" />
+    <Build Include="dbo\Functions\dbo.cff_tvf_StringSplitter_varchar.sql" />
+    <Build Include="dbo\Functions\dbo.cffn_SPLIT_STRING.sql" />
+    <Build Include="dbo\Functions\dbo.getActualRate.sql" />
+    <Build Include="dbo\Functions\dbo.getNextLoadArrivingDate.sql" />
+    <Build Include="dbo\Functions\dbo.getRate.sql" />
+    <Build Include="dbo\Functions\dbo.getRateFuelSurcharge.sql" />
+    <Build Include="dbo\Functions\dbo.getRateMiles.sql" />
+    <Build Include="dbo\Functions\dbo.getStopsPay.sql" />
+    <Build Include="dbo\Functions\dbo.GetSvcManagerNm.sql" />
+    <Build Include="dbo\Functions\dbo.PGGetInventory.sql" />
+    <Build Include="dbo\Functions\dbo.PGGetRoom.sql" />
+    <Build Include="dbo\Functions\dbo.PGGetSource.sql" />
+    <Build Include="dbo\Functions\dbo.RemoveCSVChars.sql" />
+    <Build Include="dbo\Stored Procedures\dbo.cfp_GetErrorInfo.sql" />
+    <Build Include="dbo\Tables\dbo.Account.sql" />
+    <Build Include="dbo\Tables\dbo.AcctHist.sql" />
+    <Build Include="dbo\Tables\dbo.APAdjust.sql" />
+    <Build Include="dbo\Tables\dbo.APDoc.sql" />
+    <Build Include="dbo\Tables\dbo.APTran.sql" />
+    <Build Include="dbo\Tables\dbo.ARDoc.sql" />
+    <Build Include="dbo\Tables\dbo.ARTran.sql" />
+    <Build Include="dbo\Tables\dbo.cft_ACCOUNT_ROLLUP.sql" />
+    <Build Include="dbo\Tables\dbo.cft_ACCOUNT_ROLLUP_TYPE.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Eval.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Eval_Results.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Form.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Form_Ans_Opt.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Form_Ques.sql" />
+    <Build Include="dbo\Tables\dbo.cft_Form_Ques_Ans_Opt.sql" />
+    <Build Include="dbo\Tables\dbo.cft_FormResults.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Group.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_GroupSample.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Monitor.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_MovementSample.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_ProtocolHdr.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_ProtocolSample.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Results.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Sample.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_SampleTest.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Schedule.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_SiteGroup.sql" />
+    <Build Include="dbo\Tables\dbo.cft_HAT_Test.sql" />
+    <Build Include="dbo\Tables\dbo.cft_SITE_FEED_REPRESENTATIVE.sql" />
+    <Build Include="dbo\Tables\dbo.cftAddress.sql" />
+    <Build Include="dbo\Tables\dbo.cftAddressType.sql" />
+    <Build Include="dbo\Tables\dbo.cftBarn.sql" />
+    <Build Include="dbo\Tables\dbo.cftBarnStyle.sql" />
+    <Build Include="dbo\Tables\dbo.cftBin.sql" />
+    <Build Include="dbo\Tables\dbo.cftBinReading.sql" />
+    <Build Include="dbo\Tables\dbo.cftBinType.sql" />
+    <Build Include="dbo\Tables\dbo.cftBioLevelProtocol.sql" />
+    <Build Include="dbo\Tables\dbo.cftContact.sql" />
+    <Build Include="dbo\Tables\dbo.cftContactAddress.sql" />
+    <Build Include="dbo\Tables\dbo.cftContactPhone.sql" />
+    <Build Include="dbo\Tables\dbo.cftContactRoleType.sql" />
+    <Build Include="dbo\Tables\dbo.cftContactType.sql" />
+    <Build Include="dbo\Tables\dbo.cftDayDefinition.sql" />
+    <Build Include="dbo\Tables\dbo.cftEmployee.sql" />
+    <Build Include="dbo\Tables\dbo.cftFacilityType.sql" />
+    <Build Include="dbo\Tables\dbo.cftFeedLoad.sql" />
+    <Build Include="dbo\Tables\dbo.cftFeedOrder.sql" />
+    <Build Include="dbo\Tables\dbo.cftFeedPlanDet.sql" />
+    <Build Include="dbo\Tables\dbo.cftFeedPlanInd.sql" />
+    <Build Include="dbo\Tables\dbo.cftFuelChargeCat.sql" />
+    <Build Include="dbo\Tables\dbo.cftFuelRate.sql" />
+    <Build Include="dbo\Tables\dbo.cftGeneratorType.sql" />
+    <Build Include="dbo\Tables\dbo.cftInsuranceProgram.sql" />
+    <Build Include="dbo\Tables\dbo.cftInternalTrucker.sql" />
+    <Build Include="dbo\Tables\dbo.cftMarketSaleTypeData.sql" />
+    <Build Include="dbo\Tables\dbo.cftMarketTrucker.sql" />
+    <Build Include="dbo\Tables\dbo.cftMileageRate.sql" />
+    <Build Include="dbo\Tables\dbo.cftMilesMatrix.sql" />
+    <Build Include="dbo\Tables\dbo.cftMillSite.sql" />
+    <Build Include="dbo\Tables\dbo.cftMktMgrAssign.sql" />
+    <Build Include="dbo\Tables\dbo.cftOrderType.sql" />
+    <Build Include="dbo\Tables\dbo.cftOwner.sql" />
+    <Build Include="dbo\Tables\dbo.cftOwnershipLevel.sql" />
+    <Build Include="dbo\Tables\dbo.cftOwnershipType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPacker.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGInvTran.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGInvXfer.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGSetup.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGStatus.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGStatusUpd.sql" />
+    <Build Include="dbo\Tables\dbo.cftPGTopClose.sql" />
+    <Build Include="dbo\Tables\dbo.cftPhone.sql" />
+    <Build Include="dbo\Tables\dbo.cftPhoneType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigFlow.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigGenderType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigGradeCatType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigGroup.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigGroupRoom.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigOffload.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigPreMkt.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigProdPhase.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigProdPod.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigPurchase.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigSale.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigSupplier.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigSystem.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigTrailer.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigTranSys.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigTranType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPigType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPM.sql" />
+    <Build Include="dbo\Tables\dbo.cftPMGradeQty.sql" />
+    <Build Include="dbo\Tables\dbo.cftPMStatus.sql" />
+    <Build Include="dbo\Tables\dbo.cftPMTranspRecord.sql" />
+    <Build Include="dbo\Tables\dbo.cftPMWeekStatus.sql" />
+    <Build Include="dbo\Tables\dbo.cftProdSvcMgr.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSDetail.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSDetailType.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSDetSwift.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSDetTriumph.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSDetTyson.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSOrdHdr.sql" />
+    <Build Include="dbo\Tables\dbo.cftPSType.sql" />
+    <Build Include="dbo\Tables\dbo.cftRelatedContact.sql" />
+    <Build Include="dbo\Tables\dbo.cftRoleType.sql" />
+    <Build Include="dbo\Tables\dbo.cftRoom.sql" />
+    <Build Include="dbo\Tables\dbo.cftSafeMort.sql" />
+    <Build Include="dbo\Tables\dbo.cftSite.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteBio.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteDivDept.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteEval.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteEvalResults.sql" />
+    <Build Include="dbo\Tables\dbo.cftSitePod.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteQuestion.sql" />
+    <Build Include="dbo\Tables\dbo.cftSiteSvcMgrAsn.sql" />
+    <Build Include="dbo\Tables\dbo.cftSowSite.sql" />
+    <Build Include="dbo\Tables\dbo.cftSrSvcMgrAsn.sql" />
+    <Build Include="dbo\Tables\dbo.cftWeekDefinition.sql" />
+    <Build Include="dbo\Tables\dbo.GLSetup.sql" />
+    <Build Include="dbo\Tables\dbo.GLTran.sql" />
+    <Build Include="dbo\Tables\dbo.INTran.sql" />
+    <Build Include="dbo\Tables\dbo.Inventory.sql" />
+    <Build Include="dbo\Tables\dbo.Item2Hist.sql" />
+    <Build Include="dbo\Tables\dbo.ItemCost.sql" />
+    <Build Include="dbo\Tables\dbo.ItemSite.sql" />
+    <Build Include="dbo\Tables\dbo.PIDetail.sql" />
+    <Build Include="dbo\Tables\dbo.pjchargd.sql" />
+    <Build Include="dbo\Tables\dbo.PJPENT.sql" />
+    <Build Include="dbo\Tables\dbo.PJPROJ.sql" />
+    <Build Include="dbo\Tables\dbo.PJPTDSUM.sql" />
+    <Build Include="dbo\Tables\dbo.PJTran.sql" />
+    <Build Include="dbo\Tables\dbo.POTran.sql" />
+    <Build Include="dbo\Tables\dbo.PurchOrd.sql" />
+    <Build Include="dbo\Tables\dbo.PurOrdDet.sql" />
+    <Build Include="dbo\Tables\dbo.SegDef.sql" />
+    <Build Include="dbo\Tables\dbo.Site.sql" />
+    <Build Include="dbo\Tables\dbo.smCode.sql" />
+    <Build Include="dbo\Tables\dbo.smServCall.sql" />
+    <Build Include="dbo\Tables\dbo.SMServDetail.sql" />
+    <Build Include="dbo\Tables\dbo.smSvcEquipment.sql" />
+    <Build Include="dbo\Tables\dbo.smSvcReadings.sql" />
+    <Build Include="dbo\Tables\dbo.SubAcct.sql" />
+    <Build Include="dbo\Tables\dbo.Terms.sql" />
+    <Build Include="dbo\Tables\dbo.Vendor.sql" />
+    <Build Include="dbo\Tables\dbo.WrkMarketTotals.sql" />
+    <Build Include="dbo\Views\dbo.cftMarketSaleType.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupDead.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupFeed.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupRation.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupRoom.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupSales.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupSource.sql" />
+    <Build Include="dbo\Views\dbo.cfv_GroupStart.sql" />
+    <Build Include="dbo\Views\dbo.cfv_HAT_HTP_Schedule.sql" />
+    <Build Include="dbo\Views\dbo.cfv_HAT_LabTests.sql" />
+    <Build Include="dbo\Views\dbo.cfv_HAT_MovementSample.sql" />
+    <Build Include="dbo\Views\dbo.cfv_HAT_Site_Schedule.sql" />
+    <Build Include="dbo\Views\dbo.cfv_PIG_SALE_LOAD_STATS.sql" />
+    <Build Include="dbo\Views\dbo.cfv_PigGroupSummary_All.sql" />
+    <Build Include="dbo\Views\dbo.cfv_PigGroupSummary_BALL.sql" />
+    <Build Include="dbo\Views\dbo.cfv_SITE_LOAD_CREW.sql" />
+    <Build Include="dbo\Views\dbo.cfvCrtMktMgrName.sql" />
+    <Build Include="dbo\Views\dbo.cfvCrtSvcMgrName.sql" />
+    <Build Include="dbo\Views\dbo.cfvCurrentInv.sql" />
+    <Build Include="dbo\Views\dbo.cfvCurrentMktSvcMgr.sql" />
+    <Build Include="dbo\Views\dbo.cfvCurrentSrSvcMgr.sql" />
+    <Build Include="dbo\Views\dbo.cfvCurrentSvcMgr.sql" />
+    <Build Include="dbo\Views\dbo.cfvDayDefinition_WithWeekInfo.sql" />
+    <Build Include="dbo\Views\dbo.cfvFeedOrderPriorFeed.sql" />
+    <Build Include="dbo\Views\dbo.cfvFeedPlanDef.sql" />
+    <Build Include="dbo\Views\dbo.cfvFeedPlanDefDet.sql" />
+    <Build Include="dbo\Views\dbo.cfvPigOffload.sql" />
+    <Build Include="dbo\Views\dbo.cfvPIGSALEREV.sql" />
+    <Build Include="dbo\Views\dbo.cfvSiteDetail.sql" />
+    <Build Include="dbo\Views\dbo.cfvSowFarmPigs.sql" />
+    <Build Include="dbo\Views\dbo.cfvSvcEquiAll.sql" />
+    <Build Include="dbo\Views\dbo.vCFContactMilesMatrix.sql" />
+    <Build Include="dbo\Views\dbo.vCFPigGroupEnd.sql" />
+    <Build Include="dbo\Views\dbo.vCFPigGroupRoomFilter.sql" />
+    <Build Include="dbo\Views\dbo.vCFPigGroupStart.sql" />
+    <Build Include="dbo\Views\dbo.vXT100Contact.sql" />
+    <Build Include="dbo\Views\dbo.vXT605MarketTrucking.sql" />
+    <Build Include="Security\MSDSL.sql" />
+    <Build Include="Security\MSDSL_1.sql" />
+    <Build Include="Security\SOLOMON.sql" />
+    <Build Include="Security\SOLOMON_1.sql" />
+    <Build Include="dbo\Tables\dbo.PreSolomonSowFeed.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CFApp_Common\CFApp_Common.sqlproj">
+      <Name>CFApp_Common</Name>
+      <Project>{ab7e461e-9e1f-4c38-8431-b56939ac26f5}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CFApp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CFApp">
+      <DefaultValue>CFApp</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>

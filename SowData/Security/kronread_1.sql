@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [kronread]
+    WITH PASSWORD = N'wsKw+0vCAljh^fhspYkKry|kmsFT7_&#$!~<pdhoak2^qh_r', SID = 0x73177AE1B855FA4F96E726C4FA67598B, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

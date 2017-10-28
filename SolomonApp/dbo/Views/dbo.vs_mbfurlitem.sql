@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfurlitem AS SELECT * FROM SolomonSystem..mbfurlitem

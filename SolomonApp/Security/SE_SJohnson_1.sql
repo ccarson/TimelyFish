@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\SJohnson]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

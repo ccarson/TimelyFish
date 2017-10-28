@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\BGifford]
+    AUTHORIZATION [SE\BGifford];
+

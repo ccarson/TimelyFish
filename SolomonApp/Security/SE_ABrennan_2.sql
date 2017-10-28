@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\ABrennan]
+    AUTHORIZATION [SE\ABrennan];
+

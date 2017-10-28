@@ -1,0 +1,48 @@
+﻿
+CREATE VIEW [QQ_smeqhistory]
+AS
+SELECT     H.EquipID AS [Equipment ID], E.Descr AS [Equipment Description], E.BranchId, 
+                      B.Name AS [Branch Name], H.CalYear AS [Calendar Year], H.YTDNetSales, H.YTDLaborCost, 
+                      H.YTDOtherCost, H.YTDTotalCost, H.YTDGrossMargin, H.YTDGrossPercent, 
+                      H.YTDLaborHours, H.NetSales00 AS [PTD Net Sales 01], H.NetSales01 AS [PTD Net Sales 02], 
+                      H.NetSales02 AS [PTD Net Sales 03], H.NetSales03 AS [PTD Net Sales 04], H.NetSales04 AS [PTD Net Sales 05], 
+                      H.NetSales05 AS [PTD Net Sales 06], H.NetSales06 AS [PTD Net Sales 07], H.NetSales07 AS [PTD Net Sales 08], 
+                      H.NetSales08 AS [PTD Net Sales 09], H.NetSales09 AS [PTD Net Sales 10], H.NetSales10 AS [PTD Net Sales 11], 
+                      H.NetSales11 AS [PTD Net Sales 12], H.LaborCost00 AS [PTD Labor Cost 01], H.LaborCost01 AS [PTD Labor Cost 02], 
+                      H.LaborCost02 AS [PTD Labor Cost 03], H.LaborCost03 AS [PTD Labor Cost 04], H.LaborCost04 AS [PTD Labor Cost 05], 
+                      H.LaborCost05 AS [PTD Labor Cost 06], H.LaborCost06 AS [PTD Labor Cost 07], H.LaborCost07 AS [PTD Labor Cost 08], 
+                      H.LaborCost08 AS [PTD Labor Cost 09], H.LaborCost09 AS [PTD Labor Cost 10], H.LaborCost10 AS [PTD Labor Cost 11], 
+                      H.LaborCost11 AS [PTD Labor Cost 12], H.OtherCost00 AS [PTD Other Cost 01], H.OtherCost01 AS [PTD Other Cost 02], 
+                      H.OtherCost02 AS [PTD Other Cost 03], H.OtherCost03 AS [PTD Other Cost 04], H.OtherCost04 AS [PTD Other Cost 05], 
+                      H.OtherCost05 AS [PTD Other Cost 06], H.OtherCost06 AS [PTD Other Cost 07], H.OtherCost07 AS [PTD Other Cost 08], 
+                      H.OtherCost08 AS [PTD Other Cost 09], H.OtherCost09 AS [PTD Other Cost 10], H.OtherCost10 AS [PTD Other Cost 11], 
+                      H.OtherCost11 AS [PTD Other Cost 12], H.TotalCost00 AS [PTD Total Cost 01], H.TotalCost01 AS [PTD Total Cost 02], 
+                      H.TotalCost02 AS [PTD Total Cost 03], H.TotalCost03 AS [PTD Total Cost 04], H.TotalCost04 AS [PTD Total Cost 05], 
+                      H.TotalCost05 AS [PTD Total Cost 06], H.TotalCost06 AS [PTD Total Cost 07], H.TotalCost07 AS [PTD Total Cost 08], 
+                      H.TotalCost08 AS [PTD Total Cost 09], H.TotalCost09 AS [PTD Total Cost 10], H.TotalCost10 AS [PTD Total Cost 11], 
+                      H.TotalCost11 AS [PTD Total Cost 12], H.GrossMargin00 AS [PTD Gross Margin 01], 
+                      H.GrossMargin01 AS [PTD Gross Margin 02], H.GrossMargin02 AS [PTD Gross Margin 03], 
+                      H.GrossMargin03 AS [PTD Gross Margin 04], H.GrossMargin04 AS [PTD Gross Margin 05], 
+                      H.GrossMargin05 AS [PTD Gross Margin 06], H.GrossMargin06 AS [PTD Gross Margin 07], 
+                      H.GrossMargin07 AS [PTD Gross Margin 08], H.GrossMargin08 AS [PTD Gross Margin 09], 
+                      H.GrossMargin09 AS [PTD Gross Margin 10], H.GrossMargin10 AS [PTD Gross Margin 11], 
+                      H.GrossMargin11 AS [PTD Gross Margin 12], H.GrossPercent00 AS [PTD Gross Percent 01], 
+                      H.GrossPercent01 AS [PTD Gross Percent 02], H.GrossPercent02 AS [PTD Gross Percent 03], 
+                      H.GrossPercent03 AS [PTD Gross Percent 04], H.GrossPercent04 AS [PTD Gross Percent 05], 
+                      H.GrossPercent05 AS [PTD Gross Percent 06], H.GrossPercent06 AS [PTD Gross Percent 07], 
+                      H.GrossPercent07 AS [PTD Gross Percent 08], H.GrossPercent08 AS [PTD Gross Percent 09], 
+                      H.GrossPercent09 AS [PTD Gross Percent 10], H.GrossPercent10 AS [PTD Gross Percent 11], 
+                      H.GrossPercent11 AS [PTD Gross Percent 12], H.LaborHours00 AS [PTD Labor Hours 01], 
+                      H.LaborHours01 AS [PTD Labor Hours 02], H.LaborHours02 AS [PTD Labor Hours 03], 
+                      H.LaborHours03 AS [PTD Labor Hours 04], H.LaborHours04 AS [PTD Labor Hours 05], 
+                      H.LaborHours05 AS [PTD Labor Hours 06], H.LaborHours06 AS [PTD Labor Hours 07], 
+                      H.LaborHours07 AS [PTD Labor Hours 08], H.LaborHours08 AS [PTD Labor Hours 09], 
+                      H.LaborHours09 AS [PTD Labor Hours 10], H.LaborHours10 AS [PTD Labor Hours 11], 
+                      H.LaborHours11 AS [PTD Labor Hours 12], convert(date,H.Crtd_DateTIme) AS [Create Date], H.Crtd_Prog AS [Create Program], 
+                      H.Crtd_User AS [Create User], convert(date,H.Lupd_DateTime) AS [Last Update Date], H.Lupd_Prog AS [Last Update Program], 
+                      H.Lupd_User AS [Last Update User], H.User1, H.User2, H.User3, H.User4, 
+                      H.User5, H.User6, convert(date,H.User7) AS [User7], convert(date,H.User8) AS [User8]
+FROM         smEqHistory H with (nolock)
+				INNER JOIN smSvcEquipment E with (nolock) ON H.EquipID = E.EquipID 
+				INNER JOIN smBranch B with (nolock) ON E.BranchId = B.BranchId
+

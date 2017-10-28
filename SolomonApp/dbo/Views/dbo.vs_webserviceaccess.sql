@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_webserviceaccess AS SELECT * FROM SolomonSystem..webserviceaccess

@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\RFiner] FOR LOGIN [SE\RFiner]
+    WITH DEFAULT_SCHEMA = [SE\RFiner];
+

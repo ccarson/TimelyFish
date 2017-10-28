@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\FCLoadout] FOR LOGIN [SE\FCLoadout];
+

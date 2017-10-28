@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[PJTRNSFR] (
+    [Batch_Id]       CHAR (10)     DEFAULT ('') NOT NULL,
+    [Crtd_DateTime]  SMALLDATETIME DEFAULT ('01/01/1900') NOT NULL,
+    [Crtd_Prog]      CHAR (8)      DEFAULT ('') NOT NULL,
+    [Crtd_User]      CHAR (10)     DEFAULT ('') NOT NULL,
+    [LastSeqNbr]     INT           DEFAULT ((0)) NOT NULL,
+    [LineID]         INT           DEFAULT ((0)) NOT NULL,
+    [LineNbr]        INT           DEFAULT ((0)) NOT NULL,
+    [LineRef]        CHAR (6)      DEFAULT ('') NOT NULL,
+    [LUpd_DateTime]  SMALLDATETIME DEFAULT ('01/01/1900') NOT NULL,
+    [LUpd_Prog]      CHAR (8)      DEFAULT ('') NOT NULL,
+    [LUpd_User]      CHAR (10)     DEFAULT ('') NOT NULL,
+    [NoteID]         INT           DEFAULT ((0)) NOT NULL,
+    [OrigBatch_Id]   CHAR (10)     DEFAULT ('') NOT NULL,
+    [OrigDetail_Num] INT           DEFAULT ((0)) NOT NULL,
+    [OrigFiscalNo]   CHAR (6)      DEFAULT ('') NOT NULL,
+    [OrigSystem_Cd]  CHAR (2)      DEFAULT ('') NOT NULL,
+    [UTLPer]         CHAR (6)      DEFAULT ('') NOT NULL,
+    [User1]          CHAR (30)     DEFAULT ('') NOT NULL,
+    [User2]          CHAR (30)     DEFAULT ('') NOT NULL,
+    [User3]          FLOAT (53)    DEFAULT ((0)) NOT NULL,
+    [User4]          FLOAT (53)    DEFAULT ((0)) NOT NULL,
+    [tstamp]         ROWVERSION    NOT NULL,
+    CONSTRAINT [PJTRNSFR0] PRIMARY KEY CLUSTERED ([Batch_Id] ASC, [LineID] ASC) WITH (FILLFACTOR = 90)
+);
+

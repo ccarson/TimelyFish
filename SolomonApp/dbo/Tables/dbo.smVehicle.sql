@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[smVehicle] (
+    [Crtd_DateTime]       SMALLDATETIME NOT NULL,
+    [Crtd_Prog]           CHAR (8)      NOT NULL,
+    [Crtd_User]           CHAR (10)     NOT NULL,
+    [Lupd_DateTime]       SMALLDATETIME NOT NULL,
+    [Lupd_Prog]           CHAR (8)      NOT NULL,
+    [Lupd_User]           CHAR (10)     NOT NULL,
+    [User1]               CHAR (30)     NOT NULL,
+    [User2]               CHAR (30)     NOT NULL,
+    [User3]               FLOAT (53)    NOT NULL,
+    [User4]               FLOAT (53)    NOT NULL,
+    [User5]               CHAR (10)     NOT NULL,
+    [User6]               CHAR (10)     NOT NULL,
+    [User7]               SMALLDATETIME NOT NULL,
+    [User8]               SMALLDATETIME NOT NULL,
+    [VehicleDesc]         CHAR (30)     NOT NULL,
+    [VehicleId]           CHAR (10)     NOT NULL,
+    [VehicleMake]         CHAR (16)     NOT NULL,
+    [VehicleMfgVIN]       CHAR (30)     NOT NULL,
+    [VehicleModel]        CHAR (16)     NOT NULL,
+    [VehiclePurchaseDate] SMALLDATETIME NOT NULL,
+    [VehicleSiteId]       CHAR (10)     NOT NULL,
+    [VehicleYear]         CHAR (4)      NOT NULL,
+    [tstamp]              ROWVERSION    NOT NULL,
+    CONSTRAINT [smVehicle0] PRIMARY KEY CLUSTERED ([VehicleId] ASC) WITH (FILLFACTOR = 90)
+);
+

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [caresystem].[REGISTRATION] (
+    [carekey]      VARCHAR (50) NOT NULL,
+    [license_type] SMALLINT     CONSTRAINT [DF_REGISTRATION_license_type] DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_REGISTRATION] PRIMARY KEY CLUSTERED ([carekey] ASC) WITH (FILLFACTOR = 80)
+);
+

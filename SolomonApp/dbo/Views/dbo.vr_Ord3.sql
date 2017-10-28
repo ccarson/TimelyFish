@@ -1,0 +1,18 @@
+﻿ 
+
+CREATE VIEW vr_Ord3
+
+AS
+
+SELECT Ord = 1
+
+UNION
+
+SELECT Ord = 2
+
+UNION
+
+SELECT Ord = 3
+
+
+ 

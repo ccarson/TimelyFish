@@ -1,0 +1,13 @@
+﻿ CREATE PROCEDURE p08310_SalesPerARDocs @SlsPerID VARCHAR (10) AS
+
+SELECT COUNT(*)
+  FROM ARDoc
+ WHERE SlsperId = @SlsPerID
+
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[p08310_SalesPerARDocs] TO [MSDSL]
+    AS [dbo];
+

@@ -1,0 +1,11 @@
+﻿CREATE TABLE [caredata].[FEED_ORDER_MEDICATIONS] (
+    [order_id]       INT        NOT NULL,
+    [treatment_id]   INT        NOT NULL,
+    [vfd_id]         INT        NULL,
+    [inclusion_rate] FLOAT (53) NOT NULL,
+    CONSTRAINT [PK_FEED_ORDER_MEDICATIONS] PRIMARY KEY CLUSTERED ([order_id] ASC, [treatment_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_FEED_ORDER_MEDICATIONS_FEED_ORDERS_0] FOREIGN KEY ([order_id]) REFERENCES [caredata].[FEED_ORDERS] ([order_id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_FEED_ORDER_MEDICATIONS_TREATMENTS_1] FOREIGN KEY ([treatment_id]) REFERENCES [caredata].[TREATMENTS] ([treatment_id]) ON UPDATE CASCADE,
+    CONSTRAINT [FK_FEED_ORDER_MEDICATIONS_VET_FEED_DIRECTIVE_2] FOREIGN KEY ([vfd_id]) REFERENCES [caredata].[VET_FEED_DIRECTIVE] ([vfd_id])
+);
+

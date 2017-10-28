@@ -1,0 +1,14 @@
+﻿ CREATE PROCEDURE OMInvc_ASID @parm1 int
+AS
+	SELECT *
+	FROM SOShipHeader
+	WHERE ASID = @parm1
+	ORDER BY ASID
+
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[OMInvc_ASID] TO [MSDSL]
+    AS [dbo];
+

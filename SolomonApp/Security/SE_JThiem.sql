@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\JThiem] FOR LOGIN [SE\JThiem];
+

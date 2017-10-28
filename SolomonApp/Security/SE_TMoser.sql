@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\TMoser] FOR LOGIN [SE\TMoser];
+

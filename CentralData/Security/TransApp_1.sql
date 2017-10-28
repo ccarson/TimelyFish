@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [TransApp]
+    WITH PASSWORD = N'odvdiGg3cfmrk=_;gjhe2SgjmsFT7_&#$!~<kgbsr|w&{hym', SID = 0x6DCE362C5B5D954391DF342DF6E02422, DEFAULT_DATABASE = [SolomonApp], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

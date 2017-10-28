@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[cft_SLF_TWOPHASE_GROUPS] (
+    [G1_PigGroupID] CHAR (10) NOT NULL,
+    [G2_PigGroupID] CHAR (10) NOT NULL
+);
+

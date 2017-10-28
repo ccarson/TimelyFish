@@ -1,0 +1,10 @@
+﻿CREATE TABLE [stage].[WeekDefinition]
+(
+	[Id] NCHAR(36) NOT NULL, 
+    [WEEKENDDATE] DATETIME NOT NULL, 
+    [WEEKOFDATE] DATETIME NOT NULL, 
+    [GROUPNAME] NCHAR(10) NULL
+	, CONSTRAINT PK_stage_WeekDefinition 
+		PRIMARY KEY CLUSTERED(
+			[Id] ASC )
+)

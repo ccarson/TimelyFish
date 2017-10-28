@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[load_techs] (
+    [SiteID]        FLOAT (53)     NULL,
+    [ContactID]     FLOAT (53)     NULL,
+    [TSiteCap]      FLOAT (53)     NULL,
+    [Site]          NVARCHAR (255) NULL,
+    [City]          NVARCHAR (255) NULL,
+    [State]         NVARCHAR (255) NULL,
+    [Zip]           FLOAT (53)     NULL,
+    [Barns]         FLOAT (53)     NULL,
+    [Phase]         NVARCHAR (255) NULL,
+    [Bio Level]     NVARCHAR (255) NULL,
+    [Ownership]     NVARCHAR (255) NULL,
+    [PigSystem]     NVARCHAR (255) NULL,
+    [SM]            NVARCHAR (255) NULL,
+    [Prod/Farm Mgr] NVARCHAR (255) NULL,
+    [Mkt Mgr]       NVARCHAR (255) NULL,
+    [Site Mgr]      NVARCHAR (255) NULL,
+    [Repair]        NVARCHAR (255) NULL,
+    [R&M]           NVARCHAR (255) NULL,
+    [Maint]         NVARCHAR (255) NULL,
+    [RM Mgr]        NVARCHAR (255) NULL,
+    [Dispatch]      NVARCHAR (255) NULL,
+    [RegionName]    NVARCHAR (255) NULL,
+    [Longitude]     FLOAT (53)     NULL,
+    [Latitude]      FLOAT (53)     NULL
+);
+

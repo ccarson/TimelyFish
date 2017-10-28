@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\SQLMonitor]
+    WITH DEFAULT_SCHEMA = [SE\SQLMonitor];
+

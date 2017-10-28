@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfuser AS SELECT * FROM SolomonSystem..mbfuser

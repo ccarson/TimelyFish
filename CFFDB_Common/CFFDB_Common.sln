@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFFDB_Common", "CFFDB_Common.sqlproj", "{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cfse-tfs01:8080/tfs/activecollection
+		SccProjectUniqueName0 = CFFDB_Common.sqlproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://cfse-tfs01:8080/tfs/activecollection
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

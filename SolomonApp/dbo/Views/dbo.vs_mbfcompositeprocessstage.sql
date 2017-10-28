@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfcompositeprocessstage AS SELECT * FROM SolomonSystem..mbfcompositeprocessstage

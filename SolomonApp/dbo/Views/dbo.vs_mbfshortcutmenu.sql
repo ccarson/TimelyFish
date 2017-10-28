@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfshortcutmenu AS SELECT * FROM SolomonSystem..mbfshortcutmenu

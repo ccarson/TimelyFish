@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprocesseventsubscription AS SELECT * FROM SolomonSystem..mbfprocesseventsubscription

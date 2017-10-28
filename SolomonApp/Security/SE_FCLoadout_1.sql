@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\FCLoadout]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\F134user] FOR LOGIN [SE\F134user];
+

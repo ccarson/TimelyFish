@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\GSouthgate]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

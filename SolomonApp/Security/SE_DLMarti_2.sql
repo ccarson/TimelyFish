@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\DLMarti]
+    AUTHORIZATION [SE\DLMarti];
+

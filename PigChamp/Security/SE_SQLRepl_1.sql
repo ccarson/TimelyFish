@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\SQLRepl]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [tempdb], DEFAULT_LANGUAGE = [us_english];
+

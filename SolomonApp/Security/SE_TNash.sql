@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\TNash] FOR LOGIN [SE\TNash]
+    WITH DEFAULT_SCHEMA = [SE\TNash];
+

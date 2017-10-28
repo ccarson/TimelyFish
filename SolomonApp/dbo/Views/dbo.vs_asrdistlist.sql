@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_asrdistlist AS SELECT * FROM SolomonSystem..asrdistlist

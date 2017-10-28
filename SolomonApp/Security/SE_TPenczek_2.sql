@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\TPenczek]
+    AUTHORIZATION [SE\TPenczek];
+

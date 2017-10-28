@@ -1,0 +1,8 @@
+﻿CREATE TABLE [careglobal].[FARM_DATA_INPUT_ITEMS] (
+    [site_id]   INT          NOT NULL,
+    [eventcode] SMALLINT     NOT NULL,
+    [category]  VARCHAR (30) NOT NULL,
+    CONSTRAINT [PK_FARM_DATA_INPUT_ITEMS] PRIMARY KEY CLUSTERED ([site_id] ASC, [eventcode] ASC) WITH (FILLFACTOR = 80),
+    CONSTRAINT [FK_FARM_DATA_INPUT_ITEMS_SITES_0] FOREIGN KEY ([site_id]) REFERENCES [careglobal].[SITES] ([site_id]) ON DELETE CASCADE
+);
+

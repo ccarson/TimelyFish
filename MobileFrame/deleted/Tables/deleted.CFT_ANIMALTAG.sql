@@ -1,0 +1,18 @@
+﻿CREATE TABLE [deleted].[CFT_ANIMALTAG] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      NOT NULL,
+    [LAST_UPDATE]     DATETIME      NOT NULL,
+    [CREATED_BY]      BIGINT        NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        NOT NULL,
+    [DELETED_BY]      BIGINT        NOT NULL,
+    [ANIMALID]        NVARCHAR (36) NULL,
+    [TAGNBR]          NVARCHAR (20) NULL,
+    [TAGDATE]         DATETIME      NULL,
+    [PRIMARYTAG]      INT           NULL,
+    [ISCURRENT]       INT           NULL,
+    [QRCODE]          IMAGE         NULL,
+    [QRCODETYPE]      NVARCHAR (20) NULL,
+    [DEVICEFARMID]    NVARCHAR (36) NULL,
+    CONSTRAINT [CFT_ANIMALTAG_PK] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

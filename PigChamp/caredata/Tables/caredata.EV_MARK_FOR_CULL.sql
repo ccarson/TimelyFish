@@ -1,0 +1,13 @@
+﻿CREATE TABLE [caredata].[EV_MARK_FOR_CULL] (
+    [event_id]    INT          NOT NULL,
+    [identity_id] INT          NOT NULL,
+    [UDF52527]    VARCHAR (25) NULL,
+    [UDF63715]    VARCHAR (8)  NULL,
+    [UDF2556]     VARCHAR (30) NULL,
+    [UDF50673]    VARCHAR (30) NULL,
+    [UDF65874]    VARCHAR (30) NULL,
+    CONSTRAINT [PK_EV_MARK_FOR_CULL] PRIMARY KEY CLUSTERED ([identity_id] ASC, [event_id] ASC) WITH (FILLFACTOR = 80),
+    CONSTRAINT [FK_EV_MARK_FOR_CULL_BH_EVENTS_0] FOREIGN KEY ([event_id]) REFERENCES [caredata].[BH_EVENTS] ([event_id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_EV_MARK_FOR_CULL_BH_IDENTITIES_1] FOREIGN KEY ([identity_id]) REFERENCES [caredata].[BH_IDENTITIES] ([identity_id])
+);
+

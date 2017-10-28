@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_pstreg AS SELECT * FROM SolomonSystem..pstreg

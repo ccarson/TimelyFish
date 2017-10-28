@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_domain AS SELECT * FROM SolomonSystem..domain

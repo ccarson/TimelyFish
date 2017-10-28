@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[cft_DRIVER_CODE_TYPE] (
+    [DriverCodeID]          INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [DriverCodeDescription] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_cft_DRIVER_CODE_TYPE] PRIMARY KEY CLUSTERED ([DriverCodeID] ASC) WITH (FILLFACTOR = 90)
+);
+

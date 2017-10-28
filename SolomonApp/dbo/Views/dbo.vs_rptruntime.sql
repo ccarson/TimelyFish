@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rptruntime AS SELECT * FROM SolomonSystem..rptruntime

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JJakobitz]
+    AUTHORIZATION [SE\JJakobitz];
+

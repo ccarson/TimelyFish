@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\CGillis]
+    AUTHORIZATION [SE\CGillis];
+

@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [dbo].[SSP_SUBACCT_COMBINER]
+@OLDSUBSEP1 VARCHAR (32), @OLDSUBSEP2 VARCHAR (32), @NEWSUBSEP VARCHAR (32)
+WITH ENCRYPTION
+AS
+BEGIN
+--The script body was encrypted and cannot be reproduced here.
+    RETURN
+END
+
+

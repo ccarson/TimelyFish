@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MReisma]
+    AUTHORIZATION [SE\MReisma];
+

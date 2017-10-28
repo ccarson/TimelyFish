@@ -1,0 +1,14 @@
+﻿CREATE TABLE [stage].[CFT_LOCATION] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      NOT NULL,
+    [LAST_UPDATE]     DATETIME      NOT NULL,
+    [CREATED_BY]      BIGINT        NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        NOT NULL,
+    [DELETED_BY]      BIGINT        NOT NULL,
+    [BARN]            NVARCHAR (10) NULL,
+    [ROOM]            NVARCHAR (10) NULL,
+    [CRATE]           NVARCHAR (10) NULL,
+    [FARMID]          NVARCHAR (36) NULL,
+    CONSTRAINT [CFT_LOCATION_PK] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

@@ -1,0 +1,8 @@
+﻿ CREATE PROCEDURE EDDSetup_Vend
+AS
+	SELECT *
+	FROM EDDSetup
+	WHERE DocType = 'U1'
+ 	ORDER BY DocType
+
+

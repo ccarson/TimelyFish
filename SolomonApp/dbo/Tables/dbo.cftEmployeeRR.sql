@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[cftEmployeeRR] (
+    [Allowance]      FLOAT (53)    NOT NULL,
+    [CpnyID]         CHAR (10)     NOT NULL,
+    [Crtd_DateTime]  SMALLDATETIME NOT NULL,
+    [Crtd_Prog]      CHAR (8)      NOT NULL,
+    [Crtd_User]      CHAR (10)     NOT NULL,
+    [DfltAllowance]  FLOAT (53)    NOT NULL,
+    [EmployType]     CHAR (4)      NOT NULL,
+    [EmpNbr]         CHAR (4)      NOT NULL,
+    [FName]          CHAR (20)     NOT NULL,
+    [JobLocation]    CHAR (10)     NOT NULL,
+    [JobTitleCode]   CHAR (20)     NOT NULL,
+    [LastChangeDate] SMALLDATETIME NOT NULL,
+    [LastHireDate]   SMALLDATETIME NOT NULL,
+    [LastRewardDate] SMALLDATETIME NOT NULL,
+    [LName]          CHAR (20)     NOT NULL,
+    [Lupd_DateTime]  SMALLDATETIME NOT NULL,
+    [Lupd_Prog]      CHAR (8)      NOT NULL,
+    [Lupd_User]      CHAR (10)     NOT NULL,
+    [NoteID]         INT           NOT NULL,
+    [ShipToLocation] CHAR (10)     NOT NULL,
+    [SSN_4]          CHAR (4)      NOT NULL,
+    [Status]         CHAR (4)      NOT NULL,
+    [tstamp]         ROWVERSION    NULL
+);
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_screen AS SELECT * FROM SolomonSystem..screen

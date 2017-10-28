@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\MMeier] FOR LOGIN [SE\MMeier];
+

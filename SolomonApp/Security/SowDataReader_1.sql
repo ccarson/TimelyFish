@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SowDataReader]
+    WITH PASSWORD = N'{yd4yx%sj{Gut{s#P9aiAzjlmsFT7_&#$!~<kWfcgc|rfsNS', SID = 0x6C33A7537743334AB806065C71992A30, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

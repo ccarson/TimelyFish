@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_solomonprovider AS SELECT * FROM SolomonSystem..solomonprovider

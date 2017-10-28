@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MSpeckman]
+    AUTHORIZATION [SE\MSpeckman];
+

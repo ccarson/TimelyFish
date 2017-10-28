@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[cft_ESSBASE_CLOSEOUT_FEEDQTY_XREF] (
+    [TaskID]  CHAR (10)  NOT NULL,
+    [FeedQty] FLOAT (53) NOT NULL
+);
+

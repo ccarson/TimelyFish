@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JLAndersen]
+    AUTHORIZATION [SE\JLAndersen];
+

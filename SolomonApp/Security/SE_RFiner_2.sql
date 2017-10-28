@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\RFiner]
+    AUTHORIZATION [SE\RFiner];
+

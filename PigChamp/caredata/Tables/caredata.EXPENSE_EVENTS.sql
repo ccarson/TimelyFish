@@ -1,0 +1,27 @@
+﻿CREATE TABLE [caredata].[EXPENSE_EVENTS] (
+    [expense_event_id] INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [expense_type_id]  INT          NOT NULL,
+    [site_id]          INT          NULL,
+    [barn_id]          INT          NULL,
+    [location_id]      INT          NULL,
+    [invoice_number]   VARCHAR (20) NULL,
+    [check_number]     VARCHAR (20) NULL,
+    [supplier_id]      INT          NULL,
+    [units]            INT          NULL,
+    [amount]           FLOAT (53)   NOT NULL,
+    [date_from]        DATETIME     NOT NULL,
+    [date_to]          DATETIME     NULL,
+    [creation_date]    DATETIME     CONSTRAINT [DF_EXPENSE_EVENTS_creation_date] DEFAULT (getdate()) NOT NULL,
+    [created_by]       VARCHAR (15) CONSTRAINT [DF_EXPENSE_EVENTS_created_by] DEFAULT ('SYSTEM') NOT NULL,
+    [last_update_date] DATETIME     NULL,
+    [last_update_by]   VARCHAR (15) NULL,
+    [deletion_date]    DATETIME     NULL,
+    [deleted_by]       VARCHAR (15) NULL,
+    CONSTRAINT [PK_EXPENSE_EVENTS] PRIMARY KEY NONCLUSTERED ([expense_event_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_EXPENSE_EVENTS_EXPENSE_TYPES_0] FOREIGN KEY ([expense_type_id]) REFERENCES [caredata].[EXPENSE_TYPES] ([expense_type_id]) ON UPDATE CASCADE,
+    CONSTRAINT [FK_EXPENSE_EVENTS_HDR_FEED_BARNS_2] FOREIGN KEY ([barn_id]) REFERENCES [caredata].[HDR_FEED_BARNS] ([barn_id]),
+    CONSTRAINT [FK_EXPENSE_EVENTS_HDR_FEED_LOCATIONS_3] FOREIGN KEY ([location_id]) REFERENCES [caredata].[HDR_FEED_LOCATIONS] ([location_id]),
+    CONSTRAINT [FK_EXPENSE_EVENTS_SITES_1] FOREIGN KEY ([site_id]) REFERENCES [careglobal].[SITES] ([site_id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_EXPENSE_EVENTS_SUPPLIERS_4] FOREIGN KEY ([supplier_id]) REFERENCES [caredata].[SUPPLIERS] ([supplier_id]) ON UPDATE CASCADE
+);
+

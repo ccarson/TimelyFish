@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_userfielddesc AS SELECT * FROM SolomonSystem..userfielddesc

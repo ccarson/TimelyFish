@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\SSutherland]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

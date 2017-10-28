@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfcompanybranding AS SELECT * FROM SolomonSystem..mbfcompanybranding

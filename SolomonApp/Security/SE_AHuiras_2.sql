@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\AHuiras]
+    AUTHORIZATION [SE\AHuiras];
+

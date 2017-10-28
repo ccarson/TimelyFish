@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\TAsk]
+    AUTHORIZATION [SE\TAsk];
+

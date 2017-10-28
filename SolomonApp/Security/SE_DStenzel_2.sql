@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\DStenzel]
+    AUTHORIZATION [SE\DStenzel];
+

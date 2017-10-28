@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MaxQ]
+    AUTHORIZATION [MaxQ];
+

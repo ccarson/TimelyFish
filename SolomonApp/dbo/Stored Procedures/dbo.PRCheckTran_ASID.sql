@@ -1,0 +1,14 @@
+﻿
+CREATE PROCEDURE PRCheckTran_ASID @parm1 int
+AS
+	SELECT *
+	FROM PRCheckTran
+	WHERE ASID = @parm1
+	ORDER BY ASID
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[PRCheckTran_ASID] TO [MSDSL]
+    AS [dbo];
+

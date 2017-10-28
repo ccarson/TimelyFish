@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_qvcatalog AS SELECT * FROM SolomonSystem..qvcatalog

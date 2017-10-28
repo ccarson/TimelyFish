@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_appsrvlog AS SELECT * FROM SolomonSystem..appsrvlog

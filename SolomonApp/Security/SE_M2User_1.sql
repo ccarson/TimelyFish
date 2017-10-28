@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\M2User]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

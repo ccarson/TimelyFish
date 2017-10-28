@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\PFischer] FOR LOGIN [SE\PFischer]
+    WITH DEFAULT_SCHEMA = [SE\PFischer];
+

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[cft_HAT_Schedule_org] (
+    [ScheduleID]         INT            IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [SiteContactID]      VARCHAR (6)    NOT NULL,
+    [VetContactID]       INT            NULL,
+    [DeliveredBy]        INT            NULL,
+    [LabID]              INT            NULL,
+    [SPID]               INT            NOT NULL,
+    [TestDate]           DATETIME       NOT NULL,
+    [LabDate]            DATETIME       NULL,
+    [ExpireDate]         DATETIME       NOT NULL,
+    [CaseID]             VARCHAR (20)   NULL,
+    [ResultsFileURL]     VARCHAR (2083) NULL,
+    [ApprovedBy]         VARCHAR (20)   NULL,
+    [Status]             SMALLINT       NOT NULL,
+    [TestComment]        VARCHAR (255)  NULL,
+    [Last_Comm_DateTime] DATETIME       NULL,
+    [crtd_DateTime]      DATETIME       CONSTRAINT [DF__cft_HAT_S__crtd___5553D84D] DEFAULT (getdate()) NOT NULL,
+    [Crtd_Prog]          VARCHAR (15)   CONSTRAINT [DF__cft_HAT_S__Crtd___5647FC86] DEFAULT (substring(host_name(),(1),(15))) NOT NULL,
+    [crtd_User]          VARCHAR (50)   CONSTRAINT [DF__cft_HAT_S__crtd___573C20BF] DEFAULT (substring(original_login(),(1),(50))) NOT NULL,
+    [Lupd_DateTime]      DATETIME       CONSTRAINT [DF__cft_HAT_S__Lupd___583044F8] DEFAULT (getdate()) NULL,
+    [Lupd_Prog]          VARCHAR (15)   CONSTRAINT [DF__cft_HAT_S__Lupd___59246931] DEFAULT (substring(host_name(),(1),(15))) NULL,
+    [Lupd_User]          VARCHAR (50)   CONSTRAINT [DF__cft_HAT_S__Lupd___5A188D6A] DEFAULT (substring(original_login(),(1),(50))) NULL,
+    [Type]               SMALLINT       NULL,
+    CONSTRAINT [cft_HAT_Schedule_org0] PRIMARY KEY CLUSTERED ([ScheduleID] ASC) WITH (FILLFACTOR = 90)
+);
+

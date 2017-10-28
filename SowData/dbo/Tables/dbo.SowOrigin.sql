@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[SowOrigin] (
+    [OriginID]   INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [OriginName] VARCHAR (50) NULL,
+    CONSTRAINT [PK_SowOrigin] PRIMARY KEY CLUSTERED ([OriginID] ASC) WITH (FILLFACTOR = 90)
+);
+

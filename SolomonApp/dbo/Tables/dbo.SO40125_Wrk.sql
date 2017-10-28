@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[SO40125_Wrk] (
+    [BookCommCost]     FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_BookCommCost] DEFAULT ((0)) NOT NULL,
+    [BookCost]         FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_BookCost] DEFAULT ((0)) NOT NULL,
+    [BookSls]          FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_BookSls] DEFAULT ((0)) NOT NULL,
+    [CuryBookCommCost] FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_CuryBookCommCost] DEFAULT ((0)) NOT NULL,
+    [CuryBookCost]     FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_CuryBookCost] DEFAULT ((0)) NOT NULL,
+    [CuryBookSls]      FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_CuryBookSls] DEFAULT ((0)) NOT NULL,
+    [S4Future01]       CHAR (30)     CONSTRAINT [DF_SO40125_Wrk_S4Future01] DEFAULT (' ') NOT NULL,
+    [S4Future02]       CHAR (30)     CONSTRAINT [DF_SO40125_Wrk_S4Future02] DEFAULT (' ') NOT NULL,
+    [S4Future03]       FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_S4Future03] DEFAULT ((0)) NOT NULL,
+    [S4Future04]       FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_S4Future04] DEFAULT ((0)) NOT NULL,
+    [S4Future05]       FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_S4Future05] DEFAULT ((0)) NOT NULL,
+    [S4Future06]       FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_S4Future06] DEFAULT ((0)) NOT NULL,
+    [S4Future07]       SMALLDATETIME CONSTRAINT [DF_SO40125_Wrk_S4Future07] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future08]       SMALLDATETIME CONSTRAINT [DF_SO40125_Wrk_S4Future08] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future09]       INT           CONSTRAINT [DF_SO40125_Wrk_S4Future09] DEFAULT ((0)) NOT NULL,
+    [S4Future10]       INT           CONSTRAINT [DF_SO40125_Wrk_S4Future10] DEFAULT ((0)) NOT NULL,
+    [S4Future11]       CHAR (10)     CONSTRAINT [DF_SO40125_Wrk_S4Future11] DEFAULT (' ') NOT NULL,
+    [S4Future12]       CHAR (10)     CONSTRAINT [DF_SO40125_Wrk_S4Future12] DEFAULT (' ') NOT NULL,
+    [SlsperID]         CHAR (10)     CONSTRAINT [DF_SO40125_Wrk_SlsperID] DEFAULT (' ') NOT NULL,
+    [SlsperName]       CHAR (60)     CONSTRAINT [DF_SO40125_Wrk_SlsperName] DEFAULT (' ') NOT NULL,
+    [User5]            FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_User5] DEFAULT ((0)) NOT NULL,
+    [User6]            FLOAT (53)    CONSTRAINT [DF_SO40125_Wrk_User6] DEFAULT ((0)) NOT NULL,
+    [tstamp]           ROWVERSION    NOT NULL
+);
+

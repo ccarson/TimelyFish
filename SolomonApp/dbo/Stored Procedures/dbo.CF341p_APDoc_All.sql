@@ -1,0 +1,3 @@
+﻿CREATE PROCEDURE CF341p_APDoc_All 
+	as 
+	SELECT * FROM APDoc

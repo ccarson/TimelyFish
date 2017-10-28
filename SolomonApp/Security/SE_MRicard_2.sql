@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MRicard]
+    AUTHORIZATION [SE\MRicard];
+

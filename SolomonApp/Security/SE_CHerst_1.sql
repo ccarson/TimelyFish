@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\CHerst]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

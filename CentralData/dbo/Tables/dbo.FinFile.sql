@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[FinFile] (
+    [FinFile] VARCHAR (15) NOT NULL,
+    [PRDDept] VARCHAR (10) NULL,
+    CONSTRAINT [PK_FinFile] PRIMARY KEY CLUSTERED ([FinFile] ASC) WITH (FILLFACTOR = 90)
+);
+

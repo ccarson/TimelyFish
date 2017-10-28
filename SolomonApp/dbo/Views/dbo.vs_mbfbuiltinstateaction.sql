@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfbuiltinstateaction AS SELECT * FROM SolomonSystem..mbfbuiltinstateaction

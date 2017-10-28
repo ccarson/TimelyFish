@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\NTeigum] FOR LOGIN [SE\NTeigum]
+    WITH DEFAULT_SCHEMA = [SE\NTeigum];
+

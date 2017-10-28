@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\AAraya] FOR LOGIN [SE\AAraya]
+    WITH DEFAULT_SCHEMA = [SE\AAraya];
+

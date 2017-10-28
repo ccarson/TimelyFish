@@ -1,0 +1,30 @@
+﻿GRANT CONNECT TO [SE\dschmidt];
+
+
+GO
+GRANT CONNECT TO [SE\sqlagtsvcsql06t];
+
+
+GO
+GRANT CONNECT TO [SE\MobileFrameAdmin];
+
+
+GO
+GRANT CONNECT TO [SE\JMaas];
+
+
+GO
+GRANT CONNECT TO [MobileFrameSvcs];
+
+
+GO
+GRANT CONNECT TO [CorpReports];
+
+
+GO
+GRANT CONNECT TO [MFSowData];
+
+
+GO
+GRANT CONNECT TO [MFSDUApp];
+

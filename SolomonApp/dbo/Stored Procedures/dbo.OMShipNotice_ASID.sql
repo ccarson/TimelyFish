@@ -1,0 +1,13 @@
+﻿
+CREATE PROCEDURE OMShipNotice_ASID @parm1 int
+AS
+	SELECT *
+	FROM SOShipHeader
+	WHERE ASID01 = @parm1
+	ORDER BY ASID01
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[OMShipNotice_ASID] TO [MSDSL]
+    AS [dbo];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\LSailer] FOR LOGIN [SE\LSailer]
+    WITH DEFAULT_SCHEMA = [SE\LSailer];
+

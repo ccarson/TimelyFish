@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_slindexcol AS SELECT * FROM SolomonSystem..slindexcol

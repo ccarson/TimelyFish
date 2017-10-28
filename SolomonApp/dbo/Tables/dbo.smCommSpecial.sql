@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[smCommSpecial] (
+    [Amount]        FLOAT (53)    NOT NULL,
+    [CommSpecId]    CHAR (10)     NOT NULL,
+    [Crtd_DateTime] SMALLDATETIME NOT NULL,
+    [Crtd_Prog]     CHAR (8)      NOT NULL,
+    [Crtd_User]     CHAR (10)     NOT NULL,
+    [Descr]         CHAR (30)     NOT NULL,
+    [EndDate]       SMALLDATETIME NOT NULL,
+    [Lupd_DateTime] SMALLDATETIME NOT NULL,
+    [Lupd_Prog]     CHAR (8)      NOT NULL,
+    [Lupd_User]     CHAR (10)     NOT NULL,
+    [PeriodID]      CHAR (10)     NOT NULL,
+    [SalesQuota]    FLOAT (53)    NOT NULL,
+    [StartDate]     SMALLDATETIME NOT NULL,
+    [Type]          CHAR (1)      NOT NULL,
+    [user1]         CHAR (30)     NOT NULL,
+    [user2]         CHAR (30)     NOT NULL,
+    [user3]         FLOAT (53)    NOT NULL,
+    [user4]         FLOAT (53)    NOT NULL,
+    [User5]         CHAR (10)     NOT NULL,
+    [User6]         CHAR (10)     NOT NULL,
+    [User7]         SMALLDATETIME NOT NULL,
+    [User8]         SMALLDATETIME NOT NULL,
+    [tstamp]        ROWVERSION    NOT NULL,
+    CONSTRAINT [smCommSpecial0] PRIMARY KEY CLUSTERED ([CommSpecId] ASC) WITH (FILLFACTOR = 90)
+);
+

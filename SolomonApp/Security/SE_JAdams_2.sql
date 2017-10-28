@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JAdams]
+    AUTHORIZATION [SE\JAdams];
+

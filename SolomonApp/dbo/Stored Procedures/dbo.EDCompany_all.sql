@@ -1,0 +1,17 @@
+﻿ CREATE PROCEDURE EDCompany_all
+ @CpnyID varchar( 10 )
+
+WITH EXECUTE AS '07718158D19D4f5f9D23B55DBF5DF1'
+as
+ SELECT *
+ FROM Company
+ WHERE CpnyID LIKE @CpnyID
+ ORDER BY CpnyID
+
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[EDCompany_all] TO [MSDSL]
+    AS [dbo];
+

@@ -1,0 +1,35 @@
+﻿
+
+
+
+CREATE VIEW 
+    [dbo].[CFV_PC_Non_Events]
+AS
+SELECT Distinct	
+		     CAST(ATP.[TAGNBR] as varchar(12)) as 'Primary'
+			,CAST(FRM.NAME as varchar(8))as Farm
+			,MFU.NAME as 'Created_By'
+			,Isnull(AE.ENTEREDDATE, AE.CREATE_DATE) as CREATE_DATE
+			,AE.[EVENTDATE]
+			,AE.[EVENTTHDATE]
+			,AE.[QTY]
+			,CAST(ET.[EVENTNAME] as varchar(20)) as 'EventType'
+			,AE.[ID] as MFID
+			,AE.SYNCSTATUS
+			,AE.EVENTNBR
+FROM  [dbo].CFT_ANIMAL AS AN WITH (NOLOCK) 
+	JOIN [dbo].[CFT_FARMANIMAL] FA (NOLOCK) on AN.ID  = FA.ANIMALID 
+	JOIN [dbo].[CFT_FARM] FRM (NOLOCK) on FA.FARMID  = FRM.ID 
+	JOIN [dbo].[CFT_ANIMALEVENTS] AE (NOLOCK) ON AN.ID  = AE.ANIMALID  
+	JOIN [dbo].[CFT_EVENTTYPE] ET (NOLOCK) ON AE.EVENTTYPEID  = ET.ID  
+	LEFT JOIN [dbo].[MF_USER] MFU (NOLOCK) ON MFU.ID = AE.DEVICEID
+	CROSS APPLY (Select Top 1 [TAGNBR] From [dbo].[CFT_ANIMALTAG] AS ATP WITH (NOLOCK) Where
+		AN.ID  = ATP.[ANIMALID] AND ATP.[PRIMARYTAG] = 1 AND ATP.[ISCURRENT] = 1) ATP
+					 
+
+
+Where ET.[EVENTNAME] IN ('Foster')
+AND AE.[DELETED_BY] = -1 
+AND FA.[DELETED_BY] = -1
+
+

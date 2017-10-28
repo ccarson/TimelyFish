@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_asrdatabase AS SELECT * FROM SolomonSystem..asrdatabase

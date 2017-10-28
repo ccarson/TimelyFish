@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\LArtz]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

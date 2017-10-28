@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Field] (
+    [FieldID]           INT           IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [FieldName]         VARCHAR (50)  NOT NULL,
+    [LegalDescription]  VARCHAR (100) NULL,
+    [County]            VARCHAR (30)  NULL,
+    [Township]          VARCHAR (30)  NULL,
+    [SectionNbr]        VARCHAR (30)  NULL,
+    [Range]             VARCHAR (30)  NULL,
+    [ParcelDescription] VARCHAR (50)  NULL,
+    [TillableAcres]     FLOAT (53)    NULL,
+    [TotalAcres]        FLOAT (53)    NULL,
+    [TileIntakeQty]     INT           NULL,
+    [EasementFlag]      SMALLINT      CONSTRAINT [DF_Field_EasementFlag] DEFAULT (0) NULL,
+    [SPAFlag]           SMALLINT      CONSTRAINT [DF_Field_SPAFlag] DEFAULT (0) NULL,
+    [HELFlag]           SMALLINT      CONSTRAINT [DF_Field_HELFlag] DEFAULT (0) NULL,
+    [GPSLongitude]      VARCHAR (30)  NULL,
+    [GPSLatitude]       VARCHAR (30)  NULL,
+    [ManureAppComm]     VARCHAR (50)  NULL,
+    [PIndexScore]       VARCHAR (20)  NULL,
+    [DatePIndex]        DATETIME      NULL,
+    [PIndexSoilType]    VARCHAR (20)  NULL,
+    [PIndexSlopePcnt]   VARCHAR (20)  NULL,
+    [PIndexTValue]      VARCHAR (20)  NULL,
+    [PIndexSedimentDel] VARCHAR (20)  NULL,
+    CONSTRAINT [PK_Field] PRIMARY KEY CLUSTERED ([FieldID] ASC) WITH (FILLFACTOR = 90)
+);
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprocessalias AS SELECT * FROM SolomonSystem..mbfprocessalias

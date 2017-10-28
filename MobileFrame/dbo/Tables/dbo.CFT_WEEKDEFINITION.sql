@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[CFT_WEEKDEFINITION] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      DEFAULT (getutcdate()) NOT NULL,
+    [LAST_UPDATE]     DATETIME      DEFAULT (getutcdate()) NOT NULL,
+    [CREATED_BY]      BIGINT        DEFAULT ((0)) NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        DEFAULT ((0)) NOT NULL,
+    [DELETED_BY]      BIGINT        DEFAULT ((-1)) NOT NULL,
+    [FISCALPERIOD]    INT           NULL,
+    [FISCALYEAR]      INT           NULL,
+    [PICWEEK]         INT           NULL,
+    [PICYEAR]         INT           NULL,
+    [WEEKENDDATE]     DATETIME      NULL,
+    [WEEKOFDATE]      DATETIME      NULL,
+    [GROUPNAME]       NVARCHAR (10) NULL,
+    CONSTRAINT [CFT_WEEKDEFINITION_PK] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

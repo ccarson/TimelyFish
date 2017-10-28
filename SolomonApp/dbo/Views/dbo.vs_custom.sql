@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_custom AS SELECT * FROM SolomonSystem..custom

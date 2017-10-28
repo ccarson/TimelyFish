@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[PJINDSRCAUD] (
+    [alloc_batch]        CHAR (10)     NOT NULL,
+    [alloc_method_cd]    CHAR (4)      NOT NULL,
+    [audit_detail_num]   INT           NOT NULL,
+    [amount]             FLOAT (53)    NOT NULL,
+    [batch_id]           CHAR (10)     NOT NULL,
+    [crtd_datetime]      SMALLDATETIME NOT NULL,
+    [crtd_prog]          CHAR (8)      NOT NULL,
+    [crtd_user]          CHAR (10)     NOT NULL,
+    [detail_num]         INT           NOT NULL,
+    [emp_CpnyId]         CHAR (10)     NOT NULL,
+    [emp_gl_subacct]     CHAR (24)     NOT NULL,
+    [fiscalno]           CHAR (6)      NOT NULL,
+    [lupd_datetime]      SMALLDATETIME NOT NULL,
+    [lupd_prog]          CHAR (8)      NOT NULL,
+    [lupd_user]          CHAR (10)     NOT NULL,
+    [pjt_entity]         CHAR (32)     NOT NULL,
+    [project]            CHAR (16)     NOT NULL,
+    [recalc_alloc_batch] CHAR (10)     NOT NULL,
+    [src_acct]           CHAR (16)     NOT NULL,
+    [src_CpnyId]         CHAR (10)     NOT NULL,
+    [src_gl_subacct]     CHAR (24)     NOT NULL,
+    [step_number]        SMALLINT      NOT NULL,
+    [system_cd]          CHAR (2)      NOT NULL,
+    [tstamp]             ROWVERSION    NOT NULL,
+    CONSTRAINT [pjindsrcaud0] PRIMARY KEY CLUSTERED ([fiscalno] ASC, [system_cd] ASC, [batch_id] ASC, [detail_num] ASC, [audit_detail_num] ASC) WITH (FILLFACTOR = 90)
+);
+

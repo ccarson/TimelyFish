@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE [dbo].[SSP_UnitConv]
+@INVTID VARCHAR (30), @FROMUNIT VARCHAR (6), @TOUNIT VARCHAR (6), @CNVFACT FLOAT (53) OUTPUT, @MULTDIV VARCHAR (1) OUTPUT
+WITH ENCRYPTION
+AS
+BEGIN
+--The script body was encrypted and cannot be reproduced here.
+    RETURN
+END
+
+

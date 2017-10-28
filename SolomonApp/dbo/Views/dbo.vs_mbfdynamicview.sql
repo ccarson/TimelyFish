@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfdynamicview AS SELECT * FROM SolomonSystem..mbfdynamicview

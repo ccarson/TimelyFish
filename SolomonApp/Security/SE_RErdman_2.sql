@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\RErdman]
+    AUTHORIZATION [SE\RErdman];
+

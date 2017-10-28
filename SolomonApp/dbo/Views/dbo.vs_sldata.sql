@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_sldata AS SELECT * FROM SolomonSystem..sldata

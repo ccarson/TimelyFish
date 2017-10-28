@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mcsetup AS SELECT * FROM SolomonSystem..mcsetup

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\MHagen]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

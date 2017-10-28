@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SQLReader]
+    WITH PASSWORD = N'cmwwxzp|u1ttuhi_jeDf{HpwmsFT7_&#$!~<^tsth5tzcwaI', SID = 0x0485C3B6A15F7C439DDE95894C8E366F, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

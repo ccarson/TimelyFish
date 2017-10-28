@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\AStai] FOR LOGIN [SE\AStai]
+    WITH DEFAULT_SCHEMA = [SE\AStai];
+

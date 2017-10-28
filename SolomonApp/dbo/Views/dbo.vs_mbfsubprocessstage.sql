@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfsubprocessstage AS SELECT * FROM SolomonSystem..mbfsubprocessstage

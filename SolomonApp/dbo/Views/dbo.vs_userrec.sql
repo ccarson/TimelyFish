@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_userrec AS SELECT * FROM SolomonSystem..userrec

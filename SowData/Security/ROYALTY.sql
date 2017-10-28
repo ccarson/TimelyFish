@@ -1,0 +1,53 @@
+﻿CREATE SCHEMA [ROYALTY]
+    AUTHORIZATION [dbo];
+
+
+GO
+GRANT CONTROL
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT DELETE
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT EXECUTE
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT INSERT
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT REFERENCES
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT SELECT
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT TAKE OWNERSHIP
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT UPDATE
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT VIEW DEFINITION
+    ON SCHEMA::[ROYALTY] TO [se\analysts];
+
+
+GO
+GRANT ALTER
+    ON SCHEMA::[ROYALTY] TO [SE\ssis_datawriter];
+

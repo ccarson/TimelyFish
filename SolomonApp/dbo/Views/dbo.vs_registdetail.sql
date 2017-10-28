@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_registdetail AS SELECT * FROM SolomonSystem..registdetail

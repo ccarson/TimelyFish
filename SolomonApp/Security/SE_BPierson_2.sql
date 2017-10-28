@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\BPierson]
+    AUTHORIZATION [SE\BPierson];
+

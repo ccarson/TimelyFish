@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_customgrp AS SELECT * FROM SolomonSystem..customgrp

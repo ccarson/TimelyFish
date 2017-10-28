@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\JMaas] FOR LOGIN [SE\JMaas];
+

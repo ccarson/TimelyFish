@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\MBurnett]
+    WITH DEFAULT_SCHEMA = [SE\MBurnett];
+

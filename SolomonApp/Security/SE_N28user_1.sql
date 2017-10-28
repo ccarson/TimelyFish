@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\N28user]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

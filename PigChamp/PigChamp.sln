@@ -1,0 +1,120 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PigChamp", "PigChamp.sqlproj", "{5FD07653-6984-4328-AD6A-7A3C213EE48A}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SolomonApp_Common", "..\SolomonApp_Common\SolomonApp_Common.sqlproj", "{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFApp_PigManagement_Common", "..\CFApp_PigManagement_Common\CFApp_PigManagement_Common.sqlproj", "{84A323D9-1557-464B-B6A5-02E2F6290178}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SolomonApp_dw_Common", "..\SolomonApp_dw_Common\SolomonApp_dw_Common.sqlproj", "{01FC200D-1A90-4103-9FE0-D3FCF02715AB}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFApp_Common", "..\CFApp_Common\CFApp_Common.sqlproj", "{AB7E461E-9E1F-4C38-8431-B56939AC26F5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CentralData_Common", "..\CentralData_Common\CentralData_Common.sqlproj", "{3E3220CC-F80B-4B5F-A190-21651C9D319F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PigChamp_Common", "..\PigChamp_Common\PigChamp_Common.sqlproj", "{58E557CA-5E92-4B48-A592-B3DA323BAAFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Test|Any CPU.Build.0 = Release|Any CPU
+		{5FD07653-6984-4328-AD6A-7A3C213EE48A}.Test|Any CPU.Deploy.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{84A323D9-1557-464B-B6A5-02E2F6290178}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{01FC200D-1A90-4103-9FE0-D3FCF02715AB}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{3E3220CC-F80B-4B5F-A190-21651C9D319F}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{58E557CA-5E92-4B48-A592-B3DA323BAAFC}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cfse-tfs01:8080/tfs/activecollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PigChamp.sqlproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\SolomonApp_Common\\SolomonApp_Common.sqlproj
+		SccProjectName2 = ../SolomonApp_Common
+		SccLocalPath2 = ..\\SolomonApp_Common
+		SccProjectUniqueName3 = ..\\CFApp_PigManagement_Common\\CFApp_PigManagement_Common.sqlproj
+		SccProjectName3 = ../CFApp_PigManagement_Common
+		SccLocalPath3 = ..\\CFApp_PigManagement_Common
+		SccProjectUniqueName4 = ..\\SolomonApp_dw_Common\\SolomonApp_dw_Common.sqlproj
+		SccProjectName4 = ../SolomonApp_dw_Common
+		SccLocalPath4 = ..\\SolomonApp_dw_Common
+		SccProjectUniqueName5 = ..\\CFApp_Common\\CFApp_Common.sqlproj
+		SccProjectName5 = ../CFApp_Common
+		SccLocalPath5 = ..\\CFApp_Common
+		SccProjectUniqueName6 = ..\\CentralData_Common\\CentralData_Common.sqlproj
+		SccProjectName6 = ../CentralData_Common
+		SccLocalPath6 = ..\\CentralData_Common
+		SccProjectUniqueName7 = ..\\PigChamp_Common\\PigChamp_Common.sqlproj
+		SccProjectName7 = ../PigChamp_Common
+		SccLocalPath7 = ..\\PigChamp_Common
+	EndGlobalSection
+EndGlobal

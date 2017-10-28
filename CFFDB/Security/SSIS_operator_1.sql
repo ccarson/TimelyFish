@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SSIS_operator]
+    WITH PASSWORD = N'|gsmiJUv,UbCkIazdzihxybfmsFT7_&#$!~<h4mt6vuxpm7d', SID = 0x61258DB34BC1EC479108BB4410823D20, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

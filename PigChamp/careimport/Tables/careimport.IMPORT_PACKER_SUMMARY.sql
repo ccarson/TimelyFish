@@ -1,0 +1,27 @@
+﻿CREATE TABLE [careimport].[IMPORT_PACKER_SUMMARY] (
+    [row_id]           INT           IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [import_id]        INT           NOT NULL,
+    [packing_plant]    VARCHAR (30)  NULL,
+    [tattoo]           VARCHAR (15)  NULL,
+    [receipt_date]     DATETIME      NULL,
+    [pigs_received]    SMALLINT      NULL,
+    [pigs_rejected]    SMALLINT      NULL,
+    [pigs_doa]         SMALLINT      NULL,
+    [pigs_substandard] SMALLINT      NULL,
+    [amount_received]  FLOAT (53)    NULL,
+    [carcass_weight]   FLOAT (53)    NULL,
+    [total_liveweight] FLOAT (53)    NULL,
+    [contract_base]    FLOAT (53)    NULL,
+    [pH]               FLOAT (53)    NULL,
+    [percent_lean]     FLOAT (53)    NULL,
+    [backfat]          FLOAT (53)    NULL,
+    [sort_loss]        FLOAT (53)    NULL,
+    [av_loin_depth]    FLOAT (53)    NULL,
+    [check_number]     VARCHAR (20)  NULL,
+    [note]             VARCHAR (300) NULL,
+    [error_date]       DATETIME      NULL,
+    [error_code]       SMALLINT      NULL,
+    [error_message]    VARCHAR (250) NULL,
+    CONSTRAINT [PK_IMPORT_PACKER_SUMMARY] PRIMARY KEY CLUSTERED ([row_id] ASC) WITH (FILLFACTOR = 90)
+);
+

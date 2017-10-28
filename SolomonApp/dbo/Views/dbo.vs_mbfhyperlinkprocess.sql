@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfhyperlinkprocess AS SELECT * FROM SolomonSystem..mbfhyperlinkprocess

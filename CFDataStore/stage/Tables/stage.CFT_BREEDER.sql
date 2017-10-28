@@ -1,0 +1,14 @@
+﻿CREATE TABLE [stage].[CFT_BREEDER] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      NOT NULL,
+    [LAST_UPDATE]     DATETIME      NOT NULL,
+    [CREATED_BY]      BIGINT        NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        NOT NULL,
+    [DELETED_BY]      BIGINT        NOT NULL,
+    [NAME]            NVARCHAR (50) NULL,
+    [FARMID]          NVARCHAR (36) NULL,
+    [STATUS]          INT           NULL,
+    [BREEDERID]       NVARCHAR (5)  NULL,
+    CONSTRAINT [CFT_BREEDER_PK] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

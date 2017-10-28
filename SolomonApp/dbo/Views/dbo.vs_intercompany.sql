@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_intercompany AS SELECT * FROM SolomonSystem..intercompany

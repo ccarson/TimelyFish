@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [TransApp]
+    WITH PASSWORD = N'Ju|{wz nvTvbzbtqjrvcEfv?msFT7_&#$!~<4zHBaKelrn}n', SID = 0x6DCE362C5B5D954391DF342DF6E02422, DEFAULT_DATABASE = [SolomonApp], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

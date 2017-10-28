@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\CBertrand]
+    AUTHORIZATION [SE\CBertrand];
+

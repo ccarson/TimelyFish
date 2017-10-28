@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rccue AS SELECT * FROM SolomonSystem..rccue

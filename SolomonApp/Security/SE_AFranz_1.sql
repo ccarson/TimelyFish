@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\AFranz]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

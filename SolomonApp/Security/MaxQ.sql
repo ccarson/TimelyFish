@@ -1,0 +1,3 @@
+﻿CREATE USER [MaxQ] FOR LOGIN [MaxQ]
+    WITH DEFAULT_SCHEMA = [MaxQ];
+

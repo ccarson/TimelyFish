@@ -1,0 +1,2 @@
+﻿CREATE USER [TimApp] FOR LOGIN [TimApp];
+

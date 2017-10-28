@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rcactivity AS SELECT * FROM SolomonSystem..rcactivity

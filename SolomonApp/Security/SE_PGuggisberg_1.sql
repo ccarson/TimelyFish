@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\PGuggisberg]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\SMatter]
+    WITH DEFAULT_SCHEMA = [SE\SMatter];
+

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [stage].[CFT_MATINGEVENT] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      NOT NULL,
+    [LAST_UPDATE]     DATETIME      NOT NULL,
+    [CREATED_BY]      BIGINT        NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        NOT NULL,
+    [DELETED_BY]      BIGINT        NOT NULL,
+    [PARITYEVENTID]   NVARCHAR (36) NULL,
+    [MATINGDATE]      DATETIME      NULL,
+    [MATINGHOUR]      INT           NULL,
+    [BREEDERID]       NVARCHAR (36) NULL,
+    [SEMENID]         NVARCHAR (36) NULL,
+    [CYCLE]           INT           NULL,
+    [MATINGNBR]       INT           NULL,
+    [STATUS]          NVARCHAR (1)  NULL,
+    [MATINGTHOUSDATE] NVARCHAR (10) NULL,
+    [SYNCSTATUS]      NVARCHAR (20) NULL,
+    [BREEDINGNBR]     INT           NULL,
+    [UPDATESCALC]     NVARCHAR (1)  NULL,
+    [MFSYNC]          NVARCHAR (1)  NULL,
+    [DataStoreID]     BIGINT        NULL,
+    CONSTRAINT [CFT_MATINGEVENT_PK] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\Teleform]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [SowData], DEFAULT_LANGUAGE = [us_english];
+

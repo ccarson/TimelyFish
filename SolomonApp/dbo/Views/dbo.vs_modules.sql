@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_modules AS SELECT * FROM SolomonSystem..modules

@@ -1,0 +1,13 @@
+﻿
+CREATE PROCEDURE OMOrderConf_WSID @parm1 int
+AS
+	SELECT *
+	FROM SOHeader
+	WHERE WSID = @parm1
+	ORDER BY WSID
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[OMOrderConf_WSID] TO [MSDSL]
+    AS [dbo];
+

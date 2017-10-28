@@ -1,0 +1,2 @@
+﻿CREATE USER [MFSowData] FOR LOGIN [MFSowData];
+

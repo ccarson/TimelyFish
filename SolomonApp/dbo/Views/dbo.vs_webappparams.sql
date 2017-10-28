@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_webappparams AS SELECT * FROM SolomonSystem..webappparams

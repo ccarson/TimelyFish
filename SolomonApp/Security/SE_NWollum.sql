@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\NWollum] FOR LOGIN [SE\NWollum];
+

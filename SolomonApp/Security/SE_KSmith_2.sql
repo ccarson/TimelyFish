@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\KSmith]
+    AUTHORIZATION [SE\KSmith];
+

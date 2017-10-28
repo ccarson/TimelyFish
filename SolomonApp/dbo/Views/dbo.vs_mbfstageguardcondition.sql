@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfstageguardcondition AS SELECT * FROM SolomonSystem..mbfstageguardcondition

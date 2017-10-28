@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprocesslog AS SELECT * FROM SolomonSystem..mbfprocesslog

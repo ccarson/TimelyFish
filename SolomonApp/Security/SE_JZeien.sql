@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\JZeien] FOR LOGIN [SE\JZeien]
+    WITH DEFAULT_SCHEMA = [SE\JZeien];
+

@@ -1,0 +1,24 @@
+﻿
+
+
+
+CREATE VIEW 
+    [dbo].[CFV_PC_DuplicateEntries]
+AS
+  select CAST(FRM.NAME as varchar(8))as Farm
+  ,ATP.[TAGNBR]
+  ,AE.ANIMALID
+  ,ET.EVENTNAME
+  ,EVENTDATE
+  ,count(AE.animalid) as tot 
+  from CFT_ANIMALEVENTS AE
+  JOIN [MobileFrame].[dbo].[CFT_EVENTTYPE] ET (NOLOCK) ON AE.EVENTTYPEID  = ET.ID
+  CROSS APPLY (Select Top 1 [TAGNBR] From [MobileFrame].[dbo].[CFT_ANIMALTAG] AS ATP WITH (NOLOCK) Where
+						  AE.ANIMALID  = ATP.[ANIMALID] AND ATP.[PRIMARYTAG] = 1 AND ATP.[ISCURRENT] = 1) ATP
+  JOIN [dbo].[CFT_FARMANIMAL] FA (NOLOCK) on AE.ANIMALID  = FA.ANIMALID 
+  JOIN [dbo].[CFT_FARM] FRM (NOLOCK) on FA.FARMID  = FRM.ID 
+  where AE.DELETED_BY = -1 --and AE.EVENTDATE > GETDATE() - 7
+
+  group by FRM.NAME,ATP.[TAGNBR], AE.ANIMALID, ET.EVENTNAME, EVENTTYPEID, EVENTDATE, MATINGNBR
+    Having count(*) > 1
+

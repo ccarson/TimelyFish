@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\SQLRepl] FOR LOGIN [SE\SQLRepl];
+

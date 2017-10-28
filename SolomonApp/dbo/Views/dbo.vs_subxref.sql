@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_subxref AS SELECT * FROM SolomonSystem..subxref

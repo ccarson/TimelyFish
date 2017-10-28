@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\LSailer]
+    AUTHORIZATION [SE\LSailer];
+

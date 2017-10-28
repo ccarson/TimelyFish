@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_webappmappings AS SELECT * FROM SolomonSystem..webappmappings

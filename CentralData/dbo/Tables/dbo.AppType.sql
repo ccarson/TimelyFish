@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[AppType] (
+    [AppTypeID]   INT          IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [Description] VARCHAR (30) NULL,
+    CONSTRAINT [PK_AppType] PRIMARY KEY CLUSTERED ([AppTypeID] ASC) WITH (FILLFACTOR = 90)
+);
+

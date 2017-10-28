@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\LRynda] FOR LOGIN [SE\LRynda]
+    WITH DEFAULT_SCHEMA = [SE\LRynda];
+

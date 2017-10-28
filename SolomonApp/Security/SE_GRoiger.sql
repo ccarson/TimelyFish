@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\GRoiger] FOR LOGIN [SE\GRoiger]
+    WITH DEFAULT_SCHEMA = [SE\GRoiger];
+

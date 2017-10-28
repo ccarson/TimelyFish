@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_defaulttasks AS SELECT * FROM SolomonSystem..defaulttasks

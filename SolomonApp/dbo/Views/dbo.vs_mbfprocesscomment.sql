@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprocesscomment AS SELECT * FROM SolomonSystem..mbfprocesscomment

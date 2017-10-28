@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[IRDemandTran] (
+    [Crtd_Datetime]   SMALLDATETIME CONSTRAINT [DF_IRDemandTran_Crtd_Datetime] DEFAULT (rtrim(CONVERT([varchar](30),CONVERT([smalldatetime],getdate(),0),0))) NOT NULL,
+    [Crtd_Prog]       CHAR (8)      CONSTRAINT [DF_IRDemandTran_Crtd_Prog] DEFAULT (' ') NOT NULL,
+    [Crtd_User]       CHAR (10)     CONSTRAINT [DF_IRDemandTran_Crtd_User] DEFAULT (' ') NOT NULL,
+    [DemandQty]       FLOAT (53)    CONSTRAINT [DF_IRDemandTran_DemandQty] DEFAULT ((0)) NOT NULL,
+    [AdjustmentQty]   FLOAT (53)    CONSTRAINT [DF_IRDemandTran_AdjustmentQty] DEFAULT ((0)) NOT NULL,
+    [Descr]           CHAR (80)     CONSTRAINT [DF_IRDemandTran_Descr] DEFAULT (' ') NOT NULL,
+    [IncludeInDemand] SMALLINT      CONSTRAINT [DF_IRDemandTran_IncludeInDemand] DEFAULT ((0)) NOT NULL,
+    [InvtID]          CHAR (30)     CONSTRAINT [DF_IRDemandTran_InvtID] DEFAULT (' ') NOT NULL,
+    [Lupd_Datetime]   SMALLDATETIME CONSTRAINT [DF_IRDemandTran_Lupd_Datetime] DEFAULT ('01/01/1900') NOT NULL,
+    [Lupd_Prog]       CHAR (8)      CONSTRAINT [DF_IRDemandTran_Lupd_Prog] DEFAULT (' ') NOT NULL,
+    [Lupd_User]       CHAR (10)     CONSTRAINT [DF_IRDemandTran_Lupd_User] DEFAULT (' ') NOT NULL,
+    [PerPost]         CHAR (6)      CONSTRAINT [DF_IRDemandTran_PerPost] DEFAULT (' ') NOT NULL,
+    [RecordID]        INT           CONSTRAINT [DF_IRDemandTran_RecordID] DEFAULT ((0)) NOT NULL,
+    [S4Future01]      CHAR (30)     CONSTRAINT [DF_IRDemandTran_S4Future01] DEFAULT (' ') NOT NULL,
+    [S4Future02]      FLOAT (53)    CONSTRAINT [DF_IRDemandTran_S4Future02] DEFAULT ((0)) NOT NULL,
+    [S4Future03]      SMALLDATETIME CONSTRAINT [DF_IRDemandTran_S4Future03] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future04]      INT           CONSTRAINT [DF_IRDemandTran_S4Future04] DEFAULT ((0)) NOT NULL,
+    [SiteID]          CHAR (10)     CONSTRAINT [DF_IRDemandTran_SiteID] DEFAULT (' ') NOT NULL,
+    [User1]           CHAR (30)     CONSTRAINT [DF_IRDemandTran_User1] DEFAULT (' ') NOT NULL,
+    [User2]           FLOAT (53)    CONSTRAINT [DF_IRDemandTran_User2] DEFAULT ((0)) NOT NULL,
+    [User3]           SMALLDATETIME CONSTRAINT [DF_IRDemandTran_User3] DEFAULT ('01/01/1900') NOT NULL,
+    [User4]           INT           CONSTRAINT [DF_IRDemandTran_User4] DEFAULT ((0)) NOT NULL,
+    [tstamp]          ROWVERSION    NOT NULL,
+    CONSTRAINT [IRDemandTran0] PRIMARY KEY CLUSTERED ([InvtID] ASC, [SiteID] ASC, [PerPost] ASC, [RecordID] ASC) WITH (FILLFACTOR = 90)
+);
+

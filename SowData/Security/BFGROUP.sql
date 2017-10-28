@@ -1,0 +1,3 @@
+﻿CREATE ROLE [BFGROUP]
+    AUTHORIZATION [dbo];
+

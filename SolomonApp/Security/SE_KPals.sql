@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\KPals] FOR LOGIN [SE\KPals];
+

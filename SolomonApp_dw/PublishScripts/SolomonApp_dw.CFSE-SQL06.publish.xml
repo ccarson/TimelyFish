@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>SolomonApp_dw</TargetDatabaseName>
+    <DeployScriptFileName>sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=CFSE-SQL06;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <DropIndexesNotInSource>False</DropIndexesNotInSource>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CentralData">
+      <Value>CentralData</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="CFApp_Contact">
+      <Value>CFApp_Contact</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="CFApp_PigManagement">
+      <Value>CFApp_PigManagement</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="SolomonApp">
+      <Value>SolomonApp</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>

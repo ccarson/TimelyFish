@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_pvrec AS SELECT * FROM SolomonSystem..pvrec

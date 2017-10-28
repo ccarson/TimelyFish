@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbftasksecurity AS SELECT * FROM SolomonSystem..mbftasksecurity

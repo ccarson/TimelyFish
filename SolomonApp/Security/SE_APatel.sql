@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\APatel] FOR LOGIN [SE\APatel]
+    WITH DEFAULT_SCHEMA = [SE\APatel];
+

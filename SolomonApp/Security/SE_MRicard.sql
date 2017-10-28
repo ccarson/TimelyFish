@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\MRicard] FOR LOGIN [SE\MRicard]
+    WITH DEFAULT_SCHEMA = [SE\MRicard];
+

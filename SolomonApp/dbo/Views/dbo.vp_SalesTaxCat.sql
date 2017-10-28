@@ -1,0 +1,17 @@
+﻿ 
+
+
+
+--APPTABLE
+--USETHISSYNTAX
+
+CREATE VIEW vp_SalesTaxCat AS 
+
+SELECT CatId FROM SlsTaxCat
+
+UNION
+
+SELECT ' '
+
+
+ 

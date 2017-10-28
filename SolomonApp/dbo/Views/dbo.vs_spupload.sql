@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_spupload AS SELECT * FROM SolomonSystem..spupload

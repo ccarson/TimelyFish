@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfappadministration AS SELECT * FROM SolomonSystem..mbfappadministration

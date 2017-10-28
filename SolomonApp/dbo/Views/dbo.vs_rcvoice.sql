@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rcvoice AS SELECT * FROM SolomonSystem..rcvoice

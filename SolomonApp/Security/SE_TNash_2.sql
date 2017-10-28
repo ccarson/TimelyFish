@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\TNash]
+    AUTHORIZATION [SE\TNash];
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rc_reportcenters AS SELECT * FROM SolomonSystem..rc_reportcenters

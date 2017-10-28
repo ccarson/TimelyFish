@@ -1,0 +1,48 @@
+﻿
+CREATE VIEW [QQ_arhist]
+AS
+SELECT	
+     h.CustId AS [Customer ID],CASE WHEN CHARINDEX('~', C.Name) > 0 THEN CONVERT(CHAR(60), 
+	 LTRIM(SUBSTRING(C.Name, 1, CHARINDEX('~',C.Name) - 1)) + ', ' + LTRIM(RTRIM(SUBSTRING(Name, CHARINDEX('~',C.Name) + 1, 60)))) ELSE C.Name END AS [Customer Name], 
+     h.CpnyID AS [Company ID], h.FiscYr AS [Fiscal Year], h.PerNbr AS [Period Number], 
+     h.BegBal AS [Beginning Balance], h.AccruedRevBegBal AS [Accrued Revenue Beginning Balance], 
+     h.YTDAccruedRev AS [YTD Accrued Revenue], h.YtdCOGS AS [YTD COGS], h.YtdCrMemo AS [YTD Credit Memos], h.YtdDisc AS [YTD Discounts], h.YtdDrMemo AS [YTD Debit Memos], h.YtdFinChrg AS [YTD Finance Charges], 
+     h.YtdRcpt AS [YTD Receipts(Payments)], h.YtdSales AS [YTD Sales Amount(Invoices)],
+     convert(date,h.Crtd_DateTime) AS [Create Date], h.Crtd_Prog AS [Create Program],h.Crtd_User AS [Create User], h.CuryID AS [Currency ID], convert(date,h.LUpd_DateTime) AS [Last Update Date], 
+     h.LUpd_Prog AS [Last Update Program], h.LUpd_User AS [Last Update User], h.NbrInvcPaid00 AS [Number of Invoices Paid in Period 1], h.NbrInvcPaid01 AS [Number of Invoices Paid in Period 2], h.NbrInvcPaid02 AS [Number of Invoices Paid in Period 3], 
+     h.NbrInvcPaid03 AS [Number of Invoices Paid in Period 4], h.NbrInvcPaid04 AS [Number of Invoices Paid in Period 5], h.NbrInvcPaid05 AS [Number of Invoices Paid in Period 6], h.NbrInvcPaid06 AS [Number of Invoices Paid in Period 7],
+     h.NbrInvcPaid07 AS [Number of Invoices Paid in Period 8],h.NbrInvcPaid08 AS [Number of Invoices Paid in Period 9], h.NbrInvcPaid09 AS [Number of Invoices Paid in Period 10], h.NbrInvcPaid10 AS [Number of Invoices Paid in Period 11], 
+     h.NbrInvcPaid11 AS [Number of Invoices Paid in Period 12],h.NbrInvcPaid12 AS [Number of Invoices Paid in Period 13],h.NoteID,
+     h.PaidInvcDays00 AS [Number of Days Outstanding in Period 1], h.PaidInvcDays01 AS [Number of Days Outstanding in Period 2], h.PaidInvcDays02 AS [Number of Days Outstanding in Period 3], 
+     h.PaidInvcDays03 AS [Number of Days Outstanding in Period 4],h.PaidInvcDays04 AS [Number of Days Outstanding in Period 5],  h.PaidInvcDays05 AS [Number of Days Outstanding in Period 6], 
+     h.PaidInvcDays06 AS [Number of Days Outstanding in Period 7], h.PaidInvcDays07 AS [Number of Days Outstanding in Period 8], h.PaidInvcDays08 AS [Number of Days Outstanding in Period 9], 
+     h.PaidInvcDays09 AS [Number of Days Outstanding in Period 10], h.PaidInvcDays10 AS [Number of Days Outstanding in Period 11], h.PaidInvcDays11 AS [Number of Days Outstanding in Period 12],
+     h.PaidInvcDays12 AS [Number of Days Outstanding in Period 13],
+     h.PTDAccruedRev00 AS [Accrued Revenue for Period 1], h.PTDAccruedRev01 AS [Accrued Revenue for Period 2], h.PTDAccruedRev02 AS [Accrued Revenue for Period 3], h.PTDAccruedRev03 AS [Accrued Revenue for Period 4], h.PTDAccruedRev04 AS [Accrued Revenue for Period 5], 
+     h.PTDAccruedRev05 AS [Accrued Revenue for Period 6], h.PTDAccruedRev06 AS [Accrued Revenue for Period 7], h.PTDAccruedRev07 AS [Accrued Revenue for Period 8], h.PTDAccruedRev08 AS [Accrued Revenue for Period 9], h.PTDAccruedRev09 AS [Accrued Revenue for Period 10], 
+     h.PTDAccruedRev10 AS [Accrued Revenue for Period 11], h.PTDAccruedRev11 AS [Accrued Revenue for Period 12], h.PTDAccruedRev12 AS [Accrued Revenue for Period 13], h.PTDCOGS00 AS [COGS for Period 1], h.PTDCOGS01 AS [COGS for Period 2], 
+     h.PTDCOGS02 AS [COGS for Period 3], h.PTDCOGS03 AS [COGS for Period 4], h.PTDCOGS04 AS [COGS for Period 5], 
+     h.PTDCOGS05 AS [COGS for Period 6], h.PTDCOGS06 AS [COGS for Period 7], 
+     h.PTDCOGS07 AS [COGS for Period 8], h.PTDCOGS08 AS [COGS for Period 9], 
+     h.PTDCOGS09 AS [COGS for Period 10], h.PTDCOGS10 AS [COGS for Period 11],
+     h.PTDCOGS11 AS [COGS for Period 12],h.PTDCOGS12 AS [COGSfor Period 13], 
+     h.PTDCrMemo00 AS [Credit Memos for Period 1], h.PTDCrMemo01 AS [Credit Memos for Period 2], h.PTDCrMemo02 AS [Credit Memos for Period 3], h.PTDCrMemo03 AS [Credit Memos for Period 4], 
+     h.PTDCrMemo04 AS [Credit Memos for Period 5], h.PTDCrMemo05 AS [Credit Memos for Period 6], h.PTDCrMemo06 AS [Credit Memos for Period 7], h.PTDCrMemo07 AS [Credit Memos for Period 8], h.PTDCrMemo08 AS [Credit Memos for Period 9], 
+     h.PTDCrMemo09 AS [Credit Memos for Period 10], h.PTDCrMemo10 AS [Credit Memos for Period 11], h.PTDCrMemo11 AS [Credit Memos for Period 12], h.PTDCrMemo12 AS [Credit Memos for Period 13], h.PTDDisc00 AS [Discounts for Period 1], 
+     h.PTDDisc01 AS [Discounts for Period 2], h.PTDDisc02 AS [Discounts for Period 3], h.PTDDisc03 AS [Discounts for Period 4], h.PTDDisc04 AS [Discounts for Period 5], h.PTDDisc05 AS [Discounts for Period 6], 
+     h.PTDDisc06 AS [Discounts for Period 7], h.PTDDisc07 AS [Discounts for Period 8], h.PTDDisc08 AS [Discounts for Period 9], h.PTDDisc09 AS [Discounts for Period 10], h.PTDDisc10 AS [Discounts for Period 11], 
+     h.PTDDisc11 AS [Discounts for Period 12], h.PTDDisc12 AS [Discounts for Period 13], h.PTDDrMemo00 AS [Debit Memos for Period 1], h.PTDDrMemo01 AS [Debit Memos for Period 2], h.PTDDrMemo02 AS [Debit Memos for Period 3], 
+     h.PTDDrMemo03 AS [Debit Memos for Period 4], h.PTDDrMemo04 AS [Debit Memos for Period 5], h.PTDDrMemo05 AS [Debit Memos for Period 6], h.PTDDrMemo06 AS [Debit Memos for Period 7], h.PTDDrMemo07 AS [Debit Memos for Period 8], 
+     h.PTDDrMemo08 AS [Debit Memos for Period 9], h.PTDDrMemo09 AS [Debit Memos for Period 10], h.PTDDrMemo10 AS [Debit Memos for Period 11], h.PTDDrMemo11 AS [Debit Memos for Period 12], h.PTDDrMemo12 AS [Debit Memos for Period 13], 
+     h.PTDFinChrg00 AS [Finance Charges for Period 1], h.PTDFinChrg01 AS [Finance Charges for Period 2], h.PTDFinChrg02 AS [Finance Charges for Period 3], h.PTDFinChrg03 AS [Finance Charges for Period 4], h.PTDFinChrg04 AS [Finance Charges for Period 5], 
+     h.PTDFinChrg05 AS [Finance Charges for Period 6], h.PTDFinChrg06 AS [Finance Charges for Period 7], h.PTDFinChrg07 AS [Finance Charges for Period 8], h.PTDFinChrg08 AS [Finance Charges for Period 9], h.PTDFinChrg09 AS [Finance Charges for Period 10], 
+     h.PTDFinChrg10 AS [Finance Charges for Period 11], h.PTDFinChrg11 AS [Finance Charges for Period 12], h.PTDFinChrg12 AS [Finance Charges for Period 13], h.PTDRcpt00 AS [Payments Received for Period 1], h.PTDRcpt01 AS [Payments Received for Period 2], 
+     h.PTDRcpt02 AS [Payments Received for Period 3], h.PTDRcpt03 AS [Payments Received for Period 4], h.PTDRcpt04 AS [Payments Received for Period 5], h.PTDRcpt05 AS [Payments Received for Period 6], h.PTDRcpt06 AS [Payments Received for Period 7], 
+     h.PTDRcpt07 AS [Payments Received for Period 8], h.PTDRcpt08 AS [Payments Received for Period 9], h.PTDRcpt09 AS [Payments Received for Period 10], h.PTDRcpt10 AS [Payments Received for Period 11], h.PTDRcpt11 AS [Payments Received for Period 12], 
+     h.PTDRcpt12 AS [Payments Received for Period 13], h.PTDSales00 AS [Gross Sales for Period 1], h.PTDSales01 AS [Gross Sales for Period 2], h.PTDSales02 AS [Gross Sales for Period 3], h.PTDSales03 AS [Gross Sales for Period 4], 
+     h.PTDSales04 AS [Gross Sales for Period 5], h.PTDSales05 AS [Gross Sales for Period 6], h.PTDSales06 AS [Gross Sales for Period 7], h.PTDSales07 AS [Gross Sales for Period 8], h.PTDSales08 AS [Gross Sales for Period 9], 
+     h.PTDSales09 AS [Gross Sales for Period 10], h.PTDSales10 AS [Gross Sales for Period 11], h.PTDSales11 AS [Gross Sales for Period 12], h.PTDSales12 AS [Gross Sales for Period 13], 
+     h.User1, h.User2, h.User3, h.User4, h.User5, h.User6, convert(date,h.User7) AS [User7], convert(date,h.User8) AS [User8] 
+FROM	arhist h with (nolock)
+        INNER JOIN customer c with (nolock) ON h.CustID = c.CustId
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\JCook]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

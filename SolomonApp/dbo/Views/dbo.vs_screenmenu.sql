@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_screenmenu AS SELECT * FROM SolomonSystem..screenmenu

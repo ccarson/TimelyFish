@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\DCleary] FOR LOGIN [SE\DCleary]
+    WITH DEFAULT_SCHEMA = [SE\DCleary];
+

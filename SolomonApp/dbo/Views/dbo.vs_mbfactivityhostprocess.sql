@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfactivityhostprocess AS SELECT * FROM SolomonSystem..mbfactivityhostprocess

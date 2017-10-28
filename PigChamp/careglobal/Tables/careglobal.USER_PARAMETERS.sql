@@ -1,0 +1,8 @@
+﻿CREATE TABLE [careglobal].[USER_PARAMETERS] (
+    [username]    VARCHAR (15)  NOT NULL,
+    [param_name]  VARCHAR (80)  NOT NULL,
+    [param_value] VARCHAR (600) NULL,
+    CONSTRAINT [PK_USER_PARAMETERS] PRIMARY KEY CLUSTERED ([username] ASC, [param_name] ASC) WITH (FILLFACTOR = 80),
+    CONSTRAINT [FK_USER_PARAMETERS_CARE_USERS_0] FOREIGN KEY ([username]) REFERENCES [careglobal].[CARE_USERS] ([username]) ON DELETE CASCADE
+);
+

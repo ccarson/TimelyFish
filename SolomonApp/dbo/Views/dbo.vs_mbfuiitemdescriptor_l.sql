@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfuiitemdescriptor_l AS SELECT * FROM SolomonSystem..mbfuiitemdescriptor_l

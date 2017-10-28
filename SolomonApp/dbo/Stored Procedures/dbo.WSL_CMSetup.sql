@@ -1,0 +1,10 @@
+﻿
+CREATE PROCEDURE WSL_CMSetup
+AS
+SELECT * FROM CMSetup
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[WSL_CMSetup] TO [MSDSL]
+    AS [dbo];
+

@@ -1,0 +1,9 @@
+﻿CREATE PROC XPCopyPigGroupfromDEV
+@parm1 as varchar(10)
+as 
+Insert into cftPigGroup
+(ActCloseDate,ActStartDate,BarnNbr,CF01,CF02,CF03,CF04,CF05,CF06,CF07,CF08,CF09,CF10,CF11,CF12,Comment,CostFlag,CpnyID,Crtd_DateTime,Crtd_Prog,Crtd_User,Description,EstCloseDate,EstInventory,EstStartDate,EstStartWeight,EstTopDate,EUCallbyUser,EUDateInel,EUDatePLCall,EUDateTop,EUFirstPLDeliv,EUPFEUInel,EUPLSFP,EUTopVerified,FeedGrouping,FeedMillContactID,FeedPlanID,GenderConfirmedFlag,InitialPigValue,LegacyGroupID,Lupd_DateTime,Lupd_Prog,Lupd_User,MasterPigGroupID,NoteID,OverRideEstQty,PGStatusID,PigFlowTypeID,PigGenderTypeID,PigGroupID,PigProdPhaseID,PigProdPodID,PigSystemID,PriorFeedQty,ProjectID,PurchCountry,PurchFlag,SplitSrcPigGroupID,SiteContactID,TaskID,UseActualsFlag)
+Select
+ActCloseDate,ActStartDate,BarnNbr,CF01,CF02,CF03,CF04,CF05,CF06,CF07,CF08,CF09,CF10,CF11,CF12,Comment,CostFlag,CpnyID,Crtd_DateTime,Crtd_Prog,Crtd_User,Description,EstCloseDate,EstInventory,EstStartDate,EstStartWeight,EstTopDate,EUCallbyUser,EUDateInel,EUDatePLCall,EUDateTop,EUFirstPLDeliv,EUPFEUInel,EUPLSFP,EUTopVerified,FeedGrouping,FeedMillContactID,FeedPlanID,GenderConfirmedFlag,InitialPigValue,LegacyGroupID,Lupd_DateTime,Lupd_Prog,Lupd_User,MasterPigGroupID,NoteID,OverRideEstQty,PGStatusID,PigFlowTypeID,PigGenderTypeID,PigGroupID,PigProdPhaseID,PigProdPodID,PigSystemID,PriorFeedQty,ProjectID,PurchCountry,PurchFlag,SplitSrcPigGroupID,SiteContactID,TaskID,UseActualsFlag
+from SQLDEV.SolomonAppTest.dbo.cftPigGroup 
+where PigGroupID=@parm1

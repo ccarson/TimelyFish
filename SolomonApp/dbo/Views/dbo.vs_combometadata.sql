@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_combometadata AS SELECT * FROM SolomonSystem..combometadata

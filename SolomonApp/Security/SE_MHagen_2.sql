@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MHagen]
+    AUTHORIZATION [SE\MHagen];
+

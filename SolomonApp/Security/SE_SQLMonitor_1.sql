@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\SQLMonitor]
+    AUTHORIZATION [SE\SQLMonitor];
+

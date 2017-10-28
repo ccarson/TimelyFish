@@ -1,0 +1,28 @@
+﻿CREATE TABLE [caredata].[SHIPMENT_TICKETS] (
+    [ticket_id]           INT           IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [from_site_id]        INT           NULL,
+    [source_id]           INT           NULL,
+    [ticket_name]         VARCHAR (20)  NULL,
+    [transport_id]        INT           NULL,
+    [truck_identifier]    VARCHAR (20)  NULL,
+    [shipment_date]       DATETIME      NOT NULL,
+    [pigs_shipped]        INT           NULL,
+    [av_age]              FLOAT (53)    NULL,
+    [av_weight]           FLOAT (53)    NULL,
+    [unit_of_measure]     TINYINT       NOT NULL,
+    [comments]            VARCHAR (100) NULL,
+    [data_source_is_file] BIT           CONSTRAINT [DF_SHIPMENT_TICKETS_data_source_is_file] DEFAULT ((0)) NOT NULL,
+    [source_file_id]      VARCHAR (40)  NULL,
+    [manually_closed]     BIT           CONSTRAINT [DF_SHIPMENT_TICKETS_manually_closed] DEFAULT ((0)) NOT NULL,
+    [creation_date]       DATETIME      CONSTRAINT [DF_SHIPMENT_TICKETS_creation_date] DEFAULT (getdate()) NOT NULL,
+    [created_by]          VARCHAR (15)  CONSTRAINT [DF_SHIPMENT_TICKETS_created_by] DEFAULT ('SYSTEM') NOT NULL,
+    [last_update_date]    DATETIME      NULL,
+    [last_update_by]      VARCHAR (15)  NULL,
+    [deletion_date]       DATETIME      NULL,
+    [deleted_by]          VARCHAR (15)  NULL,
+    CONSTRAINT [PK_SHIPMENT_TICKETS] PRIMARY KEY NONCLUSTERED ([ticket_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_SHIPMENT_TICKETS_EXTERNAL_FARMS_1] FOREIGN KEY ([source_id]) REFERENCES [caredata].[EXTERNAL_FARMS] ([farm_id]) ON UPDATE CASCADE,
+    CONSTRAINT [FK_SHIPMENT_TICKETS_SITES_0] FOREIGN KEY ([from_site_id]) REFERENCES [careglobal].[SITES] ([site_id]),
+    CONSTRAINT [FK_SHIPMENT_TICKETS_TRANSPORT_COMPANIES_2] FOREIGN KEY ([transport_id]) REFERENCES [caredata].[TRANSPORT_COMPANIES] ([transport_id]) ON UPDATE CASCADE
+);
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\APhinney] FOR LOGIN [SE\APhinney]
+    WITH DEFAULT_SCHEMA = [SE\APhinney];
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_pwrules AS SELECT * FROM SolomonSystem..pwrules

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfresourceproviderquery AS SELECT * FROM SolomonSystem..mbfresourceproviderquery

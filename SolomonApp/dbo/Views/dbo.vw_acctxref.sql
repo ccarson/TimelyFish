@@ -1,0 +1,1 @@
+﻿CREATE VIEW vw_acctxref AS SELECT * FROM SolomonSystem..acctxref

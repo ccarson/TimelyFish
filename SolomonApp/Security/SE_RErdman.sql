@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\RErdman] FOR LOGIN [SE\RErdman]
+    WITH DEFAULT_SCHEMA = [SE\RErdman];
+

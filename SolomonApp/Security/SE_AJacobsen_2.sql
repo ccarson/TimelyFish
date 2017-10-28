@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\AJacobsen]
+    AUTHORIZATION [SE\AJacobsen];
+

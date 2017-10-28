@@ -1,0 +1,23 @@
+﻿CREATE TABLE [dbo].[cft_MASTER_SETTLEMENT] (
+    [MasterSettlementID] VARCHAR (100) NOT NULL,
+    [APBatchNumber]      VARCHAR (10)  NOT NULL,
+    [Delivery_VendorID]  VARCHAR (15)  NOT NULL,
+    [PayTo_VendorID]     VARCHAR (15)  NULL,
+    PRIMARY KEY CLUSTERED ([MasterSettlementID] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE UNIQUE NONCLUSTERED INDEX [IX_cft_MASTER_SETTLEMENT_APBatchNumber_Delivery_VendorID]
+    ON [dbo].[cft_MASTER_SETTLEMENT]([APBatchNumber] ASC, [Delivery_VendorID] ASC, [PayTo_VendorID] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_cft_MASTER_SETTLEMENT_PayTo_VendorID]
+    ON [dbo].[cft_MASTER_SETTLEMENT]([PayTo_VendorID] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [IX_cft_MASTER_SETTLEMENT_Delivery_VendorID]
+    ON [dbo].[cft_MASTER_SETTLEMENT]([Delivery_VendorID] ASC) WITH (FILLFACTOR = 90);
+

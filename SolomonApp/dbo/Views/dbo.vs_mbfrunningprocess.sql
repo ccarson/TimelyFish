@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfrunningprocess AS SELECT * FROM SolomonSystem..mbfrunningprocess

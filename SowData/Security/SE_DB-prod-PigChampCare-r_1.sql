@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\DB-prod-PigChampCare-r]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [PigChamp], DEFAULT_LANGUAGE = [us_english];
+

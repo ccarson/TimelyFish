@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\MSykes] FOR LOGIN [SE\MSykes]
+    WITH DEFAULT_SCHEMA = [SE\MSykes];
+

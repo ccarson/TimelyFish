@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[cft_MARKET_OPTIMIZER] (
+    [MarketOptimizerID]   INT             IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [LoadID]              INT             NOT NULL,
+    [CalculatingOptionID] INT             NULL,
+    [ContactID]           INT             NOT NULL,
+    [EstimatedQuantity]   INT             NULL,
+    [EstimatedWeight]     INT             NULL,
+    [ActualQuantity]      INT             NULL,
+    [ActualWeight]        INT             NULL,
+    [MovementDate]        DATETIME        NULL,
+    [Ignore]              BIT             NULL,
+    [OutByDay]            INT             NULL,
+    [BasePrice]           DECIMAL (10, 4) NULL,
+    [BaseDollarAmount]    DECIMAL (10, 4) NULL,
+    [SortAmount]          DECIMAL (10, 4) NULL,
+    [LeanAmount]          DECIMAL (10, 4) NULL,
+    [FixedCost]           DECIMAL (10, 4) NULL,
+    [TransportationCost]  DECIMAL (10, 4) NULL,
+    [NetLoadAmount]       DECIMAL (10, 4) NULL,
+    [OptimizerSelected]   BIT             NULL,
+    [CreatedDateTime]     DATETIME        CONSTRAINT [DF_cft_MARKET_OPTIMIZER_CreatedDateTime] DEFAULT (getdate()) NOT NULL,
+    [CreatedBy]           VARCHAR (50)    NOT NULL,
+    [UpdatedDateTime]     DATETIME        NULL,
+    [UpdatedBy]           VARCHAR (50)    NULL,
+    CONSTRAINT [MARKET_OPTIMIZER] PRIMARY KEY CLUSTERED ([MarketOptimizerID] ASC) WITH (FILLFACTOR = 90)
+);
+

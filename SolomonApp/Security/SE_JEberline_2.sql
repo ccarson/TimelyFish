@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JEberline]
+    AUTHORIZATION [SE\JEberline];
+

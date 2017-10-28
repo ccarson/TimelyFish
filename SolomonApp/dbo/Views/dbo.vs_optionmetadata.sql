@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_optionmetadata AS SELECT * FROM SolomonSystem..optionmetadata

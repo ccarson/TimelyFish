@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\JPiehl] FOR LOGIN [SE\JPiehl]
+    WITH DEFAULT_SCHEMA = [SE\JPiehl];
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\CWohlers]
+    AUTHORIZATION [SE\CWohlers];
+

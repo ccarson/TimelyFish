@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_statusrequest AS SELECT * FROM SolomonSystem..statusrequest

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\SKretsch]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,4 @@
+﻿CREATE PROCEDURE CF341p_AutoAPBatNbr 
+	as 
+	SELECT LastBatNbr 
+	FROM APSetUp

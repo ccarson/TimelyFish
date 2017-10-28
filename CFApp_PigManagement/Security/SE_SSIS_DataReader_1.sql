@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\SSIS_DataReader]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

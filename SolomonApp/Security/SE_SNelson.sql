@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\SNelson] FOR LOGIN [SE\SNelson];
+

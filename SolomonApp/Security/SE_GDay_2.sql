@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\GDay]
+    AUTHORIZATION [SE\GDay];
+

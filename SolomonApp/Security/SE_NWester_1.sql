@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\NWester]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

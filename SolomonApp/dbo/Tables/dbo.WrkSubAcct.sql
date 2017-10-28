@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[WrkSubAcct] (
+    [Sub]    CHAR (24)  NOT NULL,
+    [tstamp] ROWVERSION NOT NULL,
+    CONSTRAINT [WrkSubAcct0] PRIMARY KEY CLUSTERED ([Sub] ASC) WITH (FILLFACTOR = 90)
+);
+

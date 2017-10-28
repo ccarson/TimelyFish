@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_usertaskmapping AS SELECT * FROM SolomonSystem..usertaskmapping

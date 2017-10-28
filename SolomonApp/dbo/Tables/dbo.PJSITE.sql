@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[PJSITE] (
+    [crtd_datetime] SMALLDATETIME NOT NULL,
+    [crtd_prog]     CHAR (8)      NOT NULL,
+    [crtd_user]     CHAR (10)     NOT NULL,
+    [EmailAddress]  CHAR (80)     NOT NULL,
+    [lupd_datetime] SMALLDATETIME NOT NULL,
+    [lupd_prog]     CHAR (8)      NOT NULL,
+    [lupd_user]     CHAR (10)     NOT NULL,
+    [NoteId]        INT           NOT NULL,
+    [Password]      CHAR (10)     NOT NULL,
+    [si_id01]       CHAR (30)     NOT NULL,
+    [si_id02]       CHAR (30)     NOT NULL,
+    [si_id03]       CHAR (20)     NOT NULL,
+    [si_id04]       CHAR (20)     NOT NULL,
+    [si_id05]       CHAR (10)     NOT NULL,
+    [si_id06]       CHAR (10)     NOT NULL,
+    [si_id07]       CHAR (4)      NOT NULL,
+    [si_id08]       FLOAT (53)    NOT NULL,
+    [si_id09]       SMALLDATETIME NOT NULL,
+    [si_id10]       INT           NOT NULL,
+    [TerminalCode]  CHAR (4)      NOT NULL,
+    [TerminalName]  CHAR (60)     NOT NULL,
+    [Type_site]     CHAR (1)      NOT NULL,
+    [tstamp]        ROWVERSION    NOT NULL,
+    CONSTRAINT [pjsite0] PRIMARY KEY CLUSTERED ([TerminalCode] ASC) WITH (FILLFACTOR = 90)
+);
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfnavigationmenu AS SELECT * FROM SolomonSystem..mbfnavigationmenu

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[FOSalesOrderStatus] (
+    [Behavior]          CHAR (4)      CONSTRAINT [DF_FOSalesOrderStatus_Behavior] DEFAULT (' ') NOT NULL,
+    [CancelDate]        SMALLDATETIME CONSTRAINT [DF_FOSalesOrderStatus_CancelDate] DEFAULT ('01/01/1900') NOT NULL,
+    [Cancelled]         SMALLINT      CONSTRAINT [DF_FOSalesOrderStatus_Cancelled] DEFAULT ((0)) NOT NULL,
+    [ErrorDescription]  CHAR (1024)   CONSTRAINT [DF_FOSalesOrderStatus_ErrorDescription] DEFAULT (' ') NOT NULL,
+    [ErrorNumber]       INT           CONSTRAINT [DF_FOSalesOrderStatus_ErrorNumber] DEFAULT ((0)) NOT NULL,
+    [OrdNbr]            CHAR (15)     CONSTRAINT [DF_FOSalesOrderStatus_OrdNbr] DEFAULT (' ') NOT NULL,
+    [S4Future01]        CHAR (30)     CONSTRAINT [DF_FOSalesOrderStatus_S4Future01] DEFAULT (' ') NOT NULL,
+    [S4Future02]        CHAR (30)     CONSTRAINT [DF_FOSalesOrderStatus_S4Future02] DEFAULT (' ') NOT NULL,
+    [S4Future03]        FLOAT (53)    CONSTRAINT [DF_FOSalesOrderStatus_S4Future03] DEFAULT ((0)) NOT NULL,
+    [S4Future04]        FLOAT (53)    CONSTRAINT [DF_FOSalesOrderStatus_S4Future04] DEFAULT ((0)) NOT NULL,
+    [S4Future05]        FLOAT (53)    CONSTRAINT [DF_FOSalesOrderStatus_S4Future05] DEFAULT ((0)) NOT NULL,
+    [S4Future06]        FLOAT (53)    CONSTRAINT [DF_FOSalesOrderStatus_S4Future06] DEFAULT ((0)) NOT NULL,
+    [S4Future07]        SMALLDATETIME CONSTRAINT [DF_FOSalesOrderStatus_S4Future07] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future08]        SMALLDATETIME CONSTRAINT [DF_FOSalesOrderStatus_S4Future08] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future09]        INT           CONSTRAINT [DF_FOSalesOrderStatus_S4Future09] DEFAULT ((0)) NOT NULL,
+    [S4Future10]        INT           CONSTRAINT [DF_FOSalesOrderStatus_S4Future10] DEFAULT ((0)) NOT NULL,
+    [S4Future11]        CHAR (10)     CONSTRAINT [DF_FOSalesOrderStatus_S4Future11] DEFAULT (' ') NOT NULL,
+    [S4Future12]        CHAR (10)     CONSTRAINT [DF_FOSalesOrderStatus_S4Future12] DEFAULT (' ') NOT NULL,
+    [SOTypeID]          CHAR (4)      CONSTRAINT [DF_FOSalesOrderStatus_SOTypeID] DEFAULT (' ') NOT NULL,
+    [Status]            CHAR (1)      CONSTRAINT [DF_FOSalesOrderStatus_Status] DEFAULT (' ') NOT NULL,
+    [SubscriberOrderID] CHAR (50)     CONSTRAINT [DF_FOSalesOrderStatus_SubscriberOrderID] DEFAULT (' ') NOT NULL,
+    [tstamp]            ROWVERSION    NOT NULL,
+    CONSTRAINT [FOSalesOrderStatus0] PRIMARY KEY CLUSTERED ([SubscriberOrderID] ASC) WITH (FILLFACTOR = 90)
+);
+

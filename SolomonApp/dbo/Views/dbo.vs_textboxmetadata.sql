@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_textboxmetadata AS SELECT * FROM SolomonSystem..textboxmetadata

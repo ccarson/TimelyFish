@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\MMackey] FOR LOGIN [SE\MMackey];
+

@@ -1,0 +1,42 @@
+﻿
+CREATE VIEW [QQ_allocgrp]
+AS
+SELECT     G.GrpId AS [Group ID], G.CpnyID AS [Company ID], G.Descr AS Description, G.AllocMthd AS [Allocation Method], 
+                      G.StartPeriod, G.EndPeriod, G.Status, G.LedgerID, G.TranLedgerID AS [Destination Ledger ID], 
+                      S.Acct AS [Source Account], S.Sub AS [Source Subaccount], S.CpnyID AS [Source Company ID], S.Lmt AS [Limit Percent], 
+                      S.LmtAmt AS [Limit Amount], D.Acct AS [Destination Account], D.Sub AS [Destination Subaccount], 
+                      D.CpnyID AS [Destination Company ID], CONVERT(DATE,G.Crtd_DateTime) AS [Group Create Date], G.Crtd_Prog AS [Group Create Program], 
+                      G.Crtd_User AS [Group Create User], G.DestFactTot AS [Total of Destination Factors], CONVERT(DATE,G.LastRvsn) AS [Last Revision], 
+                      CONVERT(DATE,G.LUpd_DateTime) AS [Group Last Update Date], G.LUpd_Prog AS [Group Last Update Program], 
+                      G.LUpd_User AS [Group Last Update User], G.NoteID AS [Group Note ID], G.PoolSequence, 
+                      G.S4Future01 AS [Group S4Future01], G.S4Future02 AS [Group S4Future02], G.S4Future03 AS [Group S4Future03], 
+                      G.S4Future04 AS [Group S4Future04], G.S4Future05 AS [Group S4Future05], G.S4Future06 AS [Group S4Future06], 
+                      CONVERT(DATE,G.S4Future07) AS [Group S4Future07], CONVERT(DATE,G.S4Future08) AS [Group S4Future08], G.S4Future09 AS [Group S4Future09], 
+                      G.S4Future10 AS [Group S4Future10], G.S4Future11 AS [Group S4Future11], G.S4Future12 AS [Group S4Future12], 
+                      G.UseBasisAcct, G.User1 AS [Group User1], G.User2 AS [Group User2], G.User3 AS [Group User3], 
+                      G.User4 AS [Group User4], G.User5 AS [Group User5], G.User6 AS [Group User6], CONVERT(DATE,G.User7) AS [Group User7], 
+                      CONVERT(DATE,G.User8) AS [Group User8], S.ContraAcct AS [Source Contra Account], S.ContraSub AS [Source Contra Subaccount], 
+                      CONVERT(DATE,S.Crtd_DateTime) AS [Source Create Date], S.Crtd_Prog AS [Source Create Program], S.Crtd_User AS [Source Create User], 
+                      S.LmtByPer AS [Percent Limit Type], CONVERT(DATE,S.LUpd_DateTime) AS [Source Last Update Date], S.LUpd_Prog AS [Source Last Update Program], 
+                      S.LUpd_User AS [Source Last Update User], S.NoteID AS [Source Note ID], S.S4Future01 AS [Source S4Future01], 
+                      S.S4Future02 AS [Source S4Future02], S.S4Future03 AS [Source S4Future03], S.S4Future04 AS [Source S4Future04], 
+                      S.S4Future05 AS [Source S4Future05], S.S4Future06 AS [Source S4Future06], CONVERT(DATE,S.S4Future07) AS [Source S4Future07], 
+                      CONVERT(DATE,S.S4Future08) AS [Source S4Future08], S.S4Future09 AS [Source S4Future09], S.S4Future10 AS [Source S4Future10], 
+                      S.S4Future11 AS [Source S4Future11], S.S4Future12 AS [Source S4Future12], S.User1 AS [Source User1], 
+                      S.User2 AS [Source User2], S.User3 AS [Source User3], S.User4 AS [Source User4], S.User5 AS [Source User5], 
+                      S.User6 AS [Source User6], CONVERT(DATE,S.User7) AS [Source User7], CONVERT(DATE,S.User8) AS [Source User8], 
+                      D.AllocDest AS [Destination FactorPercent], D.BasisAcct AS [Destination Basis Account], 
+                      D.BasisCpnyID AS [Destination Basis Company ID], D.BasisSub AS [Destination Basis Subaccount], 
+                      CONVERT(DATE,D.Crtd_DateTime) AS [Destination Create Date], D.Crtd_Prog AS [Destination Create Program], 
+                      D.Crtd_User AS [Destination Create User], D.DestFact AS [Destination FactorPercent for Subaccounts], 
+                      CONVERT(DATE,D.LUpd_DateTime) AS [Last Update Date], D.LUpd_Prog AS [Last Update Program], D.LUpd_User AS [Last Update User], 
+                      D.NoteID AS [Destination Note ID], D.S4Future01 AS [Destination S4Future01], D.S4Future02 AS [Destination S4Future02], 
+                      D.S4Future03 AS [Destination S4Future03], D.S4Future04 AS [Destination S4Future04], D.S4Future05 AS [Destination S4Future05], 
+                      D.S4Future06 AS [Destination S4Future06], CONVERT(DATE,D.S4Future07) AS [Destination S4Future07], CONVERT(DATE,D.S4Future08) AS [Destination S4Future08], 
+                      D.S4Future09 AS [Destination S4Future09], D.S4Future10 AS [Destination S4Future10], D.S4Future11 AS [Destination S4Future11], 
+                      D.S4Future12 AS [Destination S4Future12], D.User1 AS [Destination User1], D.User2 AS [Destination User2], 
+                      D.User3 AS [Destination User3], D.User4 AS [Destination User4], D.User5 AS [Destination User5], 
+                      D.User6 AS [Destination User6], CONVERT(DATE,D.User7) AS [Destination User7], CONVERT(DATE,D.User8) AS [Destination User8]
+FROM	AllocGrp G 
+			INNER JOIN AllocSrc S with (nolock) ON G.GrpId = S.GrpId 
+			INNER JOIN AllocDest D with (nolock) ON G.GrpId = D.GrpId

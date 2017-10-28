@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfwindowsterminalserver_l AS SELECT * FROM SolomonSystem..mbfwindowsterminalserver_l

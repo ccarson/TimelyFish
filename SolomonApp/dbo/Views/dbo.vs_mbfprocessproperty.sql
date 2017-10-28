@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfprocessproperty AS SELECT * FROM SolomonSystem..mbfprocessproperty

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[XF Trace] (
+    [RowNumber]       INT            IDENTITY (0, 1) NOT NULL,
+    [EventClass]      INT            NULL,
+    [EventSequence]   BIGINT         NULL,
+    [TextData]        NTEXT          NULL,
+    [ApplicationName] NVARCHAR (128) NULL,
+    [LoginName]       NVARCHAR (128) NULL,
+    [DatabaseName]    NVARCHAR (128) NULL,
+    [DatabaseID]      INT            NULL,
+    [ClientProcessID] INT            NULL,
+    [HostName]        NVARCHAR (128) NULL,
+    [ServerName]      NVARCHAR (128) NULL,
+    [BinaryData]      IMAGE          NULL,
+    [SPID]            INT            NULL,
+    [StartTime]       DATETIME       NULL,
+    [EndTime]         DATETIME       NULL,
+    [IsSystem]        INT            NULL,
+    [NTDomainName]    NVARCHAR (128) NULL,
+    [NTUserName]      NVARCHAR (128) NULL,
+    [Error]           INT            NULL,
+    [RowCounts]       BIGINT         NULL,
+    [RequestID]       INT            NULL,
+    [EventSubClass]   INT            NULL,
+    [Handle]          INT            NULL,
+    PRIMARY KEY CLUSTERED ([RowNumber] ASC)
+);
+

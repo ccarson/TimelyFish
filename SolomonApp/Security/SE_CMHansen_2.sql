@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\CMHansen]
+    AUTHORIZATION [SE\CMHansen];
+

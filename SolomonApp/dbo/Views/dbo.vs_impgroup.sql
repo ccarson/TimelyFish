@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_impgroup AS SELECT * FROM SolomonSystem..impgroup

@@ -1,0 +1,1544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SowData</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ac852d71-b92f-467d-9d92-d8c821f4f3c8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SowData</RootNamespace>
+    <AssemblyName>SowData</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNulls>False</AnsiNulls>
+    <QuotedIdentifier>False</QuotedIdentifier>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>120</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiPadding>False</AnsiPadding>
+    <AnsiWarnings>False</AnsiWarnings>
+    <ArithAbort>False</ArithAbort>
+    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings>71558</SuppressTSqlWarnings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="ROYALTY\" />
+    <Folder Include="ROYALTY\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="ObsoleteScripts" />
+    <Folder Include="ObsoleteScripts\InvalidReferences" />
+    <Folder Include="ObsoleteScripts\MarkedForDeletion" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SowData_Common\SowData_Common.sqlproj">
+      <Name>SowData_Common</Name>
+      <Project>{84658cce-9451-4139-bcca-0a0c7865f759}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+    <ProjectReference Include="..\PigChamp_Common\PigChamp_Common.sqlproj">
+      <Name>PigChamp_Common</Name>
+      <Project>{58e557ca-5e92-4b48-a592-b3da323baafc}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>PigChamp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\CentralData_Common\CentralData_Common.sqlproj">
+      <Name>CentralData_Common</Name>
+      <Project>{3e3220cc-f80b-4b5f-a190-21651c9d319f}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CentralData</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\SolomonApp_Common\SolomonApp_Common.sqlproj">
+      <Name>SolomonApp_Common</Name>
+      <Project>{0f63a210-2e31-4e64-83d7-4416ba7dbd9b}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>SolomonApp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\CFApp_Common\CFApp_Common.sqlproj">
+      <Name>CFApp_Common</Name>
+      <Project>{ab7e461e-9e1f-4c38-8431-b56939ac26f5}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CFApp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\dbo.Replication_Validation.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowFarrowEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterBreedingDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowPregExamEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterBreedAddDetWk.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterBreed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.RemovalReason.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowGroupEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterBreedAddWk.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowLocationEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cft_nightly_sowdays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.C53HistSowTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterBreedAdditions.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.EssbaseUploadTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowOrigin.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowPigletDeathEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterBreedingDetailAdditions.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FormSerialIDTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowBreedDaysFromBirth.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowFosterEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowNurseEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.LitterGenetics.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowWeanEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.EssbaseUploadTemp_WO.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpBreedingStockAdditionDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowFalloutEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCGroup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowNonServiceEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FarmSetup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.LitterData.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpBreedingStockRemovalDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MatingPattern.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.TempWeekOfDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpBreedingTransactionDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterFarrowDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpPigletMortalityDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadPigletMortality.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PigChampExtractSetup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterWeanDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FormExportHeader.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpPigMortCrossFosterDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FAX_INFORMATION.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpBoarAdditionDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftBarnTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FarmBreeder.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadBoarAddition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftBinReadingTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftBinTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftContactTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowMultiplierFarm.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftFeedOrderTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowCardDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftPMGradeQtyTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowBreeder.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftPMTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.cftPMTranspRecordTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.CSIDTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadFormHeader.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.GiltTagUsage.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PigChampDestination.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCEventUpload.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowRemoveEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.GeneticComposition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.RefaxAudit.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.Breeder.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadBreedStockAddition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.Genetics.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadBreedStockRemoval.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.WeekDefinitionTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadBreedTransaction.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterFarrow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_Sire.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_Dam.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_Line.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_WeekOfDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_SowMatingAll.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowMatingEventTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_SowMating.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowParityTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GGGPDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowTransfer.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GGGP.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.DayDefinitionTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GGPDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GGP.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowIDList.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GPDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_GP.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.BrianMatt.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpPG600TrialDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_PDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_P.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadPG600Trial.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="ROYALTY\Tables\ROYALTY.Royalty_EnteredSow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterWean.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadPigMortCrossFoster.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgAudit.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgMasterBreeding.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgMasterFarrow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgMasterWean.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PreSolomonSowFeed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.EssbaseRemovalUploadTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgPigMortCrossFoster.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.TeleformMerge.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.GeneticAliasDefault.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpTransferDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowFosterEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgBoarAddition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadMasterBreedAdd.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgBreedingStockAddition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCUploadTransfer.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.ExpMasterBreedAddDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgBreedingStockRemoval.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.MrgBreedingTransaction.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCGroupInventoryEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.DayDefinition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCGroupEndEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.EssbaseUploadFeed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.FarmSvcMgrAssignment.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowSvcMgr.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCGroupGeneralEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.GestationTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.SowGenetics.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.Sow_bkup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCNetFosterPWM.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.EssbaseGeneticUploadTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\dbo.PCEventSynonym.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_NaturalLitterWeanAge.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigletFarrowInventory.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_NaturalLitterSowQty.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.PCUploadHeaderwithFormName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPCUploadHeaderwithFormName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPigletFarrowInventory.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM_PigsBornAliveTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.WeekDefinition.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM_PigsDeathTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.tempGestSue.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vLevel1Litter.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.CFV_Genetics.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.CFV_SowBreeder.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.CFV_SowOrigin.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.CFV_FarmSetup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_GestationDayDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_ServiceToFarrowBaseDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vLevel1Litter_115.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vLevel1LitterUnknown.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM_PigsNursedOnTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowGeneticeL2.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowGeneticeL3.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_IsoDays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vLactationDayDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM_PigsWeanedTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM_CalcDeath.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_CalcDeath.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowFeed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vRefaxAuditwithRepName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vDistinctPCUploadAll.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteDivDept.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowsFarrowed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vMrgAudit.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_RepeatServices.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowFirstServices.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowFarmBinForEachWeek.sql">
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_GiltFirstServices.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_EndingFemaleInventoryBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsBornAlive.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_EndingFemaleInventory.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowSvcMgrWithName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_StillBornPigs.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigletDeaths.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_MummifiedPigsBorn.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_ServiceToFarrowBaseDetail_115.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_ServiceToFarrowDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_ServedToFarrow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_Aborts.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_TotalSowDaysBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_TotalSowDays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowAndGiltDeathsBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowAndGiltDeaths.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_WeanedForFarrowedAndWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LastWeaningsDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_GestationDayDetail_115.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowFeedInventoryCalcs.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LastWeaningsBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_IsoDaysDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LastWeanDatesQty.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowWeanAndNurseOffDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowWeanAndNurseOffBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowGroupEventTempNext.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsWeanedWithLastWeanDate.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vFirstGroupEvent.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_NumberOfLittersWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_FemalesEnteredBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_FemalesEntered.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowsAndGiltsCulledBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigGradeQtys.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowsAndGiltsCulled.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowsAndGiltsTransferredBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vRemovalCube_Removals.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowsAndGiltsTransferred.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LittersWeanedDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LittersWeanedWithNurseOffDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_TransportPigQtys.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LittersWeanedWithNurseOffBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsBornOfLittersWeanedBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsBornOfLittersWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigDeathsOfLittersWeanedBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigDeathsOfLittersWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesWithFalloutDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesFalloutBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesFallout0To28.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vTransportDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesFallout29To37.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowFeedDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesFallout38To56.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vTransportGradeDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_SowServicesFallout57To126.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vWeanPigScheduleDetail_remove.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsBornforFarrowedAndWeanedBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowFarmBin.sql">
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_PigsBornforFarrowedAndWeaned.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vBinReadingDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_WeanedForFarrowedAndWeanedBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vFarmBinForEachWeekWithReading.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vEssbaseFiscalPeriodRollup.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_GestationDays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LactationDayDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_LactationDays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_UnbredGiltDaysBase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_UnbredGiltDays.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.tempGestSue_115.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_FirstWeanDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPM2_NaturalLitterWeanDetail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\db_executor.sql" />
+    <Build Include="Security\db_sp_exec.sql" />
+    <Build Include="Security\BFGROUP.sql" />
+    <Build Include="Security\PRD.sql" />
+    <Build Include="Security\SE_PRD.sql" />
+    <Build Include="Security\SQLReader.sql" />
+    <Build Include="Security\SQLReader_1.sql" />
+    <Build Include="Security\SE_Teleform.sql" />
+    <Build Include="Security\SE_Teleform_1.sql" />
+    <Build Include="Security\SE_HealthAssurance.sql" />
+    <Build Include="Security\SE_HealthAssurance_1.sql" />
+    <Build Include="Security\EarthDataReader.sql" />
+    <Build Include="Security\ReadOnly.sql" />
+    <Build Include="Security\kronread.sql" />
+    <Build Include="Security\kronread_1.sql" />
+    <Build Include="Security\se_db-prod-SowData-w.sql" />
+    <Build Include="Security\SE_DB-prod-SowData-w_1.sql" />
+    <Build Include="Security\se_itdevelopers.sql" />
+    <Build Include="Security\SE_ITDevelopers_1.sql" />
+    <Build Include="Security\SQLEssbaseSproc.sql" />
+    <Build Include="Security\SQLEssbaseSproc_1.sql" />
+    <Build Include="Security\master.sql" />
+    <Build Include="Security\master_1.sql" />
+    <Build Include="Security\SE_DB-prod-SowData-r.sql" />
+    <Build Include="Security\SE_DB-prod-SowData-r_1.sql" />
+    <Build Include="Security\se_analysts.sql" />
+    <Build Include="Security\SE_Analysts_1.sql" />
+    <Build Include="Security\SKretsch.sql" />
+    <Build Include="Security\SE_SKretsch.sql" />
+    <Build Include="Security\CorpReports.sql" />
+    <Build Include="Security\CorpReports_1.sql" />
+    <Build Include="Security\SE_JMaas.sql" />
+    <Build Include="Security\SE_ssis_datareader.sql" />
+    <Build Include="Security\SE_SSIS_DataReader_1.sql" />
+    <Build Include="Security\SE_ssis_datawriter.sql" />
+    <Build Include="Security\SE_ssis_datawriter_1.sql" />
+    <Build Include="Security\MyFaxService.sql" />
+    <Build Include="Security\SE_MyFaxService.sql" />
+    <Build Include="Security\TimApp.sql" />
+    <Build Include="Security\TimApp_1.sql" />
+    <Build Include="Security\SE_DB-prod-PigChampCare-r.sql" />
+    <Build Include="Security\SE_DB-prod-PigChampCare-r_1.sql" />
+    <Build Include="Security\SSIS_operator.sql" />
+    <Build Include="Security\SSIS_operator_1.sql" />
+    <Build Include="Security\SE_SQLRepl.sql" />
+    <Build Include="Security\SE_SQLRepl_1.sql" />
+    <Build Include="Security\SE_veeambackup.sql" />
+    <Build Include="Security\SE_veeambackup_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\dbo.ReturnHighValue.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.ConvertDateTo1000Day.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSowFarmIDFromContactID.sql">
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSowSvcMgr.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetFiscYr.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pBuildEssbaseSowsFarrowed.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.FAX_UPDATE.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.FAX_INSERT.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.FAX_SELECT_BY_ID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.FARM_SELECT_BY_PHONE.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pEssbaseSolomonTemp.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pFaxMailSorter_ProcessEmail.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfs_FARM_SELECT_ALL_ID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfs_FARM_SELECT_BY_PHONE.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pBuildEssbaseUploadTemp55.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pCreateMergeTable.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfs_WEEK_DEFINITION_SELECT_ALL_PIC_YEAR.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pBuildEssbaseUploadTemp56.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfs_WEEK_DEFINITION_SELECT_ALL_PIC_WEEK.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pBuildEssbaseUploadTemp60.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\master_2.sql" />
+    <Build Include="Security\ROYALTY.sql" />
+    <Build Include="Security\Permissions.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.cfv_PercentSowGenetic.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.GetSowParity.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SiteWeeklyAbortions.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_ClearSowTablesSpecificFarmSow.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_Sow.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowFalloutEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowFarrowEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowGroupEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowLocationEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowMatingEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowNonServiceEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowNurseEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowParity.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowPigletDeathEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowPregExamEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowRemoveEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.SSIS_Ensure_SowWeanEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.TempSowData.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vCommercialFarmEntry.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vCommercialFarmMating.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vCommercialFarmWean.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vFirstOriginGroupEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.View1.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.View2.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLastWeaning.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLastWeaningsDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel2Litter.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel2Litter_115.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel2LitterUnknown.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel3Litter.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel3Litter_ALL.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel3LitterUnknown.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vLevel3LitterUnknown_ALL.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vMultiplierMatingEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vMultiplierMatingEvent_115.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_Aborts.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ActiveSowsByWeekDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_AdjServedToFarrow.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_AdjServiceToFarrowBaseDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_AdjServiceToFarrowBaseDetail_115.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_AdjServiceToFarrowDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_CalcPigsDeathTemp.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_EndingFemaleInventory.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_EndingFemaleInventoryBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_EndingFemaleInventoryBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_EndingFemaleInventoryBase2 - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_EndingFemaleInventoryBase2.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_FarrowWithService.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_FemalesEntered.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_FemalesEnteredBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_FemalesEnteredBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_GiltFirstServices - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_GiltFirstServices.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LastWeanDatesQty.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LastWeaningsBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LastWeaningsDetail - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LastWeaningsDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LittersWeanedDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LittersWeanedWithNurseOffBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LittersWeanedWithNurseOffDetail - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_LittersWeanedWithNurseOffDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_MummifiedPigsBorn.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_NetFosterDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_NumberOfLittersWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigDeathsOfLittersWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigDeathsOfLittersWeanedBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigletDeaths.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornAlive.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornforFarrowedAndWeaned - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornforFarrowedAndWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornforFarrowedAndWeanedBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornOfLittersWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsBornOfLittersWeanedBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsWeaned - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsWeanedWithLastWeanDate.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsWeanLastWeanBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_PigsWeanLastWeanBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_RepeatServices - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_RepeatServices.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServedToFarrow.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServiceToFarrowBaseDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServiceToFarrowBaseDetail_119.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServiceToFarrowBaseDetail2.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServiceToFarrowBaseDetail2_119.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_ServiceToFarrowDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowAndGiltDeaths.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowAndGiltDeathsBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowAndGiltDeathsBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowFirstServices - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowFirstServices.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsCulled.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsCulledBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsCulledBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsTransferred.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsTransferredBase - Copy.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsAndGiltsTransferredBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowsFarrowed.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowWeanAndNurseOffBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_SowWeanAndNurseOffDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_StillBornPigs.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_TotalSowDays.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_TotalSowDaysBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_UnbredGiltDays.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_UnbredGiltDaysBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_WeanedForFarrowedAndWeaned.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM_WeanedForFarrowedAndWeanedBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_AdjServedToFarrow.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_AdjServiceToFarrowBaseDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_AdjServiceToFarrowBaseDetail_115.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_AdjServiceToFarrowDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_TransferDaysQty.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vPM2_WeanedPigScheduledQty.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowBirthDateCalc.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowBirthDateCalc1.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowBirthDateCalc2.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowBirthDateCalcTemp.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowBreedResultByObserver.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowEventHistory.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowInventoryEvent.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowMatingCode.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowMatingCodeFromOrigin.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowMatings.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowParityByWeek.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesFallout0To28.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesFallout29To37.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesFallout38To56.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesFallout57To126.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesFalloutBase.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowServicesWithFalloutDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowsParityByWeek.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowTransferInfo.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vSowTransferInfoPartial.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vUnknownMatingPattern.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vUnknownSemen.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.vUnknownSowGenetics.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbaseNaturalLitterWeanAge_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbasePigsBornforFarrowedAndWeaned_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbaseWeanedPigDestQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbaseWeanedPigRecountQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbaseWeanedPigScheduledQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildEssbaseWeanedPigSourceQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_BuildWeekDefinitionTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfp_EssbaseEventTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfs_ESSBASE_SELECT_REMOVAL_UPLOAD_TEMP_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.cfs_ESSBASE_SELECT_UPLOAD_TEMP_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseAborts_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseAcctLocations_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseAdjServedToFarrow_all_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseAdjServedToFarrow_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseEndingFemaleInventory_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseFeedBegInv_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseFeedDelv_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseFeedEndInv_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseFemalesEntered_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseGestationDays_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseGiltFirstServices_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseGradeQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseIsoDays_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseLactationDays_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseLastWeanDatesQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseMummifiedPigsBorn_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseNaturalLitterSowQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseNaturalLitterWeanAge_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseNaturalLitterWeanAge_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseNoLittersWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigDeathsOfLittersWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigletDeaths_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigletDeaths_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsBornAlive_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsBornforFarrowedAndWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsBornforFarrowedAndWeaned_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsBornOfLittersWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbasePigsWeanedDate_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseRemovalUploadTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseRepeatServices_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseServedToFarrow_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowAndGiltDeaths_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowFeed_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowFirstServices_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowsAndGiltsCulled_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowsAndGiltsTransferred_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowServicesFallout0To28_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowServicesFallout29To37_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowServicesFallout38To56_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseSowServicesFallout57To126_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseStillBornPigs_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseTotalSowDays_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseTransferDaysQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUnbredGiltDays_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp_Delete_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp2_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp21_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp22_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp23_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp24_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp25_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp26_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp27_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp28_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp29_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp30_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp31_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp32_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp33_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp34_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp35_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp36_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp37_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp38_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp39_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp40_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp41_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp42_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp43_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp44_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp45_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp46_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp47_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp48_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp49_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp50_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp51_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp52_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp53_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp54_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp57_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp58_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp59_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp61_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp62_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp63_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp64_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTemp65_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseUploadTempSue_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedForFarrowedAndWeaned_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigDestQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigDestQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigRecountQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigRecountQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigScheduledQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigScheduledQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigSourceQty_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildEssbaseWeanedPigSourceQty_WO_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pBuildWeekDefinitionTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pClearGroupTablesSpecificFarm_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pClearSowTablesSpecificFarm_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pClearUploadTablesSpecificFarm_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pEssbaseSolomonBinRTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pEssbaseSolomonFeedTemp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pFarmBulkInsert_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pFarmBulkInsert_temp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pFarmGroupBulkInsert_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pGetPreviousWeans_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pLoadSowTempTables_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pLoadSowTempTables2_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pSowEventHistory_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pSowWeanQty_ContactID_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pTruncateSowTables_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pTruncateSowTables_temp_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pUpdateSowEntryDate_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pUpdateSowRemovalDate_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pUploadCommercialFarmMating_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.pUploadCommercialFarmWean_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.Sow_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowFalloutEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowFarrowEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowGroupEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowLocationEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowMatingEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowNonServiceEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowNurseEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowParity_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowPigletDeathEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowPregExamEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowRemoveEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.SowWeanEvent_remove.sql" />
+    <None Include="ObsoleteScripts\MarkedForDeletion\dbo.WeekDefinition_20150113.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CentralData">
+      <DefaultValue>CentralData</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="CFApp">
+      <DefaultValue>CFApp</DefaultValue>
+      <Value>$(SqlCmdVar__4)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="PigChamp">
+      <DefaultValue>PigChamp</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="SolomonApp">
+      <DefaultValue>SolomonApp</DefaultValue>
+      <Value>$(SqlCmdVar__3)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
+  </ItemGroup>
+</Project>

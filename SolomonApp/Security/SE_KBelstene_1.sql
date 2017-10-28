@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\KBelstene]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[cft_ESSBASE_CLOSEOUT_TAILENDER_XREF] (
+    [TaskID] CHAR (10)  NOT NULL,
+    [TE_Qty] INT        NOT NULL,
+    [TE_Wt]  FLOAT (53) NOT NULL
+);
+

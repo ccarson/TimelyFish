@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\AHerzog]
+    AUTHORIZATION [SE\AHerzog];
+

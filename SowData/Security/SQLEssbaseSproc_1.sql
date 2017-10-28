@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SQLEssbaseSproc]
+    WITH PASSWORD = N'zej|x6phk>tMohlk|tvud,a1msFT7_&#$!~<mmqu9oq+prKj', SID = 0xA261ADD8B2ABBC49B99EED6647BCE55F, DEFAULT_DATABASE = [SowData], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

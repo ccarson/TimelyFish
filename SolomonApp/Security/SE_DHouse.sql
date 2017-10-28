@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\DHouse] FOR LOGIN [SE\DHouse]
+    WITH DEFAULT_SCHEMA = [SE\DHouse];
+

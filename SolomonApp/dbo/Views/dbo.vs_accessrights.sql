@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_accessrights AS SELECT * FROM SolomonSystem..accessrights

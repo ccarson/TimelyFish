@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_appsrvrequest AS SELECT * FROM SolomonSystem..appsrvrequest

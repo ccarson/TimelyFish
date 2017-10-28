@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\MBurkett] FOR LOGIN [SE\MBurkett]
+    WITH DEFAULT_SCHEMA = [SE\MBurkett];
+

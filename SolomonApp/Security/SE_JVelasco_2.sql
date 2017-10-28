@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JVelasco]
+    AUTHORIZATION [SE\JVelasco];
+

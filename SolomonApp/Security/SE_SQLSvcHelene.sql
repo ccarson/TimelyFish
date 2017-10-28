@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\SQLSvcHelene]
+    WITH DEFAULT_SCHEMA = [SE\SQLSvcHelene];
+

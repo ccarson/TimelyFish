@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[FuelSurcharge] (
+    [ID]   INT   IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [Low]  MONEY NULL,
+    [High] MONEY NULL,
+    [Rate] MONEY NULL,
+    CONSTRAINT [PK_FuelSurcharge] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

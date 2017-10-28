@@ -1,0 +1,22 @@
+﻿ CREATE PROCEDURE
+	smEmp_All
+		@parm1 varchar(10)
+AS
+	SELECT
+		*
+	FROM
+		smEmp (NOLOCK)
+	WHERE
+		EmployeeId LIKE @parm1
+	ORDER BY
+		EmployeeId
+
+-- Copyright 1998, 1999 by Solomon Software, Inc. All rights reserved.
+
+
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[smEmp_All] TO [MSDSL]
+    AS [dbo];
+

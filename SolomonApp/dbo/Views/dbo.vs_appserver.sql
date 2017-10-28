@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_appserver AS SELECT * FROM SolomonSystem..appserver

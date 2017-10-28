@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [TimApp]
+    WITH PASSWORD = N'ejb|xphktohlk|t=uzdmua7%msFT7_&#$!~<m Dmqufoq:pr', SID = 0xEA43603B3C04274EBB3499E192AE845E, DEFAULT_DATABASE = [SowData], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

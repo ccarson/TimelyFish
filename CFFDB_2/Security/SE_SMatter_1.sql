@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\SMatter]
+    AUTHORIZATION [SE\SMatter];
+

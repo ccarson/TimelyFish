@@ -1,0 +1,9 @@
+﻿ CREATE PROCEDURE ED850Lsss_EdiPoId
+ @parm1 varchar( 10 )
+AS
+ SELECT *
+ FROM ED850Lsss
+ WHERE EdiPoId LIKE @parm1
+ ORDER BY EdiPoId
+
+

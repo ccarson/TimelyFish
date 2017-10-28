@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\KBrincks]
+    AUTHORIZATION [SE\KBrincks];
+

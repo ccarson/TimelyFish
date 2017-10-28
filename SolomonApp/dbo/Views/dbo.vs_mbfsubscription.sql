@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfsubscription AS SELECT * FROM SolomonSystem..mbfsubscription

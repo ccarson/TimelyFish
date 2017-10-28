@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfsmartlistaction AS SELECT * FROM SolomonSystem..mbfsmartlistaction

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\N28user]
+    AUTHORIZATION [SE\N28user];
+

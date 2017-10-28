@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfuserpreferencesetting AS SELECT * FROM SolomonSystem..mbfuserpreferencesetting

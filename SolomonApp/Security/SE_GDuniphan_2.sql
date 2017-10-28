@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\GDuniphan]
+    AUTHORIZATION [SE\GDuniphan];
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_vtsample_customers AS SELECT * FROM SolomonSystem..vtsample_customers

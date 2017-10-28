@@ -1,0 +1,3 @@
+﻿CREATE USER [ReadOnly] WITHOUT LOGIN
+    WITH DEFAULT_SCHEMA = [dbo];
+

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [se\SLozinski]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

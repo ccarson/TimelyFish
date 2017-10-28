@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[cft_eval_dw] (
+    [Eval_id]         INT           NOT NULL,
+    [SiteContactID]   CHAR (6)      NOT NULL,
+    [SvcMgrContactID] CHAR (6)      NULL,
+    [EntryDate]       DATETIME      NOT NULL,
+    [EntryUserID]     VARCHAR (30)  NOT NULL,
+    [Question_id]     INT           NOT NULL,
+    [Answer]          BIT           NOT NULL,
+    [QuestionNbr]     INT           NOT NULL,
+    [status]          VARCHAR (1)   NOT NULL,
+    [Area]            VARCHAR (30)  NOT NULL,
+    [Definition]      VARCHAR (255) NOT NULL,
+    [DayDate]         SMALLDATETIME NOT NULL,
+    [DayName]         VARCHAR (9)   NOT NULL,
+    [PICCycle]        CHAR (2)      NOT NULL,
+    [PICDayNbr]       CHAR (3)      NOT NULL,
+    [WeekOfDate]      SMALLDATETIME NOT NULL,
+    [FiscalPeriod]    SMALLINT      NOT NULL,
+    [FiscalYear]      SMALLINT      NOT NULL,
+    [PICWeek]         SMALLINT      NOT NULL,
+    [PICYear]         SMALLINT      NOT NULL,
+    [PICYear_Week]    VARCHAR (6)   NOT NULL,
+    [WeekEndDate]     SMALLDATETIME NOT NULL,
+    [PICQuarter]      VARCHAR (9)   NOT NULL,
+    [FYPeriod]        VARCHAR (7)   NOT NULL,
+    CONSTRAINT [pk_Eval_DW] PRIMARY KEY CLUSTERED ([EntryDate] ASC, [SiteContactID] ASC, [Eval_id] ASC, [Question_id] ASC, [Answer] ASC) WITH (FILLFACTOR = 100)
+);
+

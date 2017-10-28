@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\RWittman]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

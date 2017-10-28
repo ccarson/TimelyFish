@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfworkfloweventlog AS SELECT * FROM SolomonSystem..mbfworkfloweventlog

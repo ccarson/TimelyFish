@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rc_reportseries AS SELECT * FROM SolomonSystem..rc_reportseries

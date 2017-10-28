@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[PJUTLROL] (
+    [adjustments]      FLOAT (53)    NOT NULL,
+    [cost]             FLOAT (53)    NOT NULL,
+    [crtd_datetime]    SMALLDATETIME NOT NULL,
+    [crtd_prog]        CHAR (8)      NOT NULL,
+    [crtd_user]        CHAR (10)     NOT NULL,
+    [data1]            CHAR (16)     NOT NULL,
+    [data2]            FLOAT (53)    NOT NULL,
+    [data3]            FLOAT (53)    NOT NULL,
+    [data4]            FLOAT (53)    NOT NULL,
+    [data5]            FLOAT (53)    NOT NULL,
+    [employee]         CHAR (10)     NOT NULL,
+    [fiscalno]         CHAR (6)      NOT NULL,
+    [lupd_datetime]    SMALLDATETIME NOT NULL,
+    [lupd_prog]        CHAR (8)      NOT NULL,
+    [lupd_user]        CHAR (10)     NOT NULL,
+    [rate]             FLOAT (53)    NOT NULL,
+    [revenue]          FLOAT (53)    NOT NULL,
+    [units]            FLOAT (53)    NOT NULL,
+    [user1]            CHAR (30)     NOT NULL,
+    [user2]            CHAR (30)     NOT NULL,
+    [user3]            FLOAT (53)    NOT NULL,
+    [user4]            FLOAT (53)    NOT NULL,
+    [utilization_type] CHAR (4)      NOT NULL,
+    [tstamp]           ROWVERSION    NOT NULL,
+    CONSTRAINT [pjutlrol0] PRIMARY KEY CLUSTERED ([employee] ASC, [fiscalno] ASC, [utilization_type] ASC) WITH (FILLFACTOR = 90)
+);
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_custfld AS SELECT * FROM SolomonSystem..custfld

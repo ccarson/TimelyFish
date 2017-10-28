@@ -1,0 +1,8 @@
+﻿CREATE TABLE [caredata].[WITHDRAWAL_PERIODS] (
+    [treatment_id] INT          NOT NULL,
+    [market_name]  VARCHAR (20) NOT NULL,
+    [withdrawal]   TINYINT      NULL,
+    CONSTRAINT [PK_WITHDRAWAL_PERIODS] PRIMARY KEY CLUSTERED ([treatment_id] ASC, [market_name] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_WITHDRAWAL_PERIODS_TREATMENTS_0] FOREIGN KEY ([treatment_id]) REFERENCES [caredata].[TREATMENTS] ([treatment_id]) ON DELETE CASCADE ON UPDATE CASCADE
+);
+

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\JForstner]
+    AUTHORIZATION [SE\JForstner];
+

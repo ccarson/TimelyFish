@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_checkboxmetadata AS SELECT * FROM SolomonSystem..checkboxmetadata

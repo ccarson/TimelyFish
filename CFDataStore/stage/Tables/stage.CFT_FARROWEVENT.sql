@@ -1,0 +1,24 @@
+﻿CREATE TABLE [stage].[CFT_FARROWEVENT] (
+    [ID]              NVARCHAR (36) NOT NULL,
+    [CREATE_DATE]     DATETIME      NOT NULL,
+    [LAST_UPDATE]     DATETIME      NOT NULL,
+    [CREATED_BY]      BIGINT        NOT NULL,
+    [LAST_UPDATED_BY] BIGINT        NOT NULL,
+    [DELETED_BY]      BIGINT        NOT NULL,
+    [PARITYEVENTID]   NVARCHAR (36) NULL,
+    [BORNALIVE]       INT           NULL,
+    [STILLBORN]       INT           NULL,
+    [MUMMY]           INT           NULL,
+    [FARROWDATE]      DATETIME      NULL,
+    [LOCATIONID]      NVARCHAR (36) NULL,
+    [PIGCHAMP_ID]     BIGINT        NULL,
+    [GESTATIONLENGTH] INT           NULL,
+    [FARROWTHDATE]    NVARCHAR (10) NULL,
+    [SYNCSTATUS]      NVARCHAR (20) NULL,
+    [MFSYNC]          NVARCHAR (1)  NULL,
+    [DataStoreID]     BIGINT        NULL,
+    CONSTRAINT [CFT_FARROWEVENT_PK] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+

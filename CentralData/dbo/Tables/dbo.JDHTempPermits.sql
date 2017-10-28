@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[JDHTempPermits] (
+    [Col001] VARCHAR (255) NULL,
+    [Col002] VARCHAR (255) NULL,
+    [Col003] VARCHAR (255) NULL,
+    [Col004] VARCHAR (255) NULL
+);
+

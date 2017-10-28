@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\GHoward] FOR LOGIN [SE\GHoward];
+

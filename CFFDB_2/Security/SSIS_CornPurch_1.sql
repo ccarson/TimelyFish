@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SSIS_CornPurch]
+    WITH PASSWORD = N'pqqhjkkj^@{jpP9c{ncuzhismsFT7_&#$!~<ysnVawdQh}zq', SID = 0xEC8733E05A17F14DBED2E17D02A8B244, DEFAULT_DATABASE = [CFApp_CornPurch], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

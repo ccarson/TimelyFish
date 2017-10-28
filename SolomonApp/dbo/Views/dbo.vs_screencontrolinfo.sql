@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_screencontrolinfo AS SELECT * FROM SolomonSystem..screencontrolinfo

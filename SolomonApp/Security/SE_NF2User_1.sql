@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\NF2User]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

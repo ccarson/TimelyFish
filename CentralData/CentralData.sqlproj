@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>CentralData</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{42d82a0d-14e5-4c80-90a4-7e553109f8fc}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>CentralData</RootNamespace>
+    <AssemblyName>CentralData</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNulls>False</AnsiNulls>
+    <QuotedIdentifier>False</QuotedIdentifier>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>120</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiPadding>False</AnsiPadding>
+    <AnsiWarnings>False</AnsiWarnings>
+    <ArithAbort>False</ArithAbort>
+    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <GenerateCreateScript>True</GenerateCreateScript>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings>71558</SuppressTSqlWarnings>
+    <OutputPath>.\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <OutputPath>bin\Test\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings>71558</SuppressTSqlWarnings>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="ObsoleteScripts" />
+    <Folder Include="ObsoleteScripts\InvalidReferences" />
+    <Folder Include="dbo\" />
+    <Folder Include="CFMobileFarms\" />
+    <Folder Include="CFMobileFarms\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="CFMobileFarms\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="PublishScripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.CF517p_PackerPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.CFP_Update_Phone_from_AD.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.cfv_kron01_contact_xref.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.GetMiles.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pAddLivestockTransfer.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507_BatNbr_RefNbr.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507AutoPigAcctBatch.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507AutoPigAcctRef.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507BarnPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507cftPigAcctSetup.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507ContactPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507GroupReq.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pcf507PigGradeCatTypePV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pcf507PigGradeSubTypePV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PigGroup.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PigGroupPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PigGroupRMPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PigMovementPV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PMGradeQty.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PMGradeQtyLKUP.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PMGrader.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pcf507PMGraderTypePV.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PMTranspRecord.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507PMTranspRef.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF507RoomReq.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pCF518OrderNbr.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pContinuousTestSiteList.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pDeleteDuplicateSiteTargetDateTests.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pGetRelatedMovements.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pGetTrailerCert.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pGetTrailerCertDetail.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pMarketDestinationTotalsReport.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pPostArriveTestSiteList.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pSourceBarnTotals.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pUpdatePostArriveMovements.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pUpdateRelatedMovements.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pUpdateValidTestCodeExisting.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.pWalkthoughTestSiteList.sql" />
+    <None Include="PublishScripts\CentralData.CFSE-SQL05T-DEV.publish.xml" />
+    <None Include="PublishScripts\CentralData.localdb.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CFApp">
+      <DefaultValue>CFApp</DefaultValue>
+      <Value>$(SqlCmdVar__6)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="CFFDB">
+      <DefaultValue>CFFDB</DefaultValue>
+      <Value>$(SqlCmdVar__5)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="SolomonApp">
+      <DefaultValue>SolomonApp</DefaultValue>
+      <Value>$(SqlCmdVar__4)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="CFMobileFarms\Tables\CFMobileFarms.__MigrationHistory.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vsSite.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteCapacity.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfv_grower_list.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vsBarn.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vScheduleShare.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vEmployeewithContactName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteInfo_Azure.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vActiveFinishSites.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vVets.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vContactAddressContacts.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vAdditionsForMilesMatrix.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vInternalTrucker.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPacker.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vMarketTrucker.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vTruckerTrailer.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vBarn.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vContactFax.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vContactMilesMatrix.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteFax.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteGPSCoordinates.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSitePhysicalAddressID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPackerPhysicalAddress.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSitetoPackerMileage.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteWithContactName.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSourceSites.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vTailEnder.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vBarnUnion.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPigMovementDestination.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vMarketDestination.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSitetoPackerMileageRates.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSitetoPackerMileageRates1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vContactPhysicalAddress.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSourceDestinationMilesMatrix.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vInternalContactFax.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vPigSupplier.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSowSites.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteManager.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vHealthServices.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vMainContactPhone.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vInternalTruckerHeader.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vDiagnosticLab.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vCompanySites.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfv_ContactComments.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfv_AGRONOMY_MANURE_APPLICATION_PLAN_SUMMARY.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSiteAddressFacilityType.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.CRMAccountView.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vSitesNoEmailNoFax.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfvSiteAddressPhoneSiteMgrType.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.vDisinctFacilityType.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="CFMobileFarms\Views\CFMobileFarms.LocationInfoes.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="CFMobileFarms\Views\CFMobileFarms.LocationComments.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="CFMobileFarms\Views\CFMobileFarms.LocationContacts.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="CFMobileFarms\Views\CFMobileFarms.SiteInfoes.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="CFMobileFarms\Views\CFMobileFarms.Contacts.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfv_DriverCompany1.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Views\dbo.cfv_SITE_MANAGEMENT_INFO.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\db_sp_exec.sql" />
+    <Build Include="Security\CentralDataApp.sql" />
+    <Build Include="Security\CentralDataApp_1.sql" />
+    <Build Include="Security\kronread.sql" />
+    <Build Include="Security\kronread_1.sql" />
+    <Build Include="Security\SSIS_operator.sql" />
+    <Build Include="Security\SSIS_operator_1.sql" />
+    <Build Include="Security\master.sql" />
+    <Build Include="Security\master_1.sql" />
+    <Build Include="Security\SOLOMON.sql" />
+    <Build Include="Security\SE_SOLOMON.sql" />
+    <Build Include="Security\se_ITAdmins.sql" />
+    <Build Include="Security\se_ITAdmins_1.sql" />
+    <Build Include="Security\SE_PRD.sql" />
+    <Build Include="Security\SE_PRD_1.sql" />
+    <Build Include="Security\LinkedServer2Earthtest.sql" />
+    <Build Include="Security\LinkedServer2Earthtest_1.sql" />
+    <Build Include="Security\SE_ssis_datareader.sql" />
+    <Build Include="Security\SE_SSIS_DataReader_1.sql" />
+    <Build Include="Security\SE_HealthAssurance.sql" />
+    <Build Include="Security\SE_HealthAssurance_1.sql" />
+    <Build Include="Security\SE_SQLSvcEarth.sql" />
+    <Build Include="Security\SE_ssis_datawriter.sql" />
+    <Build Include="Security\SE_ssis_datawriter_1.sql" />
+    <Build Include="Security\SE_MyFaxService.sql" />
+    <Build Include="Security\SE_MyFaxService_1.sql" />
+    <Build Include="Security\SE_SPSecureStoreSvc.sql" />
+    <Build Include="Security\SE_SPSecureStoreSvc_1.sql" />
+    <Build Include="Security\exe_cfp_excel_LP.sql" />
+    <Build Include="Security\exe_cfp_excel_LP_1.sql" />
+    <Build Include="Security\SLWSAPP.sql" />
+    <Build Include="Security\SLWSAPP_1.sql" />
+    <Build Include="Security\07718158D19D4f5f9D23B55DBF5DF1.sql" />
+    <Build Include="Security\07718158D19D4f5f9D23B55DBF5DF1_1.sql" />
+    <Build Include="Security\SQLReader.sql" />
+    <Build Include="Security\SQLReader_1.sql" />
+    <Build Include="Security\E8F575915A2E4897A517779C0DD7CE.sql" />
+    <Build Include="Security\E8F575915A2E4897A517779C0DD7CE_1.sql" />
+    <Build Include="Security\SE_JHaala.sql" />
+    <Build Include="Security\SE_JHaala_1.sql" />
+    <Build Include="Security\se_Earth~CentralData~DataReader.sql" />
+    <Build Include="Security\SE_Earth~CentralData~DataReader_1.sql" />
+    <Build Include="Security\SE_Earth~CentralData~DataWriter.sql" />
+    <Build Include="Security\SE_Earth~CentralData~DataWriter_1.sql" />
+    <Build Include="Security\SE_PQA Individuals.sql" />
+    <Build Include="Security\SE_PQA Individuals_1.sql" />
+    <Build Include="Security\TRANSAPP.sql" />
+    <Build Include="Security\TransApp_1.sql" />
+    <Build Include="Security\SE_PigMgmtAppReports.sql" />
+    <Build Include="Security\SE_PigMgmtAppReports_1.sql" />
+    <Build Include="Security\SE_powerobjects.sql" />
+    <Build Include="Security\SE_powerobjects_1.sql" />
+    <Build Include="Security\SE_scribeservice.sql" />
+    <Build Include="Security\SE_scribeservice_1.sql" />
+    <Build Include="Security\se_sqlsvc2.sql" />
+    <Build Include="Security\SE_SQLSvc2_1.sql" />
+    <Build Include="Security\SE_ITDevelopers.sql" />
+    <Build Include="Security\SE_ITDevelopers_1.sql" />
+    <Build Include="Security\ApplicationCenter.sql" />
+    <Build Include="Security\ApplicationCenter_1.sql" />
+    <Build Include="Security\SE_veeambackup.sql" />
+    <Build Include="Security\SE_veeambackup_1.sql" />
+    <Build Include="Security\CorpReports.sql" />
+    <Build Include="Security\CorpReports_1.sql" />
+    <Build Include="Security\SE_SQLRepl.sql" />
+    <Build Include="Security\SE_SQLRepl_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\dbo.GetSMphonenbr_mkt.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.DateAddNoSunday.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetTphonenbr.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.CalcDistance.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSMphonenbr_orig.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSMphonenbr.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSvcManager.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetSvcManagerID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Functions\dbo.GetMarketSvcManager.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.CFP_REPORT_USERID.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfp_pqaindividual.sql">
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pFindSites.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pComponentMaint.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pLevelMaint.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pTreeView.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pAssignedNodes.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignedNodes.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignSite.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignLevel.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignPhase.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignType.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignSystem.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pBioSecurityReport.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pFindSiteBioSecurity.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pSitePigFlow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignedSitePigFlow.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUnAssignedSite.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pSitePigFlowAll.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pSourceSitesFiltered.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.rpt_WaterUsageException.sql" />
+    <Build Include="dbo\Stored Procedures\dbo.cfp_PQA_Report.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pUpdateRelatedWalkMovements.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.cfp_trigger_list.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Stored Procedures\dbo.pAlphabetizeTableFieldNames.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Security\ApplicationCenter_2.sql" />
+    <Build Include="Security\CentralDataApp_2.sql" />
+    <Build Include="Security\kronread_2.sql" />
+    <Build Include="Security\LinkedServer2Earthtest_2.sql" />
+    <Build Include="Security\master_2.sql" />
+    <Build Include="Security\se_Earth~CentralData~DataReader_2.sql" />
+    <Build Include="Security\SE_Earth~CentralData~DataWriter_2.sql" />
+    <Build Include="Security\SE_HealthAssurance_2.sql" />
+    <Build Include="Security\se_ITAdmins_2.sql" />
+    <Build Include="Security\SE_ITDevelopers_2.sql" />
+    <Build Include="Security\SE_MyFaxService_2.sql" />
+    <Build Include="Security\SE_PigMgmtAppReports_2.sql" />
+    <Build Include="Security\SE_PRD_2.sql" />
+    <Build Include="Security\se_sqlsvc2_2.sql" />
+    <Build Include="Security\SE_ssis_datareader_2.sql" />
+    <Build Include="Security\SOLOMON_1.sql" />
+    <Build Include="Security\Permissions.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.FuelSurcharge.trInsFuelSurcharge.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </None>
+    <Build Include="dbo\Tables\dbo.AddressType.sql" />
+    <Build Include="dbo\Tables\dbo.AgreementType.sql" />
+    <Build Include="dbo\Tables\dbo.AlarmCallList.sql" />
+    <Build Include="dbo\Tables\dbo.AlarmSystem.sql" />
+    <Build Include="dbo\Tables\dbo.APDoc.sql" />
+    <Build Include="dbo\Tables\dbo.Application.sql" />
+    <Build Include="dbo\Tables\dbo.ApplicationPlanStatus.sql" />
+    <Build Include="dbo\Tables\dbo.ApplicationSeasons.sql" />
+    <Build Include="dbo\Tables\dbo.AppModule.sql" />
+    <Build Include="dbo\Tables\dbo.AppSecurityRole.sql" />
+    <Build Include="dbo\Tables\dbo.AppType.sql" />
+    <Build Include="dbo\Tables\dbo.APTran.sql" />
+    <Build Include="dbo\Tables\dbo.ASPRoles.sql" />
+    <Build Include="dbo\Tables\dbo.ASPUsers.sql" />
+    <Build Include="dbo\Tables\dbo.AvailabilityOption.sql" />
+    <Build Include="dbo\Tables\dbo.BarnGating.sql" />
+    <Build Include="dbo\Tables\dbo.BarnRoom.sql" />
+    <Build Include="dbo\Tables\dbo.BarnStyle.sql" />
+    <Build Include="dbo\Tables\dbo.BarnTranslation.sql" />
+    <Build Include="dbo\Tables\dbo.BarnType.sql" />
+    <Build Include="dbo\Tables\dbo.BinInfo.sql" />
+    <Build Include="dbo\Tables\dbo.BioLevelProtocol.sql" />
+    <Build Include="dbo\Tables\dbo.BioSecurityComponent.sql" />
+    <Build Include="dbo\Tables\dbo.BioSecuritySystem.sql" />
+    <Build Include="dbo\Tables\dbo.Building.sql" />
+    <Build Include="dbo\Tables\dbo.BuildingStyle.sql" />
+    <Build Include="dbo\Tables\dbo.BuildingType.sql" />
+    <Build Include="dbo\Tables\dbo.CalendarDate.sql" />
+    <Build Include="dbo\Tables\dbo.CFFContact.sql" />
+    <Build Include="dbo\Tables\dbo.cftAddressType.sql" />
+    <Build Include="dbo\Tables\dbo.cftFeedFlowSite.sql" />
+    <Build Include="dbo\Tables\dbo.cftMktMgrAssign.sql" />
+    <Build Include="dbo\Tables\dbo.cftPfosSite.sql" />
+    <Build Include="dbo\Tables\dbo.cftRoleType.sql" />
+    <Build Include="dbo\Tables\dbo.cftSBFSiteLookup.sql" />
+    <Build Include="dbo\Tables\dbo.Comments.sql" />
+    <Build Include="dbo\Tables\dbo.Component.sql" />
+    <Build Include="dbo\Tables\dbo.ComponentClass.sql" />
+    <Build Include="dbo\Tables\dbo.ComponentType.sql" />
+    <Build Include="dbo\Tables\dbo.ContactSecurityRole.sql" />
+    <Build Include="dbo\Tables\dbo.Country.sql" />
+    <Build Include="dbo\Tables\dbo.CropType.sql" />
+    <Build Include="dbo\Tables\dbo.Customer.sql" />
+    <Build Include="dbo\Tables\dbo.Department.sql" />
+    <Build Include="dbo\Tables\dbo.Easement.sql" />
+    <Build Include="dbo\Tables\dbo.EmissionControlType.sql" />
+    <Build Include="dbo\Tables\dbo.EmployeeDetail.sql" />
+    <Build Include="dbo\Tables\dbo.EntityType.sql" />
+    <Build Include="dbo\Tables\dbo.FacilityType.sql" />
+    <Build Include="dbo\Tables\dbo.FeedOrderComments.sql" />
+    <Build Include="dbo\Tables\dbo.FeedPlan.sql" />
+    <Build Include="dbo\Tables\dbo.Field.sql" />
+    <Build Include="dbo\Tables\dbo.FieldOperator.sql" />
+    <Build Include="dbo\Tables\dbo.FieldOwner.sql" />
+    <Build Include="dbo\Tables\dbo.FinFile.sql" />
+    <Build Include="dbo\Tables\dbo.FlowType.sql" />
+    <Build Include="dbo\Tables\dbo.FuelSurcharge.sql" />
+    <Build Include="dbo\Tables\dbo.GeneratorType.sql" />
+    <Build Include="dbo\Tables\dbo.GLCodes.sql" />
+    <Build Include="dbo\Tables\dbo.HealthServices.sql" />
+    <Build Include="dbo\Tables\dbo.HPEExport.sql" />
+    <Build Include="dbo\Tables\dbo.HPESafeData.sql" />
+    <Build Include="dbo\Tables\dbo.HPESiteCodes.sql" />
+    <Build Include="dbo\Tables\dbo.InsuranceProgram.sql" />
+    <Build Include="dbo\Tables\dbo.InternalTrucker.sql" />
+    <Build Include="dbo\Tables\dbo.JDHTempPermits.sql" />
+    <Build Include="dbo\Tables\dbo.LinkedDocument.sql" />
+    <Build Include="dbo\Tables\dbo.LinkedDocumentType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureAppDetailSubType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureAppDetailType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureAppInvoiceDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureAppInvoiceHeader.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationCost.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationMethod.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationPlan.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationPlanAnalyteDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationPlanStructureDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationVendor.sql" />
+    <Build Include="dbo\Tables\dbo.ManureApplicationVendorEmployeeName.sql" />
+    <Build Include="dbo\Tables\dbo.ManureAppRateType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureCertification.sql" />
+    <Build Include="dbo\Tables\dbo.ManureLevelReading.sql" />
+    <Build Include="dbo\Tables\dbo.ManureLevelReadingDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureMovement.sql" />
+    <Build Include="dbo\Tables\dbo.ManureMovementDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureMovementType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureStorageType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureStructure.sql" />
+    <Build Include="dbo\Tables\dbo.ManureStructureType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureSystemType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureTreatment.sql" />
+    <Build Include="dbo\Tables\dbo.ManureTreatmentDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureTreatmentProduct.sql" />
+    <Build Include="dbo\Tables\dbo.ManureTreatmentType.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValueAgreement.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValueAgreementAnalyteSpecificDetail.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValueAgreementField.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValuePaymentAgreement.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValuePaymentAgreement2.sql" />
+    <Build Include="dbo\Tables\dbo.ManureValuePaymentAgreementType.sql" />
+    <Build Include="dbo\Tables\dbo.MarketSvcMgrAssignment.sql" />
+    <Build Include="dbo\Tables\dbo.MarketTrucker.sql" />
+    <Build Include="dbo\Tables\dbo.MAS90Company.sql" />
+    <Build Include="dbo\Tables\dbo.MileageRate.sql" />
+    <Build Include="dbo\Tables\dbo.MilesMatrix1.sql" />
+    <Build Include="dbo\Tables\dbo.MilesMatrix-SiteToField.sql" />
+    <Build Include="dbo\Tables\dbo.NonSiteLocations.sql" />
+    <Build Include="dbo\Tables\dbo.Owner.sql" />
+    <Build Include="dbo\Tables\dbo.OwnerBarnDetail.sql" />
+    <Build Include="dbo\Tables\dbo.OwnershipLevel.sql" />
+    <Build Include="dbo\Tables\dbo.PermitRenewal.sql" />
+    <Build Include="dbo\Tables\dbo.PermitType.sql" />
+    <Build Include="dbo\Tables\dbo.PhoneNumber-Delete.sql" />
+    <Build Include="dbo\Tables\dbo.PhoneType.sql" />
+    <Build Include="dbo\Tables\dbo.PigChampLocation.sql" />
+    <Build Include="dbo\Tables\dbo.PigFlow.sql" />
+    <Build Include="dbo\Tables\dbo.PigSupplier.sql" />
+    <Build Include="dbo\Tables\dbo.PigTrailer.sql" />
+    <Build Include="dbo\Tables\dbo.PigTrailerType.sql" />
+    <Build Include="dbo\Tables\dbo.Position.sql" />
+    <Build Include="dbo\Tables\dbo.ProductionPhase.sql" />
+    <Build Include="dbo\Tables\dbo.ProductionPhaseBioSecurityLevel.sql" />
+    <Build Include="dbo\Tables\dbo.ProductionSystem.sql" />
+    <Build Include="dbo\Tables\dbo.ProductionTypeProductionPhase.sql" />
+    <Build Include="dbo\Tables\dbo.ProjectType.sql" />
+    <Build Include="dbo\Tables\dbo.Rainfall.sql" />
+    <Build Include="dbo\Tables\dbo.RelatedContactRelationshipType.sql" />
+    <Build Include="dbo\Tables\dbo.Replication_Validation.sql" />
+    <Build Include="dbo\Tables\dbo.Results.sql" />
+    <Build Include="dbo\Tables\dbo.Room.sql" />
+    <Build Include="dbo\Tables\dbo.Sample.sql" />
+    <Build Include="dbo\Tables\dbo.SampleAnalyte.sql" />
+    <Build Include="dbo\Tables\dbo.SampleDetail.sql" />
+    <Build Include="dbo\Tables\dbo.SampleEntityDetail.sql" />
+    <Build Include="dbo\Tables\dbo.SampleForm.sql" />
+    <Build Include="dbo\Tables\dbo.SampleType.sql" />
+    <Build Include="dbo\Tables\dbo.SamplingMethod.sql" />
+    <Build Include="dbo\Tables\dbo.ScheduleType.sql" />
+    <Build Include="dbo\Tables\dbo.ServiceManagerTemp.sql" />
+    <Build Include="dbo\Tables\dbo.SexType.sql" />
+    <Build Include="dbo\Tables\dbo.SiteBarnManureStructure.sql" />
+    <Build Include="dbo\Tables\dbo.SiteBio.sql" />
+    <Build Include="dbo\Tables\dbo.SiteBioSecurity.sql" />
+    <Build Include="dbo\Tables\dbo.SiteCareContract.sql" />
+    <Build Include="dbo\Tables\dbo.SiteCareType.sql" />
+    <Build Include="dbo\Tables\dbo.SiteComponents.sql" />
+    <Build Include="dbo\Tables\dbo.SiteEmployee.sql" />
+    <Build Include="dbo\Tables\dbo.SiteManureStructure.sql" />
+    <Build Include="dbo\Tables\dbo.SiteMedVendor.sql" />
+    <Build Include="dbo\Tables\dbo.SiteOwnershipType.sql" />
+    <Build Include="dbo\Tables\dbo.SitePigFlow.sql" />
+    <Build Include="dbo\Tables\dbo.SitePod.sql" />
+    <Build Include="dbo\Tables\dbo.SowSite.sql" />
+    <Build Include="dbo\Tables\dbo.SrSvcMgrAssignment.sql" />
+    <Build Include="dbo\Tables\dbo.StatusType.sql" />
+    <Build Include="dbo\Tables\dbo.SummerSiteCareContract.sql" />
+    <Build Include="dbo\Tables\dbo.SystemProductionType.sql" />
+    <Build Include="dbo\Tables\dbo.Table1.sql" />
+    <Build Include="dbo\Tables\dbo.tempcftPGInvTran.sql" />
+    <Build Include="dbo\Tables\dbo.tempPJTRAN.sql" />
+    <Build Include="dbo\Tables\dbo.TrailerAvailability.sql" />
+    <Build Include="dbo\Tables\dbo.TransSchedMethodType.sql" />
+    <Build Include="dbo\Tables\dbo.Trucker.sql" />
+    <Build Include="dbo\Tables\dbo.TruckerTrailer.sql" />
+    <Build Include="dbo\Tables\dbo.TruckerType.sql" />
+    <Build Include="dbo\Tables\dbo.Vendor.sql" />
+    <Build Include="dbo\Tables\dbo.VentilationSystem.sql" />
+    <Build Include="dbo\Tables\dbo.WaterMeter.sql" />
+    <Build Include="dbo\Tables\dbo.WaterMeterLevelDetail.sql" />
+    <Build Include="dbo\Tables\dbo.WaterMeterReading.sql" />
+    <Build Include="dbo\Tables\dbo.WFFinFile.sql" />
+    <Build Include="dbo\Tables\dbo.WinterSiteCareContract.sql" />
+    <Build Include="dbo\Tables\dbo.WorkOrder.sql" />
+    <Build Include="dbo\Tables\dbo.WorkOrderBarn.sql" />
+    <Build Include="dbo\Tables\dbo.WorkOrderComponents.sql" />
+    <Build Include="dbo\Tables\dbo.WorkOrderEmployeeTime.sql" />
+    <Build Include="dbo\Tables\dbo.WorkOrderStatus.sql" />
+    <Build Include="dbo\Tables\dbo.WorkType.sql" />
+    <None Include="ObsoleteScripts\InvalidReferences\dbo.getPackerRate.sql" />
+    <Build Include="dbo\Tables\dbo.Site.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.RoleType.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Phone.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Address.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Contact.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.ContactAddress.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.ContactPhone.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.ContactRoleType.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.ContactType.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.MilesMatrix.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Packer.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Barn.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Employee.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.RelatedContact.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.Bin.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.BinType.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.ProdSvcMgrAssignment.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.SiteDivDept.Triggers.sql" />
+    <Build Include="dbo\Tables\dbo.SiteSvcMgrAssignment.Triggers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolomonApp_Common\SolomonApp_Common.sqlproj">
+      <Name>SolomonApp_Common</Name>
+      <Project>{0f63a210-2e31-4e64-83d7-4416ba7dbd9b}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>SolomonApp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\CFFDB_Common\CFFDB_Common.sqlproj">
+      <Name>CFFDB_Common</Name>
+      <Project>{26c2857a-745e-4dd3-b64c-895ffb9e8ec4}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CFFDB</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\CentralData_Common\CentralData_Common.sqlproj">
+      <Name>CentralData_Common</Name>
+      <Project>{3e3220cc-f80b-4b5f-a190-21651c9d319f}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+    <ProjectReference Include="..\CFApp_Common\CFApp_Common.sqlproj">
+      <Name>CFApp_Common</Name>
+      <Project>{ab7e461e-9e1f-4c38-8431-b56939ac26f5}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CFApp</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\120\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
+  </ItemGroup>
+</Project>

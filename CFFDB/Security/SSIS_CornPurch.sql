@@ -1,0 +1,2 @@
+﻿CREATE USER [SSIS_CornPurch] FOR LOGIN [SSIS_CornPurch];
+

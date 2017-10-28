@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfquery AS SELECT * FROM SolomonSystem..mbfquery

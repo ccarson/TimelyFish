@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rptformat AS SELECT * FROM SolomonSystem..rptformat

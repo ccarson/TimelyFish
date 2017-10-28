@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\JHaala] FOR LOGIN [SE\JHaala];
+

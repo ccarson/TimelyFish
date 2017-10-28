@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rcpartrights AS SELECT * FROM SolomonSystem..rcpartrights

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\LSherman]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

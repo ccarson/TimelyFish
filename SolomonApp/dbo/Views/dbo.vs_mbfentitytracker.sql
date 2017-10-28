@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfentitytracker AS SELECT * FROM SolomonSystem..mbfentitytracker

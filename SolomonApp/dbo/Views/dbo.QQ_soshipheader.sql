@@ -1,0 +1,52 @@
+﻿
+CREATE VIEW [QQ_soshipheader]
+AS
+SELECT	h.ShipperID, h.OrdNbr AS [Order Number], convert(date,h.OrdDate) AS [Order Date], h.CustOrdNbr AS [Customer Order Number], h.CustID AS [Customer ID], 
+		CASE WHEN CHARINDEX('~', c.Name) > 0 THEN CONVERT(CHAR(60), LTRIM(SUBSTRING(c.Name, 1, CHARINDEX('~', c.Name) - 1)) + ', ' + LTRIM(RTRIM(SUBSTRING(c.Name, 
+		CHARINDEX('~', c.Name) + 1, 60)))) ELSE c.Name END AS [Customer Name], h.SOTypeID AS [Sales Order Type ID], h.Status, h.Cancelled, h.CreditHold AS [Credit Hold], 
+		isnull(SOStep.Descr,'') AS [Next Step], h.TotInvc AS [Invoice Total], h.BalDue AS [Balance Due], h.InvcNbr AS [Invoice Number], convert(date,h.InvcDate) AS [Invoice Date], 
+		h.CpnyID AS [Company ID], h.ARBatNbr AS [A/R Batch Number], h.INBatNbr AS [Inventory Batch Number], h.ShipRegisterID AS [Sales Journal ID], 
+		convert(date,h.AccrDocDate) AS [Accrual Document Date], h.AccrPerPost AS [Accrual Period to Post], h.AccrRevAcct AS [Accrual Revenue Account], 
+		h.AccrRevSub AS [Accrual Revenue Subaccount], h.AccrShipRegisterID AS [Accrual Sales Journal ID], h.S4Future12 AS [Address Type], 
+		h.AdminHold AS [Administrative Hold], h.S4Future01 AS [Applied To Document Reference Number], h.ARAcct AS [A/R Account], h.ARSub AS [A/R Subaccount], 
+		h.ARDocType AS [A/R Document Type], h.ASID AS [Application Server ID], h.ASID01 AS [Application Server ID 01], h.AuthNbr AS [Authorization Number], 
+		h.S4Future10 AS [Automatically Release Return], h.BIInvoice AS [Invoicing Location], h.BillAddr1 AS [Bill To Address 1], h.BillAddr2 AS [Bill To Address 2], 
+		h.BillAddrSpecial AS [Bill To Address Special], h.BillAttn AS [Bill To Attention], h.BillCity AS [Bill To City], h.BillCountry AS [Bill To Country], 
+		h.BillName AS [Bill To Name], '(' + SUBSTRING(h.BillPhone, 1, 3) + ')' + SUBSTRING(h.BillPhone, 4, 3) + '-' + RTRIM(SUBSTRING(h.BillPhone, 7, 24)) AS [Bill To Phone], 
+		h.BillState AS [Bill To State], h.BillZip AS [Bill To Zip], h.BlktOrdNbr AS [Blanket Order Number], h.BuildActQty AS [Actual Build Quantity], 
+		convert(date,h.BuildCmpltDate) AS [Build Complete Date], h.BuildInvtID AS [Build Inventory ID], h.BuildQty AS [Build Quantity], h.BuildTotalCost AS [Build Total Cost], 
+		h.BuyerID, h.BuyerName, h.CancelBO AS [Cancel Backorder], h.CertID AS [Certification ID], h.CertNoteID AS [Certification Note ID], h.ChainDisc AS [Chain Discount], 
+		h.CmmnPct AS [Commission Percent], h.ConsolInv AS [Consolidated Invoice], h.ContractNbr AS [Contract Number], h.CreditApprDays AS [Credit Approval Days], 
+		h.CreditApprLimit AS [Credit Approval Limit], h.CreditChk AS [Credit Check], convert(date,h.CreditHoldDate) AS [Credit Hold Date], convert(date,h.Crtd_DateTime) AS [Create Date], 
+		h.Crtd_Prog AS [Create Program], h.Crtd_User AS [Create User], h.CuryBalDue AS [Currency Balance Due], h.CuryBuildTotCost AS [Currency Build Total Cost], 
+		convert(date,h.CuryEffDate) AS [Currency Effective Date], h.CuryID AS [Currency ID], h.CuryMultDiv AS [Currency Multiple/Divide], 
+		h.CuryPremFrtAmt AS [Currency Premium Freight Amount], h.CuryRate AS [Currency Rate], h.CuryRateType AS [Currency Rate Type], 
+		h.CuryTotFrtCost AS [Currency Total Freight Cost], h.CuryTotFrtInvc AS [Currency Total Freight Invoice], h.CuryTotInvc AS [Currency Total Invoice], 
+		h.CuryTotLineDisc AS [Currency Total Line Discount], h.CuryTotMerch AS [Currency Total Merchandise], h.CuryTotMisc AS [Currency Total Miscellaneous], 
+		h.CuryTotPmt AS [Currency Total Payment], h.CuryTotTax AS [Currency Total Tax], h.CuryWholeOrdDisc AS [Currency Whole Order Discount], 
+		h.CustGLClassID AS [Customer GL Class ID], convert(date,h.DateCancelled) AS [DateCancelled], h.Dept AS [Department], h.DiscAcct AS [Discount Account], h.DiscSub AS [Discount Subaccount], 
+		h.DiscPct AS [Discount Percent], h.Div AS [Division], h.DropShip, h.EDI810 AS [EDI Invoice], h.EDI856 AS [EDI Advanced Ship Notice], 
+		h.EDIASNProcNbr AS [EDI Advanced Ship Notice Process Number], h.EDIInvcProcNbr AS [EDI Invoice Process Number], convert(date,h.ETADate) AS [ETADate], h.FOBID, h.FrtAcct AS [Freight Account], 
+		h.FrtSub AS [Freight Subaccount], h.FrtCollect AS [Freight Collect], h.FrtTermsID AS [Freight Terms ID], h.InvcPrint AS [Invoice Print], 
+		convert(date,h.LastAppendDate) AS [LastAppendDate], CONVERT(TIME,h.LastAppendTime) as [LastAppendTime], h.S4Future09 AS [LotSerialHold], convert(date,h.LUpd_DateTime) AS [Last Update Date], h.LUpd_Prog AS [Last Update Program], 
+		h.LUpd_User AS [Last Update User], h.MarkFor, h.NextFunctionClass, h.NextFunctionID, h.NoteID, h.OKToAppend, h.OverridePerPost AS [Override Period to Post], 
+		convert(date,h.PackDate) AS [PackDate], h.PerPost AS [Period to Post], convert(date,h.PickDate) AS [PickDate], h.PremFrt AS [Premium Freight], h.PremFrtAmt AS [Premium Freight Amount], h.Priority, h.ProjectID, 
+		convert(date,h.RelDate) AS [Picking Release Date], h.ReleaseValue AS [Last Credit Released Value], h.RequireStepAssy AS [Assembly Step Required], 
+		h.RequireStepInsp AS [Inspection Step Required], h.S4Future02 AS [Transfer Status], h.SellingSiteID, h.ShipAddr1 AS [Ship To Address 1], 
+		h.ShipAddr2 AS [Ship To Address 2], h.ShipAddrID AS [Ship To Address ID], h.ShipAddrSpecial AS [Ship To Address Special], h.ShipAttn AS [Ship To Attention], 
+		h.ShipCity AS [Ship To City], h.ShipCmplt AS [Ship Complete], h.ShipCountry AS [Ship To Country], h.ShipCustID AS [Ship To Customer ID], 
+		convert(date,h.ShipDateAct) AS [Actual Ship Date], convert(date,h.ShipDatePlan) AS [Planned Ship Date], h.ShipName AS [Ship To Name], 
+		'(' + SUBSTRING(h.ShipPhone, 1, 3) + ')' + SUBSTRING(h.ShipPhone, 4, 3) + '-' + RTRIM(SUBSTRING(h.ShipPhone, 7, 24)) AS [Ship To Phone], h.ShippingConfirmed, 
+		h.ShippingManifested, h.ShipSiteID AS [Ship To Site ID], h.ShipState AS [Ship To State], h.ShiptoID, h.ShiptoType, h.S4Future11 AS [Ship To Vendor Address ID], 
+		h.ShipVendID AS [Ship To Vendor ID], h.ShipViaID AS [Ship Via ID], h.ShipZip AS [Ship To Zip], h.SiteID, h.SlsperID AS [Salesperson ID], h.TaxID00, h.TaxID01, 
+		h.TaxID02, h.TaxID03, h.TermsID, h.TotBoxes AS [Total Box Number], h.TotCommCost AS [Total Commissionable Cost], h.TotCost AS [Total Cost], 
+		h.TotFrtCost AS [Total Freight Cost], h.TotFrtInvc AS [Total Freight Invoice], h.TotLineDisc AS [Total Line Discount], h.TotMerch AS [Total Merchandise], 
+		h.TotMisc AS [Total Miscellaneous], h.TotPallets AS [Total Pallets], h.TotPmt AS [Total Payment], h.TotShipWght AS [Total Shipping Weight], h.TotTax AS [Total Tax], 
+		h.TrackingNbr AS [Tracking Number], h.TransitTime, h.User1, h.User2, h.User3, h.User4, h.User5, h.User6, h.User7, h.User8, 
+		convert(date,h.User9) AS [User9], convert(date,h.User10) AS [User10], 
+		h.WholeOrdDisc AS [Whole Order Discount], h.WorkflowID, h.WorkflowStatus, h.WSID AS [Doc Share ID], h.WSID01 AS [Doc Share ID 01], h.Zone
+FROM         SOShipHeader H with (nolock)
+		left outer join Customer c with (nolock) ON h.CustID = c.CustId 
+		left outer join SOStep with (nolock) ON h.CpnyID = SOStep.CpnyID AND h.SOTypeID = SOStep.SOTypeID AND 
+                      h.NextFunctionClass = SOStep.FunctionClass AND h.NextFunctionID = SOStep.FunctionID
+                     

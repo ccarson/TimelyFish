@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MBurkett]
+    AUTHORIZATION [SE\MBurkett];
+

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfnonstateaction AS SELECT * FROM SolomonSystem..mbfnonstateaction

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfactivitylog AS SELECT * FROM SolomonSystem..mbfactivitylog

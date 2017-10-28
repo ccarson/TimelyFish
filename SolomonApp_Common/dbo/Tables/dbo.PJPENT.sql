@@ -1,0 +1,81 @@
+﻿CREATE TABLE [dbo].[PJPENT] (
+    [contract_type]      CHAR (4)      NOT NULL,
+    [crtd_datetime]      SMALLDATETIME NOT NULL,
+    [crtd_prog]          CHAR (8)      NOT NULL,
+    [crtd_user]          CHAR (10)     NOT NULL,
+    [end_date]           SMALLDATETIME NOT NULL,
+    [fips_num]           CHAR (10)     NOT NULL,
+    [labor_class_cd]     CHAR (4)      NOT NULL,
+    [lupd_datetime]      SMALLDATETIME NOT NULL,
+    [lupd_prog]          CHAR (8)      NOT NULL,
+    [lupd_user]          CHAR (10)     NOT NULL,
+    [manager1]           CHAR (10)     NOT NULL,
+    [MSPData]            CHAR (50)     NOT NULL,
+    [MSPInterface]       CHAR (1)      NOT NULL,
+    [MSPSync]            CHAR (1)      NOT NULL,
+    [MSPTask_UID]        INT           NOT NULL,
+    [noteid]             INT           NOT NULL,
+    [opportunityProduct] CHAR (36)     NOT NULL,
+    [pe_id01]            CHAR (30)     NOT NULL,
+    [pe_id02]            CHAR (30)     NOT NULL,
+    [pe_id03]            CHAR (16)     NOT NULL,
+    [pe_id04]            CHAR (16)     NOT NULL,
+    [pe_id05]            CHAR (4)      NOT NULL,
+    [pe_id06]            FLOAT (53)    NOT NULL,
+    [pe_id07]            FLOAT (53)    NOT NULL,
+    [pe_id08]            SMALLDATETIME NOT NULL,
+    [pe_id09]            SMALLDATETIME NOT NULL,
+    [pe_id10]            INT           NOT NULL,
+    [pe_id31]            CHAR (30)     NOT NULL,
+    [pe_id32]            CHAR (30)     NOT NULL,
+    [pe_id33]            CHAR (20)     NOT NULL,
+    [pe_id34]            CHAR (20)     NOT NULL,
+    [pe_id35]            CHAR (10)     NOT NULL,
+    [pe_id36]            CHAR (10)     NOT NULL,
+    [pe_id37]            CHAR (4)      NOT NULL,
+    [pe_id38]            FLOAT (53)    NOT NULL,
+    [pe_id39]            SMALLDATETIME NOT NULL,
+    [pe_id40]            INT           NOT NULL,
+    [pjt_entity]         CHAR (32)     NOT NULL,
+    [pjt_entity_desc]    CHAR (60)     NOT NULL,
+    [project]            CHAR (16)     NOT NULL,
+    [start_date]         SMALLDATETIME NOT NULL,
+    [status_08]          CHAR (1)      NOT NULL,
+    [status_09]          CHAR (1)      NOT NULL,
+    [status_10]          CHAR (1)      NOT NULL,
+    [status_11]          CHAR (1)      NOT NULL,
+    [status_12]          CHAR (1)      NOT NULL,
+    [status_13]          CHAR (1)      NOT NULL,
+    [status_14]          CHAR (1)      NOT NULL,
+    [status_15]          CHAR (1)      NOT NULL,
+    [status_16]          CHAR (1)      NOT NULL,
+    [status_17]          CHAR (1)      NOT NULL,
+    [status_18]          CHAR (1)      NOT NULL,
+    [status_19]          CHAR (1)      NOT NULL,
+    [status_20]          CHAR (1)      NOT NULL,
+    [status_ap]          CHAR (1)      NOT NULL,
+    [status_ar]          CHAR (1)      NOT NULL,
+    [status_gl]          CHAR (1)      NOT NULL,
+    [status_in]          CHAR (1)      NOT NULL,
+    [status_lb]          CHAR (1)      NOT NULL,
+    [status_pa]          CHAR (1)      NOT NULL,
+    [status_po]          CHAR (1)      NOT NULL,
+    [user1]              CHAR (30)     NOT NULL,
+    [user2]              CHAR (30)     NOT NULL,
+    [user3]              FLOAT (53)    NOT NULL,
+    [user4]              FLOAT (53)    NOT NULL,
+    [tstamp]             ROWVERSION    NOT NULL,
+    CONSTRAINT [pjpent0] PRIMARY KEY CLUSTERED ([project] ASC, [pjt_entity] ASC) WITH (FILLFACTOR = 100)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [pjpent1]
+    ON [dbo].[PJPENT]([pjt_entity_desc] ASC) WITH (FILLFACTOR = 100);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_pjpent_pjt_entity_incl]
+    ON [dbo].[PJPENT]([pjt_entity] ASC)
+    INCLUDE([project], [tstamp]) WITH (FILLFACTOR = 90);
+

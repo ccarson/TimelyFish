@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MSDynamicsSL]
+    AUTHORIZATION [MSDynamicsSL];
+

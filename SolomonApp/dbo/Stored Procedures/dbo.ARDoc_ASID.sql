@@ -1,0 +1,8 @@
+﻿ CREATE PROCEDURE ARDoc_ASID @parm1 int
+AS
+	SELECT *
+	FROM ARDoc
+	WHERE ASID = @parm1
+	ORDER BY ASID
+
+

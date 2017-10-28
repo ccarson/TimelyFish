@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_testing AS SELECT * FROM SolomonSystem..testing

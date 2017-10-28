@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_registitem AS SELECT * FROM SolomonSystem..registitem

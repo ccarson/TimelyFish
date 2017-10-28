@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_screendeletecf AS SELECT * FROM SolomonSystem..screendeletecf

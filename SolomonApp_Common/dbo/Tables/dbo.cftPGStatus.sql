@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[cftPGStatus] (
+    [Crtd_DateTime]    SMALLDATETIME NOT NULL,
+    [Crtd_Prog]        CHAR (8)      NOT NULL,
+    [Crtd_User]        CHAR (10)     NOT NULL,
+    [Description]      CHAR (30)     NOT NULL,
+    [EstInvFlg]        SMALLINT      NOT NULL,
+    [LUpd_DateTime]    SMALLDATETIME NOT NULL,
+    [LUpd_Prog]        CHAR (8)      NOT NULL,
+    [LUpd_User]        CHAR (10)     NOT NULL,
+    [NoteID]           INT           NOT NULL,
+    [PGStatusID]       CHAR (2)      NOT NULL,
+    [Precedence]       SMALLINT      NOT NULL,
+    [status_adjust]    CHAR (1)      NOT NULL,
+    [status_alloc]     CHAR (1)      NOT NULL,
+    [status_ap]        CHAR (1)      NOT NULL,
+    [status_ar]        CHAR (1)      NOT NULL,
+    [status_gl]        CHAR (1)      NOT NULL,
+    [status_in]        CHAR (1)      NOT NULL,
+    [status_pa]        CHAR (1)      NOT NULL,
+    [status_po]        CHAR (1)      NOT NULL,
+    [status_transfer]  CHAR (1)      NOT NULL,
+    [status_transport] CHAR (1)      NOT NULL,
+    [tstamp]           ROWVERSION    NULL,
+    CONSTRAINT [cftPGStatus0] PRIMARY KEY CLUSTERED ([PGStatusID] ASC) WITH (FILLFACTOR = 90)
+);
+

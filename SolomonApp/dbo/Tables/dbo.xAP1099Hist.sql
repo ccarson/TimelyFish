@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[xAP1099Hist] (
+    [CpnyID]        CHAR (10)     NOT NULL,
+    [Crtd_DateTime] SMALLDATETIME NOT NULL,
+    [Crtd_Prog]     CHAR (8)      NOT NULL,
+    [Crtd_User]     CHAR (10)     NOT NULL,
+    [Box00]         FLOAT (53)    NOT NULL,
+    [Box01]         FLOAT (53)    NOT NULL,
+    [Box02]         FLOAT (53)    NOT NULL,
+    [Box03]         FLOAT (53)    NOT NULL,
+    [Box04]         FLOAT (53)    NOT NULL,
+    [Box05]         FLOAT (53)    NOT NULL,
+    [Box06]         FLOAT (53)    NOT NULL,
+    [Box07]         FLOAT (53)    NOT NULL,
+    [Box08]         FLOAT (53)    NOT NULL,
+    [Box09]         FLOAT (53)    NOT NULL,
+    [Box10]         FLOAT (53)    NOT NULL,
+    [Interest]      FLOAT (53)    NOT NULL,
+    [LUpd_DateTime] SMALLDATETIME NOT NULL,
+    [LUpd_Prog]     CHAR (8)      NOT NULL,
+    [LUpd_User]     CHAR (10)     NOT NULL,
+    [NoteID]        INT           NOT NULL,
+    [VendID]        CHAR (15)     NOT NULL,
+    [Year]          CHAR (4)      NOT NULL,
+    [tstamp]        ROWVERSION    NOT NULL,
+    CONSTRAINT [xAP1099Hist0] PRIMARY KEY CLUSTERED ([VendID] ASC, [CpnyID] ASC, [Year] ASC) WITH (FILLFACTOR = 90)
+);
+

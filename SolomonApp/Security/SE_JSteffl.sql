@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\JSteffl] FOR LOGIN [SE\JSteffl]
+    WITH DEFAULT_SCHEMA = [SE\JSteffl];
+

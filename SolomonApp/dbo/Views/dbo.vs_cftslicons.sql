@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_cftslicons AS SELECT * FROM SolomonSystem..cftslicons

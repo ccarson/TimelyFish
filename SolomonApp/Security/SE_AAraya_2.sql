@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\AAraya]
+    AUTHORIZATION [SE\AAraya];
+

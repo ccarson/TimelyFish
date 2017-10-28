@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfsystemworkitem AS SELECT * FROM SolomonSystem..mbfsystemworkitem

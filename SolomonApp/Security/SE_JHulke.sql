@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\JHulke] FOR LOGIN [SE\JHulke];
+

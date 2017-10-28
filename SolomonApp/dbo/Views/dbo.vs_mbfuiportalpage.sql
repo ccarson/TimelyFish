@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfuiportalpage AS SELECT * FROM SolomonSystem..mbfuiportalpage

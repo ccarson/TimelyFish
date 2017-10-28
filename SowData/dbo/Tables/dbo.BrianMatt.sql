@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[BrianMatt] (
+    [EventID]    BIGINT       IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [NameColumn] VARCHAR (10) NOT NULL,
+    PRIMARY KEY CLUSTERED ([EventID] ASC) WITH (FILLFACTOR = 90)
+);
+

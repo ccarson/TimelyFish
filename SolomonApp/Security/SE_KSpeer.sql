@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\KSpeer] FOR LOGIN [SE\KSpeer]
+    WITH DEFAULT_SCHEMA = [SE\KSpeer];
+

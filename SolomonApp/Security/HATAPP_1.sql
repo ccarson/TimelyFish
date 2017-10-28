@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [HATAPP]
+    WITH PASSWORD = N'vvmhxqtT@mlxyoww|watagvxmsFT7_&#$!~<xet|h9p#dit{', SID = 0x9BCAED127DCD5A4BB855D469A302BACD, DEFAULT_DATABASE = [SolomonApp], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

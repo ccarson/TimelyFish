@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\BSwitzer]
+    AUTHORIZATION [SE\BSwitzer];
+

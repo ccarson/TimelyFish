@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\NTeigum]
+    AUTHORIZATION [SE\NTeigum];
+

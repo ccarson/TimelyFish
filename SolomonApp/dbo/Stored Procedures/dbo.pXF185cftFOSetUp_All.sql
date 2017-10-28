@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE pXF185cftFOSetUp_All 
+	AS 
+    	SELECT * FROM cftFOSetUp
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[pXF185cftFOSetUp_All] TO [MSDSL]
+    AS [dbo];
+

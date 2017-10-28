@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\BSwitzer] FOR LOGIN [SE\BSwitzer]
+    WITH DEFAULT_SCHEMA = [SE\BSwitzer];
+

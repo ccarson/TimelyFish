@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfworklistadapterconfiguration AS SELECT * FROM SolomonSystem..mbfworklistadapterconfiguration

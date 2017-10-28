@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\JAdams]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

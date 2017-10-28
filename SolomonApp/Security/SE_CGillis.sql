@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\CGillis] FOR LOGIN [SE\CGillis]
+    WITH DEFAULT_SCHEMA = [SE\CGillis];
+

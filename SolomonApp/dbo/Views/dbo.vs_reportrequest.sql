@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_reportrequest AS SELECT * FROM SolomonSystem..reportrequest

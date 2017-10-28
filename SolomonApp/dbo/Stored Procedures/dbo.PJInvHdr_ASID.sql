@@ -1,0 +1,8 @@
+﻿ CREATE PROCEDURE PJInvHdr_ASID @parm1 int
+AS
+	SELECT *
+	FROM PJInvHdr
+	WHERE ASID = @parm1
+	ORDER BY ASID
+
+

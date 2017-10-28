@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfdynamicviewsecurity AS SELECT * FROM SolomonSystem..mbfdynamicviewsecurity

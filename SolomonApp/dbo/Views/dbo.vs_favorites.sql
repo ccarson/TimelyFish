@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_favorites AS SELECT * FROM SolomonSystem..favorites

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfhyperlinkstage AS SELECT * FROM SolomonSystem..mbfhyperlinkstage

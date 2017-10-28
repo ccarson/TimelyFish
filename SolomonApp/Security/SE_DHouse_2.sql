@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\DHouse]
+    AUTHORIZATION [SE\DHouse];
+

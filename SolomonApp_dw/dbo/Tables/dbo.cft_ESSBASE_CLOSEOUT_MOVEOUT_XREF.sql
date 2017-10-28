@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[cft_ESSBASE_CLOSEOUT_MOVEOUT_XREF] (
+    [TaskID] CHAR (10)  NOT NULL,
+    [MO_Qty] INT        NOT NULL,
+    [MO_Wt]  FLOAT (53) NOT NULL
+);
+

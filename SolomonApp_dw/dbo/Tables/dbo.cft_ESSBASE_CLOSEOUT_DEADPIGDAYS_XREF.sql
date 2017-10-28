@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[cft_ESSBASE_CLOSEOUT_DEADPIGDAYS_XREF] (
+    [TaskID]      CHAR (10) NOT NULL,
+    [DeadPigDays] BIGINT    NOT NULL
+);
+

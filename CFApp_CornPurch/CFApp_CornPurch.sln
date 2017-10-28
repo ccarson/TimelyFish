@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFApp_CornPurch", "CFApp_CornPurch.sqlproj", "{A4BF1755-B540-4A51-9BDF-E7537317AE99}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SolomonApp_Common", "..\SolomonApp_Common\SolomonApp_Common.sqlproj", "{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFApp_Contact_Common", "..\CFApp_Contact_Common\CFApp_Contact_Common.sqlproj", "{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFFDB_Common", "..\CFFDB_Common\CFFDB_Common.sqlproj", "{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CFApp_Common", "..\CFApp_Common\CFApp_Common.sqlproj", "{AB7E461E-9E1F-4C38-8431-B56939AC26F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Test|Any CPU.Build.0 = Release|Any CPU
+		{A4BF1755-B540-4A51-9BDF-E7537317AE99}.Test|Any CPU.Deploy.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{0F63A210-2E31-4E64-83D7-4416BA7DBD9B}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{3ECB6DD0-7AD9-4E2F-9EDF-7C7D39EF648E}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{26C2857A-745E-4DD3-B64C-895FFB9E8EC4}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{AB7E461E-9E1F-4C38-8431-B56939AC26F5}.Test|Any CPU.Deploy.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cfse-tfs01:8080/tfs/activecollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CFApp_CornPurch.sqlproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\SolomonApp_Common\\SolomonApp_Common.sqlproj
+		SccProjectName2 = ../SolomonApp_Common
+		SccLocalPath2 = ..\\SolomonApp_Common
+		SccProjectUniqueName3 = ..\\CFApp_Contact_Common\\CFApp_Contact_Common.sqlproj
+		SccProjectName3 = ../CFApp_Contact_Common
+		SccLocalPath3 = ..\\CFApp_Contact_Common
+		SccProjectUniqueName4 = ..\\CFFDB_Common\\CFFDB_Common.sqlproj
+		SccProjectName4 = ../CFFDB_Common
+		SccLocalPath4 = ..\\CFFDB_Common
+		SccProjectUniqueName5 = ..\\CFApp_Common\\CFApp_Common.sqlproj
+		SccProjectName5 = ../CFApp_Common
+		SccLocalPath5 = ..\\CFApp_Common
+	EndGlobalSection
+EndGlobal

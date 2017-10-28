@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_accessmodule AS SELECT * FROM SolomonSystem..accessmodule

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\DGrimes]
+    AUTHORIZATION [SE\DGrimes];
+

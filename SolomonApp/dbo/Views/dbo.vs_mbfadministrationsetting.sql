@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfadministrationsetting AS SELECT * FROM SolomonSystem..mbfadministrationsetting

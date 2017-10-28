@@ -1,0 +1,27 @@
+﻿
+CREATE PROCEDURE [dbo].[cfp_PIG_GROUP_CENSUS_PHASE_DESCRIPTION_SELECT]
+	@PICYear_Week		CHAR(6)
+,	@PigProdPhaseID		VARCHAR(3)
+,	@PigFlowID			VARCHAR(10)
+AS
+
+IF @PigFlowID = '-1'
+   SET @PigFlowID = '%'
+	 
+SELECT	'%', '--All--'PhaseDesc
+UNION ALL
+SELECT	DISTINCT
+	cft_PIG_GROUP_CENSUS.PhaseDesc
+	,cft_PIG_GROUP_CENSUS.PhaseDesc
+FROM cft_PIG_GROUP_CENSUS
+WHERE cft_PIG_GROUP_CENSUS.PICYear_Week = @PICYear_Week
+AND cft_PIG_GROUP_CENSUS.PigProdPhaseID like @PigProdPhaseID
+AND cft_PIG_GROUP_CENSUS.PigFlowID like @PigFlowID
+ORDER BY PhaseDesc
+
+
+GO
+GRANT EXECUTE
+    ON OBJECT::[dbo].[cfp_PIG_GROUP_CENSUS_PHASE_DESCRIPTION_SELECT] TO [db_sp_exec]
+    AS [dbo];
+

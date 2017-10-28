@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_vtsample_orddet AS SELECT * FROM SolomonSystem..vtsample_orddet

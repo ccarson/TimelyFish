@@ -1,0 +1,8 @@
+﻿CREATE TABLE [careglobal].[USER_SITES] (
+    [username] VARCHAR (15) NOT NULL,
+    [site_id]  INT          NOT NULL,
+    CONSTRAINT [PK_USER_SITES] PRIMARY KEY CLUSTERED ([username] ASC, [site_id] ASC) WITH (FILLFACTOR = 80),
+    CONSTRAINT [FK_USER_SITES_CARE_USERS_0] FOREIGN KEY ([username]) REFERENCES [careglobal].[CARE_USERS] ([username]) ON DELETE CASCADE,
+    CONSTRAINT [FK_USER_SITES_SITES_1] FOREIGN KEY ([site_id]) REFERENCES [careglobal].[SITES] ([site_id]) ON DELETE CASCADE
+);
+

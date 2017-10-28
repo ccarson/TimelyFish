@@ -1,0 +1,77 @@
+﻿CREATE TABLE [dbo].[WOMatlReq] (
+    [CnvFact]             FLOAT (53)    CONSTRAINT [DF_WOMatlReq_CnvFact] DEFAULT ((0)) NOT NULL,
+    [Comment]             CHAR (30)     CONSTRAINT [DF_WOMatlReq_Comment] DEFAULT (' ') NOT NULL,
+    [CompAdded]           CHAR (1)      CONSTRAINT [DF_WOMatlReq_CompAdded] DEFAULT (' ') NOT NULL,
+    [CpnyID]              CHAR (10)     CONSTRAINT [DF_WOMatlReq_CpnyID] DEFAULT (' ') NOT NULL,
+    [Crtd_DateTime]       SMALLDATETIME CONSTRAINT [DF_WOMatlReq_Crtd_DateTime] DEFAULT (rtrim(CONVERT([varchar](30),CONVERT([smalldatetime],getdate(),0),0))) NOT NULL,
+    [Crtd_Prog]           CHAR (8)      CONSTRAINT [DF_WOMatlReq_Crtd_Prog] DEFAULT (' ') NOT NULL,
+    [Crtd_Time]           SMALLDATETIME CONSTRAINT [DF_WOMatlReq_Crtd_Time] DEFAULT (rtrim(CONVERT([varchar](30),CONVERT([smalldatetime],getdate(),0),0))) NOT NULL,
+    [Crtd_User]           CHAR (10)     CONSTRAINT [DF_WOMatlReq_Crtd_User] DEFAULT (' ') NOT NULL,
+    [DateReqd]            SMALLDATETIME CONSTRAINT [DF_WOMatlReq_DateReqd] DEFAULT ('01/01/1900') NOT NULL,
+    [InvtID]              CHAR (30)     CONSTRAINT [DF_WOMatlReq_InvtID] DEFAULT (' ') NOT NULL,
+    [LineNbr]             SMALLINT      CONSTRAINT [DF_WOMatlReq_LineNbr] DEFAULT ((0)) NOT NULL,
+    [LineRef]             CHAR (5)      CONSTRAINT [DF_WOMatlReq_LineRef] DEFAULT (' ') NOT NULL,
+    [LSLineCntr]          SMALLINT      CONSTRAINT [DF_WOMatlReq_LSLineCntr] DEFAULT ((0)) NOT NULL,
+    [LUpd_DateTime]       SMALLDATETIME CONSTRAINT [DF_WOMatlReq_LUpd_DateTime] DEFAULT ('01/01/1900') NOT NULL,
+    [LUpd_Prog]           CHAR (8)      CONSTRAINT [DF_WOMatlReq_LUpd_Prog] DEFAULT (' ') NOT NULL,
+    [LUPd_Time]           SMALLDATETIME CONSTRAINT [DF_WOMatlReq_LUPd_Time] DEFAULT ('01/01/1900') NOT NULL,
+    [LUpd_User]           CHAR (10)     CONSTRAINT [DF_WOMatlReq_LUpd_User] DEFAULT (' ') NOT NULL,
+    [NoteID]              INT           CONSTRAINT [DF_WOMatlReq_NoteID] DEFAULT ((0)) NOT NULL,
+    [QtyAutoIssuedPO]     FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyAutoIssuedPO] DEFAULT ((0)) NOT NULL,
+    [QtyAutoIssuedWO]     FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyAutoIssuedWO] DEFAULT ((0)) NOT NULL,
+    [QtyIssuedToDate]     FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyIssuedToDate] DEFAULT ((0)) NOT NULL,
+    [QtyRemaining]        FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyRemaining] DEFAULT ((0)) NOT NULL,
+    [QtyScrapNoReAlloc]   FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyScrapNoReAlloc] DEFAULT ((0)) NOT NULL,
+    [QtyScrapReAlloc]     FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyScrapReAlloc] DEFAULT ((0)) NOT NULL,
+    [QtyStd]              FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyStd] DEFAULT ((0)) NOT NULL,
+    [QtyToIssue]          FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyToIssue] DEFAULT ((0)) NOT NULL,
+    [QtyTransferInWO]     FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyTransferInWO] DEFAULT ((0)) NOT NULL,
+    [QtyTransferOutNoReA] FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyTransferOutNoReA] DEFAULT ((0)) NOT NULL,
+    [QtyTransferOutReA]   FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyTransferOutReA] DEFAULT ((0)) NOT NULL,
+    [QtyWOReqd]           FLOAT (53)    CONSTRAINT [DF_WOMatlReq_QtyWOReqd] DEFAULT ((0)) NOT NULL,
+    [RtgStep]             CHAR (5)      CONSTRAINT [DF_WOMatlReq_RtgStep] DEFAULT (' ') NOT NULL,
+    [S4Future01]          CHAR (30)     CONSTRAINT [DF_WOMatlReq_S4Future01] DEFAULT (' ') NOT NULL,
+    [S4Future02]          CHAR (30)     CONSTRAINT [DF_WOMatlReq_S4Future02] DEFAULT (' ') NOT NULL,
+    [S4Future03]          FLOAT (53)    CONSTRAINT [DF_WOMatlReq_S4Future03] DEFAULT ((0)) NOT NULL,
+    [S4Future04]          FLOAT (53)    CONSTRAINT [DF_WOMatlReq_S4Future04] DEFAULT ((0)) NOT NULL,
+    [S4Future05]          FLOAT (53)    CONSTRAINT [DF_WOMatlReq_S4Future05] DEFAULT ((0)) NOT NULL,
+    [S4Future06]          FLOAT (53)    CONSTRAINT [DF_WOMatlReq_S4Future06] DEFAULT ((0)) NOT NULL,
+    [S4Future07]          SMALLDATETIME CONSTRAINT [DF_WOMatlReq_S4Future07] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future08]          SMALLDATETIME CONSTRAINT [DF_WOMatlReq_S4Future08] DEFAULT ('01/01/1900') NOT NULL,
+    [S4Future09]          INT           CONSTRAINT [DF_WOMatlReq_S4Future09] DEFAULT ((0)) NOT NULL,
+    [S4Future10]          INT           CONSTRAINT [DF_WOMatlReq_S4Future10] DEFAULT ((0)) NOT NULL,
+    [S4Future11]          CHAR (10)     CONSTRAINT [DF_WOMatlReq_S4Future11] DEFAULT (' ') NOT NULL,
+    [S4Future12]          CHAR (10)     CONSTRAINT [DF_WOMatlReq_S4Future12] DEFAULT (' ') NOT NULL,
+    [Sequence]            SMALLINT      CONSTRAINT [DF_WOMatlReq_Sequence] DEFAULT ((0)) NOT NULL,
+    [SiteID]              CHAR (10)     CONSTRAINT [DF_WOMatlReq_SiteID] DEFAULT (' ') NOT NULL,
+    [SpecificCostID]      CHAR (25)     CONSTRAINT [DF_WOMatlReq_SpecificCostID] DEFAULT (' ') NOT NULL,
+    [StockUsage]          CHAR (1)      CONSTRAINT [DF_WOMatlReq_StockUsage] DEFAULT (' ') NOT NULL,
+    [Task]                CHAR (32)     CONSTRAINT [DF_WOMatlReq_Task] DEFAULT (' ') NOT NULL,
+    [UnitCost]            FLOAT (53)    CONSTRAINT [DF_WOMatlReq_UnitCost] DEFAULT ((0)) NOT NULL,
+    [UnitDesc]            CHAR (6)      CONSTRAINT [DF_WOMatlReq_UnitDesc] DEFAULT (' ') NOT NULL,
+    [User1]               CHAR (30)     CONSTRAINT [DF_WOMatlReq_User1] DEFAULT (' ') NOT NULL,
+    [User10]              CHAR (30)     CONSTRAINT [DF_WOMatlReq_User10] DEFAULT (' ') NOT NULL,
+    [User2]               CHAR (30)     CONSTRAINT [DF_WOMatlReq_User2] DEFAULT (' ') NOT NULL,
+    [User3]               FLOAT (53)    CONSTRAINT [DF_WOMatlReq_User3] DEFAULT ((0)) NOT NULL,
+    [User4]               FLOAT (53)    CONSTRAINT [DF_WOMatlReq_User4] DEFAULT ((0)) NOT NULL,
+    [User5]               CHAR (10)     CONSTRAINT [DF_WOMatlReq_User5] DEFAULT (' ') NOT NULL,
+    [User6]               CHAR (10)     CONSTRAINT [DF_WOMatlReq_User6] DEFAULT (' ') NOT NULL,
+    [User7]               SMALLDATETIME CONSTRAINT [DF_WOMatlReq_User7] DEFAULT ('01/01/1900') NOT NULL,
+    [User8]               SMALLDATETIME CONSTRAINT [DF_WOMatlReq_User8] DEFAULT ('01/01/1900') NOT NULL,
+    [User9]               CHAR (30)     CONSTRAINT [DF_WOMatlReq_User9] DEFAULT (' ') NOT NULL,
+    [WhseLoc]             CHAR (10)     CONSTRAINT [DF_WOMatlReq_WhseLoc] DEFAULT (' ') NOT NULL,
+    [WONbr]               CHAR (16)     CONSTRAINT [DF_WOMatlReq_WONbr] DEFAULT (' ') NOT NULL,
+    [tstamp]              ROWVERSION    NOT NULL,
+    CONSTRAINT [WOMatlReq0] PRIMARY KEY CLUSTERED ([WONbr] ASC, [Task] ASC, [LineNbr] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [WOMatlReq1]
+    ON [dbo].[WOMatlReq]([InvtID] ASC, [SiteID] ASC, [WONbr] ASC, [WhseLoc] ASC, [QtyRemaining] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [WOMatlReq2]
+    ON [dbo].[WOMatlReq]([InvtID] ASC, [SiteID] ASC, [QtyRemaining] ASC) WITH (FILLFACTOR = 90);
+

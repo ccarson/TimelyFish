@@ -1,0 +1,611 @@
+﻿CREATE ROLE [MSDynamicsSL]
+    AUTHORIZATION [dbo];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\AIrmiter];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JJones];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CHerst];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AHuiras];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JMaas];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TAsk];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JSteffl];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\jshideler];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\powerobjects];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TJones];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\RJackson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CGillis];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\APatel];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\Janderson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\bwright];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\setruckwash];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MBeaumont];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BLown];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\GDuniphan];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\N29user];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KKrieger];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JVelasco];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LMarti];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\TWatkins];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DHouse];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CHennessey];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DGrimes];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KSpeer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\F141User];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JZeien];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CTovarBrostrand];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\ddahle];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\nfossen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BBrown];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MHagen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NCraighton];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DStenzel];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JAdams];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\EFaust];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\HJohnson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\EJohnson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KACummins];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CLozinski];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\F67User];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\EDJohnson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AStadtherr];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BJohnson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\PFischer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LSherman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LStevicks];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NSellner];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\GWordekemper];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AStai];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MBurkett];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MBurnett];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SMattes];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NBraam];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BPierson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\SLozinski];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LArtz];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MRicard];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LRynda];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AADKINS];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\RErdman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SJensen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LSchlemme];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KBrincks];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\scribeservice];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TNash];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MHansen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KTeotia];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TManderscheid];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\APhinney];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JWilliams];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TDomeier];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MWellner];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DLMarti];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AJensen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JHolmquist];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JGerdes];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JEberline];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JJakobitz];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\ARomero];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\JZihlke];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JHrdlicka];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\DSchueler];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\RTeuber];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\JGarcia];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NTeigum];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\GRoiger];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NHonetschlager];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JPiehl];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DRichtsmeier];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AHELGET];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\THaupt];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\GLANOUE];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TEST2017];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SKLIMESH];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SHinderman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\NWyatt];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\jromero];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LChristianson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MSykes];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JGodwin];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\GDay];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JForstner];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SJohnson];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LBusch];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AAraya];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LSailer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\TPenczek];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BSwitzer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CMHansen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\N25user];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AHerzog];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BGifford];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MHarris];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JRusch];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\RFiner];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [se\jfischer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\RWittman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MTrunkhill];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JWoods];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JLAndersen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\SSchneeberg];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\PGuggisberg];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\PBordesandrade];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CWohlers];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AJacobsen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AFranz];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JCook];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JAkkermann];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KSmith];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\RDomeier];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\KZimmerman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\N27user];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\REberline];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\LCraighton];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\BAllen];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NDovre];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NWester];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CBISEL];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\AVanwyk];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\N28user];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\JMorrison];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MReisma];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\MSpeckman];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DMeyer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\ABrennan];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\CBertrand];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\NSommer];
+
+
+GO
+ALTER ROLE [MSDynamicsSL] ADD MEMBER [SE\DCleary];
+

@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\THaupt] FOR LOGIN [SE\THaupt]
+    WITH DEFAULT_SCHEMA = [SE\THaupt];
+

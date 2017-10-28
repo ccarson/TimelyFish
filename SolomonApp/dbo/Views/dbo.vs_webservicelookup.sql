@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_webservicelookup AS SELECT * FROM SolomonSystem..webservicelookup

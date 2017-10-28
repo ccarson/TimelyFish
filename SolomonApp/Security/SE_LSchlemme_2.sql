@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\LSchlemme]
+    AUTHORIZATION [SE\LSchlemme];
+

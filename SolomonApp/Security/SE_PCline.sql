@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\PCline] FOR LOGIN [SE\PCline];
+

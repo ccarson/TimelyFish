@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfuiitemdescriptorsecurity AS SELECT * FROM SolomonSystem..mbfuiitemdescriptorsecurity

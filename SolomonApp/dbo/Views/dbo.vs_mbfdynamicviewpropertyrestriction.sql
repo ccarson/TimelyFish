@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfdynamicviewpropertyrestriction AS SELECT * FROM SolomonSystem..mbfdynamicviewpropertyrestriction

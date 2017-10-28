@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\TDomeier] FOR LOGIN [SE\TDomeier]
+    WITH DEFAULT_SCHEMA = [SE\TDomeier];
+

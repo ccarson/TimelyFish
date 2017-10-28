@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [CornPurchApp]
+    WITH PASSWORD = N'uzfcCcrKndxal{zM?fngcpnhmsFT7_&#$!~<uW^vGtlpaJm{', SID = 0x1C040DEE9D9A3E47B838D3D9FFF4A4DC, DEFAULT_DATABASE = [CFApp_CornPurch], DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

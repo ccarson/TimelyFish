@@ -1,0 +1,9 @@
+﻿CREATE TABLE [caredata].[FEED_ORDER_BINS] (
+    [order_id] INT        NOT NULL,
+    [bin_id]   INT        NOT NULL,
+    [quantity] FLOAT (53) NOT NULL,
+    CONSTRAINT [PK_FEED_ORDER_BINS] PRIMARY KEY CLUSTERED ([order_id] ASC, [bin_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_FEED_ORDER_BINS_FEED_ORDERS_0] FOREIGN KEY ([order_id]) REFERENCES [caredata].[FEED_ORDERS] ([order_id]),
+    CONSTRAINT [FK_FEED_ORDER_BINS_HDR_FEED_BINS_1] FOREIGN KEY ([bin_id]) REFERENCES [caredata].[HDR_FEED_BINS] ([bin_id]) ON DELETE CASCADE
+);
+

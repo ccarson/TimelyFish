@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[cftEmpRRSetup] (
+    [ID]            INT           IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+    [Lupd_American] SMALLDATETIME NOT NULL,
+    [Lupd_Internal] SMALLDATETIME NOT NULL,
+    CONSTRAINT [cftEmpRRSetup0] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90)
+);
+

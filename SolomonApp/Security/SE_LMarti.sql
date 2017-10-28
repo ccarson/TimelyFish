@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\LMarti] FOR LOGIN [SE\LMarti]
+    WITH DEFAULT_SCHEMA = [SE\LMarti];
+

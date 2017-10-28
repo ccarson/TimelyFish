@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[cft_SLF_PHASE_TYPE_DESCRIPTION] (
+    [PhaseType]     CHAR (2)  NOT NULL,
+    [PhaseTypeDesc] CHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([PhaseType] ASC) WITH (FILLFACTOR = 90)
+);
+

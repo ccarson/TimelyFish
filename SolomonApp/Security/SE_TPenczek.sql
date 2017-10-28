@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\TPenczek] FOR LOGIN [SE\TPenczek]
+    WITH DEFAULT_SCHEMA = [SE\TPenczek];
+

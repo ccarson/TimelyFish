@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\TDomeier]
+    AUTHORIZATION [SE\TDomeier];
+

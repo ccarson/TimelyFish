@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\GStolt] FOR LOGIN [SE\GStolt];
+

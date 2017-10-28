@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[cft_scribe_CRM_workorder] (
+    [ServiceCallID]          CHAR (10)      NOT NULL,
+    [CpnyID]                 CHAR (10)      NULL,
+    [CallStatus]             CHAR (10)      NULL,
+    [CallType]               CHAR (10)      NULL,
+    [calltypedesc]           VARCHAR (30)   NULL,
+    [preferredtech]          VARCHAR (6)    NULL,
+    [CallerName]             CHAR (60)      NULL,
+    [callerphone]            VARCHAR (30)   NULL,
+    [ProjectID]              CHAR (16)      NULL,
+    [CustomerId]             CHAR (15)      NULL,
+    [name]                   VARCHAR (60)   NULL,
+    [service_acct_siteid]    VARCHAR (6)    NULL,
+    [service_acct_contactid] VARCHAR (6)    NULL,
+    [service_acct_name]      VARCHAR (60)   NULL,
+    [ServiceCallPriority]    CHAR (1)       NULL,
+    [ServiceCallDate]        SMALLDATETIME  NULL,
+    [ServiceCallTime]        CHAR (4)       NULL,
+    [ServiceCallStatus]      CHAR (1)       NULL,
+    [ServiceCallDateProm]    SMALLDATETIME  NULL,
+    [promtimeto]             CHAR (4)       NULL,
+    [SALDateTime]            SMALLDATETIME  NULL,
+    [DueDateTime]            SMALLDATETIME  NULL,
+    [Crtd_DateTime]          SMALLDATETIME  NULL,
+    [crtd_user]              VARCHAR (50)   NULL,
+    [work_order_summary]     VARCHAR (8000) NULL
+);
+

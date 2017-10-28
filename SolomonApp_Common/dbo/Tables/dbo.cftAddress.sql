@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[cftAddress] (
+    [Address1]      CHAR (30)     NOT NULL,
+    [Address2]      CHAR (30)     NOT NULL,
+    [AddressID]     CHAR (6)      NOT NULL,
+    [City]          CHAR (30)     NOT NULL,
+    [Country]       CHAR (30)     NOT NULL,
+    [County]        CHAR (30)     NOT NULL,
+    [Crtd_DateTime] SMALLDATETIME NOT NULL,
+    [Crtd_Prog]     CHAR (8)      NOT NULL,
+    [Crtd_User]     CHAR (10)     NOT NULL,
+    [Latitude]      FLOAT (53)    NOT NULL,
+    [Longitude]     FLOAT (53)    NOT NULL,
+    [Lupd_DateTime] SMALLDATETIME NOT NULL,
+    [Lupd_Prog]     CHAR (8)      NOT NULL,
+    [Lupd_User]     CHAR (10)     NOT NULL,
+    [Range]         CHAR (30)     NOT NULL,
+    [SectionNbr]    CHAR (30)     NOT NULL,
+    [State]         CHAR (3)      NOT NULL,
+    [TempID]        CHAR (50)     NOT NULL,
+    [Township]      CHAR (30)     NOT NULL,
+    [Zip]           CHAR (10)     NOT NULL,
+    [tstamp]        ROWVERSION    NOT NULL,
+    CONSTRAINT [cftAddress0] PRIMARY KEY CLUSTERED ([AddressID] ASC) WITH (FILLFACTOR = 90)
+);
+

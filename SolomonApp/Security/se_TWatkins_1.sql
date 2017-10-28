@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [se\TWatkins]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

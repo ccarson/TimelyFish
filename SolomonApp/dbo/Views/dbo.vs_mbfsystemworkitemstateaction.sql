@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfsystemworkitemstateaction AS SELECT * FROM SolomonSystem..mbfsystemworkitemstateaction

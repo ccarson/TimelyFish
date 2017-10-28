@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE CF341p_AutoAPRefNbr 
+	as 
+	SELECT LastRefNbr 
+	FROM APSetUp
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[CF341p_AutoAPRefNbr] TO [MSDSL]
+    AS [dbo];
+

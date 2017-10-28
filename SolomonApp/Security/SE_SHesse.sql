@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\SHesse] FOR LOGIN [SE\SHesse];
+

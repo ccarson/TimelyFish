@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[cft_ESSBASE_CLOSEOUT_INVADJ_XREF] (
+    [TaskID] CHAR (10) NOT NULL,
+    [IA_Qty] INT       NOT NULL
+);
+

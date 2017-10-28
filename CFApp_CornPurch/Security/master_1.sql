@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [master]
+    WITH PASSWORD = N'uzfccrEng{udV{xNa{zXrf{nmsFT7_&#$!~<gfcpn1h0ouv:', SID = 0x548AC2495CF4914187FAFE62E24EA653, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

@@ -1,0 +1,102 @@
+﻿CREATE TABLE [dbo].[Employee] (
+    [Addr1]              CHAR (60)     NOT NULL,
+    [Addr2]              CHAR (60)     NOT NULL,
+    [Attn]               CHAR (30)     NOT NULL,
+    [BirthDate]          SMALLDATETIME NOT NULL,
+    [CalYr]              CHAR (4)      NOT NULL,
+    [ChkNbr]             CHAR (10)     NOT NULL,
+    [City]               CHAR (30)     NOT NULL,
+    [Country]            CHAR (3)      NOT NULL,
+    [CpnyID]             CHAR (10)     NOT NULL,
+    [Crtd_DateTime]      SMALLDATETIME NOT NULL,
+    [Crtd_Prog]          CHAR (8)      NOT NULL,
+    [Crtd_User]          CHAR (10)     NOT NULL,
+    [CurrBatNbr]         CHAR (10)     NOT NULL,
+    [CurrCheckCalc]      SMALLINT      NOT NULL,
+    [CurrCheckPrint]     SMALLINT      NOT NULL,
+    [CurrCheckType]      CHAR (1)      NOT NULL,
+    [CurrEarn]           FLOAT (53)    NOT NULL,
+    [CurrNet]            FLOAT (53)    NOT NULL,
+    [CurrPayPerEndDate]  SMALLDATETIME NOT NULL,
+    [CurrPayPerNbr]      SMALLINT      NOT NULL,
+    [CurrPayPerStrtDate] SMALLDATETIME NOT NULL,
+    [CurrStdUnitRate]    FLOAT (53)    NOT NULL,
+    [Department]         CHAR (10)     NOT NULL,
+    [DfltEarnType]       CHAR (10)     NOT NULL,
+    [DfltExpAcct]        CHAR (10)     NOT NULL,
+    [DfltExpSub]         CHAR (24)     NOT NULL,
+    [DfltOthrExmpt]      SMALLINT      NOT NULL,
+    [DfltPersExmpt]      SMALLINT      NOT NULL,
+    [DfltWrkloc]         CHAR (6)      NOT NULL,
+    [DirectDeposit]      CHAR (1)      NOT NULL,
+    [EmailAddr]          CHAR (80)     NOT NULL,
+    [EmpId]              CHAR (10)     NOT NULL,
+    [EndDate]            SMALLDATETIME NOT NULL,
+    [Fax]                CHAR (30)     NOT NULL,
+    [HireAct]            INT           NOT NULL,
+    [HomeUnion]          CHAR (10)     NOT NULL,
+    [LastPaidDate]       SMALLDATETIME NOT NULL,
+    [LUpd_DateTime]      SMALLDATETIME NOT NULL,
+    [LUpd_Prog]          CHAR (8)      NOT NULL,
+    [LUpd_User]          CHAR (10)     NOT NULL,
+    [MagW2]              SMALLINT      NOT NULL,
+    [MarStat]            CHAR (1)      NOT NULL,
+    [MaxGarnWarn]        SMALLINT      NOT NULL,
+    [MedGovtEmpl]        SMALLINT      NOT NULL,
+    [Name]               CHAR (60)     NOT NULL,
+    [NoteId]             INT           NOT NULL,
+    [PayGrpId]           CHAR (6)      NOT NULL,
+    [PayType]            CHAR (1)      NOT NULL,
+    [PercentDispEarn]    FLOAT (53)    NOT NULL,
+    [Phone]              CHAR (30)     NOT NULL,
+    [S4Future01]         CHAR (30)     NOT NULL,
+    [S4Future02]         CHAR (30)     NOT NULL,
+    [S4Future03]         FLOAT (53)    NOT NULL,
+    [S4Future04]         FLOAT (53)    NOT NULL,
+    [S4Future05]         FLOAT (53)    NOT NULL,
+    [S4Future06]         FLOAT (53)    NOT NULL,
+    [S4Future07]         SMALLDATETIME NOT NULL,
+    [S4Future08]         SMALLDATETIME NOT NULL,
+    [S4Future09]         INT           NOT NULL,
+    [S4Future10]         INT           NOT NULL,
+    [S4Future11]         CHAR (10)     NOT NULL,
+    [S4Future12]         CHAR (10)     NOT NULL,
+    [Salut]              CHAR (30)     NOT NULL,
+    [Shift]              CHAR (1)      NOT NULL,
+    [SSN]                CHAR (9)      NOT NULL,
+    [State]              CHAR (3)      NOT NULL,
+    [Status]             CHAR (1)      NOT NULL,
+    [Statutory]          SMALLINT      NOT NULL,
+    [StdSlry]            FLOAT (53)    NOT NULL,
+    [StdUnitRate]        FLOAT (53)    NOT NULL,
+    [StrtDate]           SMALLDATETIME NOT NULL,
+    [User1]              CHAR (30)     NOT NULL,
+    [User2]              CHAR (30)     NOT NULL,
+    [User3]              FLOAT (53)    NOT NULL,
+    [User4]              FLOAT (53)    NOT NULL,
+    [User5]              CHAR (10)     NOT NULL,
+    [User6]              CHAR (10)     NOT NULL,
+    [User7]              SMALLDATETIME NOT NULL,
+    [User8]              SMALLDATETIME NOT NULL,
+    [WCCode]             CHAR (6)      NOT NULL,
+    [YtdEarn]            FLOAT (53)    NOT NULL,
+    [Zip]                CHAR (10)     NOT NULL,
+    [tstamp]             ROWVERSION    NOT NULL,
+    CONSTRAINT [Employee0] PRIMARY KEY CLUSTERED ([EmpId] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [Employee1]
+    ON [dbo].[Employee]([PayGrpId] ASC, [EmpId] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [Employee2]
+    ON [dbo].[Employee]([CurrCheckCalc] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+CREATE NONCLUSTERED INDEX [Employee3]
+    ON [dbo].[Employee]([SSN] ASC, [EmpId] ASC) WITH (FILLFACTOR = 90);
+

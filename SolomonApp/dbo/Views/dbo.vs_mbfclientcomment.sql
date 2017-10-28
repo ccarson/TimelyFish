@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfclientcomment AS SELECT * FROM SolomonSystem..mbfclientcomment

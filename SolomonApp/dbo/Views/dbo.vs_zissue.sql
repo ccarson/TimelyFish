@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_zissue AS SELECT * FROM SolomonSystem..zissue

@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\N12User] FOR LOGIN [SE\N12User];
+

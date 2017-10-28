@@ -1,0 +1,17 @@
+﻿CREATE TABLE [stage].[CFT_WEEKDEFINITION] (
+   [ID] [nvarchar](36) NOT NULL,
+	[CREATE_DATE] [datetime] NOT NULL DEFAULT (getutcdate()),
+	[LAST_UPDATE] [datetime] NOT NULL DEFAULT (getutcdate()),
+	[CREATED_BY] [bigint] NOT NULL DEFAULT ((0)),
+	[LAST_UPDATED_BY] [bigint] NOT NULL DEFAULT ((0)),
+	[DELETED_BY] [bigint] NOT NULL DEFAULT ((-1)),
+	[FISCALPERIOD] [int] NULL,
+	[FISCALYEAR] [int] NULL,
+	[PICWEEK] [int] NULL,
+	[PICYEAR] [int] NULL,
+	[WEEKENDDATE] [datetime] NULL,
+	[WEEKOFDATE] [datetime] NULL,
+	[GROUPNAME] [nvarchar](10) NULL,
+    CONSTRAINT [CFT_WEEKDEFINITION_PK] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

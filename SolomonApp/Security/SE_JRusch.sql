@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\JRusch] FOR LOGIN [SE\JRusch]
+    WITH DEFAULT_SCHEMA = [SE\JRusch];
+

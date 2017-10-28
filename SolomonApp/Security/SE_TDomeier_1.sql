@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\TDomeier]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

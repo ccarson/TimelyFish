@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_xl_rptcontrol AS SELECT * FROM SolomonSystem..xl_rptcontrol

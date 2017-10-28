@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_wrkregistdetail AS SELECT * FROM SolomonSystem..wrkregistdetail

@@ -1,0 +1,13 @@
+﻿
+CREATE PROCEDURE OMManualConf_ASID @parm1 int
+AS
+	SELECT *
+	FROM SOHeader
+	WHERE ASID01 = @parm1
+	ORDER BY ASID01
+
+GO
+GRANT CONTROL
+    ON OBJECT::[dbo].[OMManualConf_ASID] TO [MSDSL]
+    AS [dbo];
+

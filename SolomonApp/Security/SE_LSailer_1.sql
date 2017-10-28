@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [SE\LSailer]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

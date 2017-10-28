@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [CEP]
+    WITH PASSWORD = N'vRvmhxqmlyoowxhv_L&tw|YwmsFT7_&#$!~<ztagvxcxet=r', SID = 0xE3354508F5B5BB478E3CE5D22E5CA4B1, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

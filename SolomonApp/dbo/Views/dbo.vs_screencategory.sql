@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_screencategory AS SELECT * FROM SolomonSystem..screencategory

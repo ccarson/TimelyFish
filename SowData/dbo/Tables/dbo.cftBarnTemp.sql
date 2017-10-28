@@ -1,0 +1,51 @@
+﻿CREATE TABLE [dbo].[cftBarnTemp] (
+    [AlarmSystemType]      CHAR (2)      NOT NULL,
+    [BarnDescription]      CHAR (30)     NOT NULL,
+    [BarnID]               CHAR (5)      NOT NULL,
+    [BarnManufacturer]     CHAR (30)     NOT NULL,
+    [BarnMgrContactID]     CHAR (6)      NOT NULL,
+    [BarnNbr]              CHAR (6)      NOT NULL,
+    [BarnStyleID]          CHAR (2)      NOT NULL,
+    [CapMultiplier]        FLOAT (53)    NOT NULL,
+    [CenterAlleyWidth]     FLOAT (53)    NOT NULL,
+    [ContactID]            CHAR (6)      NOT NULL,
+    [Crtd_DateTime]        SMALLDATETIME NOT NULL,
+    [Crtd_Prog]            CHAR (8)      NOT NULL,
+    [Crtd_User]            CHAR (10)     NOT NULL,
+    [DateBuilt]            CHAR (20)     NOT NULL,
+    [DateContracted]       SMALLDATETIME NOT NULL,
+    [DeliverFeedFlag]      SMALLINT      NOT NULL,
+    [DfltFeedPlanID]       CHAR (4)      NOT NULL,
+    [DfltRation]           CHAR (10)     NOT NULL,
+    [FacilityTypeID]       CHAR (3)      NOT NULL,
+    [FinFile]              CHAR (30)     NOT NULL,
+    [Height]               FLOAT (53)    NOT NULL,
+    [Length]               FLOAT (53)    NOT NULL,
+    [LoadChuteFlag]        SMALLINT      NOT NULL,
+    [LossValue]            SMALLINT      NOT NULL,
+    [Lupd_DateTime]        SMALLDATETIME NOT NULL,
+    [Lupd_Prog]            CHAR (8)      NOT NULL,
+    [Lupd_User]            CHAR (10)     NOT NULL,
+    [ManureSysTypeID]      CHAR (2)      NOT NULL,
+    [ManuverableWithSemiF] SMALLINT      NOT NULL,
+    [MaxCap]               SMALLINT      NOT NULL,
+    [PigChampLocationID]   CHAR (4)      NOT NULL,
+    [SiteID]               CHAR (4)      NOT NULL,
+    [SpecialRation]        CHAR (10)     NOT NULL,
+    [SpecialRationBegin]   SMALLDATETIME NOT NULL,
+    [SpecialRationEnd]     SMALLDATETIME NOT NULL,
+    [SquareFootage]        FLOAT (53)    NOT NULL,
+    [StatusTypeID]         CHAR (1)      NOT NULL,
+    [StdCap]               SMALLINT      NOT NULL,
+    [VentilationType]      CHAR (2)      NOT NULL,
+    [WasteHandlingSys]     CHAR (30)     NOT NULL,
+    [WFFinFile2]           CHAR (30)     NOT NULL,
+    [Width]                FLOAT (53)    NOT NULL,
+    [tstamp]               ROWVERSION    NOT NULL
+);
+
+
+GO
+CREATE CLUSTERED INDEX [cftBarnTempInd]
+    ON [dbo].[cftBarnTemp]([BarnNbr] ASC, [ContactID] ASC) WITH (FILLFACTOR = 90);
+

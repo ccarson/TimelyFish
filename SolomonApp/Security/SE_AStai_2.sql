@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\AStai]
+    AUTHORIZATION [SE\AStai];
+

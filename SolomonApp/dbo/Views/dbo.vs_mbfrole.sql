@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfrole AS SELECT * FROM SolomonSystem..mbfrole

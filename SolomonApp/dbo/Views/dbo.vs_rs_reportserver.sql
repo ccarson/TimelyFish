@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_rs_reportserver AS SELECT * FROM SolomonSystem..rs_reportserver

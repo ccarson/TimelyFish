@@ -1,0 +1,9 @@
+﻿ 
+
+CREATE VIEW vp_08400DrCr As
+SELECT DrCr ='D'
+UNION 
+SELECT 'C'
+
+
+ 

@@ -1,0 +1,2 @@
+﻿CREATE USER [SE\SELoadout] FOR LOGIN [SE\SELoadout];
+

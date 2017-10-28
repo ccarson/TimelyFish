@@ -1,0 +1,10 @@
+﻿CREATE TABLE [caredata].[MAP_MEDICATION_USAGE] (
+    [purchase_id] INT         NOT NULL,
+    [event_id]    INT         NOT NULL,
+    [quantity]    INT         NOT NULL,
+    [usage_type]  VARCHAR (1) NOT NULL,
+    CONSTRAINT [PK_MAP_MEDICATION_USAGE] PRIMARY KEY NONCLUSTERED ([purchase_id] ASC, [event_id] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_MAP_MEDICATION_USAGE_EV_MEDICATION_PURCHASES_0] FOREIGN KEY ([purchase_id]) REFERENCES [caredata].[EV_MEDICATION_PURCHASES] ([purchase_id]),
+    CONSTRAINT [FK_MAP_MEDICATION_USAGE_EV_MEDICATION_USAGE_1] FOREIGN KEY ([event_id]) REFERENCES [caredata].[EV_MEDICATION_USAGE] ([event_id]) ON DELETE CASCADE
+);
+

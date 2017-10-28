@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_mbfbackofficeaccess AS SELECT * FROM SolomonSystem..mbfbackofficeaccess

@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_dtproperties AS SELECT * FROM SolomonSystem..dtproperties

@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [SE\MHarris]
+    AUTHORIZATION [SE\MHarris];
+

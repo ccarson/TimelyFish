@@ -1,0 +1,3 @@
+﻿CREATE USER [SE\KTeotia] FOR LOGIN [SE\KTeotia]
+    WITH DEFAULT_SCHEMA = [SE\KTeotia];
+

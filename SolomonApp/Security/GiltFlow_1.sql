@@ -1,0 +1,7 @@
+﻿CREATE LOGIN [GiltFlow]
+    WITH PASSWORD = N'v_vmhxqml3=8yrioww|59wRjmsFT7_&#$!~<Vtagvxxet|hD', SID = 0x48A1F9737224E5429C57EC3043B45C85, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
+
+GO
+ALTER LOGIN [GiltFlow] DISABLE;
+

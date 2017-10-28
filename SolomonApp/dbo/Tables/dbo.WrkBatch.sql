@@ -1,0 +1,53 @@
+﻿CREATE TABLE [dbo].[WrkBatch] (
+    [Acct]         CHAR (10)     NULL,
+    [AutoRev]      SMALLINT      NULL,
+    [AutoRevCopy]  SMALLINT      NULL,
+    [BalanceType]  CHAR (1)      NULL,
+    [BasecuryID]   CHAR (4)      NULL,
+    [BatNbr]       CHAR (10)     NOT NULL,
+    [BatType]      CHAR (1)      NULL,
+    [ClearAmt]     FLOAT (53)    NULL,
+    [Cleared]      SMALLINT      NULL,
+    [CpnyID]       CHAR (10)     NULL,
+    [CrTot]        FLOAT (53)    NULL,
+    [CtrlTot]      FLOAT (53)    NULL,
+    [CuryCrTot]    FLOAT (53)    NULL,
+    [CuryCtrlTot]  FLOAT (53)    NULL,
+    [CuryDrTot]    FLOAT (53)    NULL,
+    [CuryEffDate]  SMALLDATETIME NULL,
+    [CuryID]       CHAR (4)      NULL,
+    [CuryMultDiv]  CHAR (1)      NULL,
+    [CuryRate]     FLOAT (53)    NULL,
+    [CuryRateType] CHAR (6)      NULL,
+    [Cycle]        SMALLINT      NULL,
+    [DateClr]      SMALLDATETIME NULL,
+    [DateEnt]      SMALLDATETIME NULL,
+    [Descr]        CHAR (30)     NULL,
+    [DRTot]        FLOAT (53)    NULL,
+    [EditScrnNbr]  CHAR (5)      NULL,
+    [GLPostOpt]    CHAR (1)      NULL,
+    [JrnlType]     CHAR (3)      NULL,
+    [LedgerID]     CHAR (10)     NULL,
+    [Module]       CHAR (2)      NULL,
+    [NbrCycle]     SMALLINT      NULL,
+    [NoteID]       INT           NULL,
+    [OrigBatNbr]   CHAR (10)     NULL,
+    [PerEnt]       CHAR (6)      NULL,
+    [PerPost]      CHAR (6)      NULL,
+    [RI_ID]        SMALLINT      NOT NULL,
+    [Rlsed]        SMALLINT      NULL,
+    [Status]       CHAR (1)      NULL,
+    [Sub]          CHAR (24)     NULL,
+    [User1]        CHAR (30)     NULL,
+    [User2]        CHAR (30)     NULL,
+    [User3]        FLOAT (53)    NULL,
+    [User4]        FLOAT (53)    NULL,
+    [tstamp]       ROWVERSION    NOT NULL,
+    CONSTRAINT [WrkBatch0] PRIMARY KEY CLUSTERED ([RI_ID] ASC, [BatNbr] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [WrkBatch1]
+    ON [dbo].[WrkBatch]([BatNbr] ASC) WITH (FILLFACTOR = 90);
+

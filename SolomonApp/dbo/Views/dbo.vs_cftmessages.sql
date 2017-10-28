@@ -1,0 +1,1 @@
+﻿CREATE VIEW vs_cftmessages AS SELECT * FROM SolomonSystem..cftmessages
